@@ -1,0 +1,9 @@
+.banner{
+    position: absolute;
+    width: 1440px;
+    height: 605px;
+    left: 0px;
+    top: 0px;
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0) 100%);
+    }

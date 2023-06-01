@@ -6,7 +6,7 @@ body {
 
 h2 {
   font-size: 2rem;
-  color: #33A8DB;
+  color: #56b8e2;
   font-weight: bold;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -115,11 +115,11 @@ section {
   border-bottom: 1px solid #33A8DB80;
   padding: 200px;
 }
-
+/*TRANSFORME O MUNDO COM A GENTE*/
 #transform-world p {
   font-weight: 900;
   font-size: 2.5rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   max-width: 250px;
   text-shadow: 3px 2px #33A8DB;
 }

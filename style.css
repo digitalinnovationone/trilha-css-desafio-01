@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Raleway:wght@100;400&family=Roboto:wght@900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(8, 9, 19);
+}
+
+.banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0) 100%), url(../trilha-CSS-desafio-01/assets/images/banner.png);
+    padding: 60px;
+    width: 1440px;
+    max-height: 605px;
+    border: 0px, 0px, 1px, 0px;
+    border-bottom: 1px solid hsla(198, 70%, 53%, 1);
+}
+
+.banner-content {
+    width: (510px);
+    height: (393px);
+    top: 56px;
+    left: 465px;
+    gap: 16px;
+}
+
+h1 {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(5, 80, 155);
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+
+button {
+    width: Fixed (326px);
+    height: Hug (57px);
+    top: 473px;
+    left: 557px;
+    padding: 19px, 91px, 19px, 91px;
+    border: 2px;
+    gap: 31px;
+    background: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    border: 2px solid;
+    border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+}
+
+

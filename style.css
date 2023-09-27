@@ -10,29 +10,34 @@ body {
 
 .banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0) 100%), url(../trilha-CSS-desafio-01/assets/images/banner.png);
-    padding: 60px;
-    width: 1440px;
+    padding: 40px;
     max-height: 605px;
     border: 0px, 0px, 1px, 0px;
     border-bottom: 1px solid hsla(198, 70%, 53%, 1);
 }
 
+/*.logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 248px;
+    height: 214px;
+    background-color: rgba(0, 0, 0, 0.212);
+    border-radius: 100%;
+}*/
+
 .banner-content {
-    width: (510px);
-    height: (393px);
-    top: 56px;
-    left: 465px;
-    gap: 16px;
+    text-align: center;
+    align-items: center;
 }
 
-h1 {
-    font-family: Raleway;
-    font-size: 40px;
+.banner-content h1 {
+    text-transform: uppercase;
     font-weight: 900;
-    color: rgb(5, 80, 155);
-    line-height: 47px;
-    letter-spacing: 0em;
-    text-align: left;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .banner-content p {
@@ -40,8 +45,9 @@ h1 {
 }
 
 button {
-    width: Fixed (326px);
-    height: Hug (57px);
+    text-transform: uppercase;
+    width: 200px;
+    height: 30px;
     top: 473px;
     left: 557px;
     padding: 19px, 91px, 19px, 91px;
@@ -50,6 +56,32 @@ button {
     background: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
     border: 2px solid;
     border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    border-radius: 5px;
 }
 
+p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+}
 
+h2 {
+    font-style: 'Raleway';
+    font-size: 32px;
+    color: rgba(51, 168, 219, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modules-list {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#transform-world {
+    background-image: url(../trilha-CSS-desafio-01/assets/images/woman-code.png);
+    padding: 300px;
+    background-size: cover;
+}

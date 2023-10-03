@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Reloway;
+    src: local(), url("../assets/font-raleway/static/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Reloway;
+    src: local(), url("../assets/font-raleway/static/Raleway-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Reloway;
+    src: local(), url("../assets/font-raleway/static/Raleway-Black.ttf");
+    font-weight: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Reloway;
+    font-weight: 400;
+}

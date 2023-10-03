@@ -1,0 +1,68 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+
+.banner {
+    width: 1440px;
+    height: 605px;
+    margin: 56px auto 75px;
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(49,168,221,0.3), rgba(0,0,0,0.6)), url(../assets/images/banner.png);
+    border-bottom: 1px solid rgba(51,168,219,1);
+}
+
+.banner-content{
+    width: 550px;
+    height: 400px;
+    gap: 16px;
+       
+}
+
+.logo {
+    width: 268px;
+    height: 268px;
+    border-radius: 100%;
+    background: rgba(0,0,0,0.20);
+   
+}
+
+#img-logo {
+    margin: 27px 10px;
+}
+
+.banner-content  h1 {
+    background-image: linear-gradient(rgba(51,168,219,1), rgba(20,114,183,1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.banner-content p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+ /*border: 2px solid;
+
+border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+
+*/
+.banner-content button {
+    width: 326px;
+    padding: 19px 46px;
+
+    color: rgba(49, 168, 221, 1);
+
+    border: 2px solid;
+    border-image-source: linear-gradient(rgba(59,161,205,1), rgba(21,114,183,1));
+    border-image-slice: 5;
+    background-color: transparent;
+
+    font-size: 16px;
+    text-align: center;
+}

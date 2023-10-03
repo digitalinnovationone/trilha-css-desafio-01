@@ -133,4 +133,24 @@ span {
     width: 1440px;
     height: 363px;
     background-image: url('../assets/images/woman-code.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#transform-world p {
+    width: 244px;
+    height: 141px;
+
+    border: 2px solid red;
+
+    font-weight: 900;
+    font-size: 40px;
+    
+    text-align: left;
+    text-transform: lowercase;
+    text-shadow: 5px 10px rgba(51,168,219,1);
+
+    white-space: pre-line;
+    word-wrap: break-word;
 }

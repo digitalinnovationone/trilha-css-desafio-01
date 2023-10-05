@@ -78,3 +78,38 @@ body p {
   border: 2px solid deepskyblue;
 }
 
+
+ #course-content{
+  width: 800px;
+  text-align: center;
+}
+
+section {
+  margin: 100px auto;
+}
+
+
+.modules-list{
+  margin: 24px 0;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.module {
+  color: white;
+  width: 530px;
+  margin: 0 auto 24px;
+  border: 1px solid #31A8DD;
+  background-color: #252525;
+  padding: 16px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}

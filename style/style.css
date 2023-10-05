@@ -198,3 +198,17 @@ span {
     font-size: 16x;
     text-align: center;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 59px 0 38px;
+    align-items: center;
+    justify-items: center;
+}
+
+footer a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #33a8db;
+}

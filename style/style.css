@@ -67,7 +67,10 @@ body {
     background-color: transparent;
 
     font-size: 16px;
+    font-weight: 900;
     text-align: center;
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
 }
 
 #course-content {

@@ -157,7 +157,7 @@ span {
     width: 244px;
     height: 141px;
 
-    border: 2px solid red;
+    margin: 111px 0 0 198px;
 
     font-weight: 900;
     font-size: 40px;
@@ -169,3 +169,4 @@ span {
     white-space: pre-line;
     word-wrap: break-word;
 }
+

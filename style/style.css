@@ -53,11 +53,7 @@ body {
     font-size: 20px;
     text-align: center;
 }
- /*border: 2px solid;
-
-border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
-
-*/
+ 
 .banner-content button {
     width: 326px;
     padding: 19px 46px;
@@ -170,3 +166,35 @@ span {
     word-wrap: break-word;
 }
 
+#professional-challenges {
+    width: 1440;
+    padding: 76px 0 91px;
+    border-bottom: 1px solid rgba(51,168,219,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#professional-challenges h2 {
+    width: 760x;
+   
+    font-weight: 700;
+    font-size: 32px;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6.08px;
+
+    /*color: rgba(51,168,219,1);*/
+    color: #33a8db;
+}
+
+#professional-challenges img {
+    margin: 32px 0 40px
+}
+#professional-challenges p {
+    width: 792px;
+    font-size: 16x;
+    text-align: center;
+}

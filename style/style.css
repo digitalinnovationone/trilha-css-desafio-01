@@ -43,9 +43,10 @@ body {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
+    
     font-weight: 900;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 .banner-content p{
@@ -85,6 +86,7 @@ body {
 
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 5px;
 
     color: rgba(51,168,219,1);
 }

@@ -133,8 +133,7 @@ main {
 }
 
 span {
-    flex-direction: row;
-    border: 1px solid purple;
+    color: #33a8db;
 }
 
 #transform-world {

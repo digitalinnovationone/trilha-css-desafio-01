@@ -1,0 +1,218 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 605px;
+    margin: 56px auto 75px;
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(49,168,221,0.3), rgba(0,0,0,0.6)), url(../assets/images/banner.png);
+    border-bottom: 1px solid rgba(51,168,219,1);
+}
+
+.banner-content{
+    width: 550px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+       
+}
+
+.logo {
+    width: 268px;
+    height: 268px;
+    border-radius: 100%;
+    background: rgba(0,0,0,0.20);
+   
+}
+
+#img-logo {
+    margin: 27px 10px;
+}
+
+.banner-content  h1 {
+    background-image: linear-gradient(rgba(51,168,219,1), rgba(20,114,183,1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.banner-content p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+.banner-content button {
+    width: 326px;
+    padding: 19px 46px;
+
+    color: rgba(49, 168, 221, 1);
+
+    border: 2px solid;
+    border-image-source: linear-gradient(rgba(59,161,205,1), rgba(21,114,183,1));
+    border-image-slice: 5;
+    background-color: transparent;
+
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+}
+
+#course-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 792px;
+    height: 325px;
+    gap: 24px;
+}
+
+#course-content h2 {
+    width: 477px;
+    font-weight: 700;
+    font-size: 32px;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+
+    color: rgba(51,168,219,1);
+}
+
+#course-content p {
+    width: 792px;
+    height: 38px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modules-list {
+    width: 1440px;
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.module {
+    width: 535px;
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(51,168,219,1);
+    border-radius: 57px;
+    
+    font-size: 16px;
+    text-align: center;
+    justify-items: center;
+}
+
+span {
+    color: #33a8db;
+}
+
+#transform-world {
+    width: 1440px;
+    height: 363px;
+
+    margin: 90px 0 0 0;
+    border-top: 1px solid rgba(51,168,219,1);;
+    border-bottom: 1px solid rgba(51,168,219,1);;
+
+    background-image: url('../assets/images/woman-code.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#transform-world p {
+    width: 244px;
+    height: 141px;
+
+    margin: 111px 0 0 198px;
+
+    font-weight: 900;
+    font-size: 40px;
+    
+    text-align: left;
+    text-transform: lowercase;
+    text-shadow: 5px 10px rgba(51,168,219,1);
+
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+#professional-challenges {
+    width: 1440;
+    padding: 76px 0 91px;
+    border-bottom: 1px solid rgba(51,168,219,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#professional-challenges h2 {
+    width: 760x;
+   
+    font-weight: 700;
+    font-size: 32px;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6.08px;
+
+    /*color: rgba(51,168,219,1);*/
+    color: #33a8db;
+}
+
+#professional-challenges img {
+    margin: 32px 0 40px
+}
+#professional-challenges p {
+    width: 792px;
+    font-size: 16x;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 59px 0 38px;
+    align-items: center;
+    justify-items: center;
+}
+
+footer a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #33a8db;
+}

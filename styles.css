@@ -1,4 +1,5 @@
 @import url('assets/images/banner.png');
+@import url('assets/images/woman-code.png');
 
 
 * {
@@ -156,3 +157,20 @@ span {
   -webkit-background-clip: text;
 }
 
+#transform-world {
+  height: 560px;
+  background-size: cover;
+  background-image: url('assets/images/woman-code.png');
+  background-attachment: fixed;
+  border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+  padding: 200px;
+}
+
+#transform-world p {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  max-width: 250px;
+  text-shadow: 3px 2px #33A8DB;
+}

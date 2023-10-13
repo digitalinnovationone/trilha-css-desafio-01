@@ -18,7 +18,7 @@
   height: 600px;
   width: 100%;
   justify-content: center;
-  background-image: url(../images/banner.png);
+  background-image: url('assets/images/banner.png');
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('assets/images/banner.png');
   border-bottom: 1px solid #33A8DB80;
   /*background-size: cover;*/
@@ -165,12 +165,60 @@ span {
   border-top: 1px solid #33A8DB80;
   border-bottom: 1px solid #33A8DB80;
   padding: 200px;
+  text-align: center;
 }
 
 #transform-world p {
   font-weight: 900;
   font-size: 2.5rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   max-width: 250px;
   text-shadow: 3px 2px #33A8DB;
+  margin: 0;
 }
+
+#professional-challenges {
+  text-align: center;
+  /*width: 570px;*/
+  /*width: 100%;*/
+  margin: 90px auto;
+  justify-content: center;
+}
+
+
+#professional-challenges h2 {
+  /*display: flex;*/
+  justify-self: center;
+  font-size: 2rem;
+  color: #33A8DB;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+/*h2 {
+  font-size: 2rem;
+  color: #33A8DB;
+  /*font-weight: bold;*/
+  /*letter-spacing: 4px;*/
+  /*text-transform: uppercase;*/
+  /*margin-bottom: 24px;*/
+  /*justify-content: center;*/
+  /*font-weight: 700;*/
+  /*dislpay: flex;*/
+/*}*/
+
+#professional-challenges img {
+  margin: 32px 0;
+  text-align: center;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+

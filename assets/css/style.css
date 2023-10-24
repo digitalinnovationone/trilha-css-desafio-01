@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root.default-theme {
+  --banner: rgba(255, 251, 0, 0.376);
+  --theme-color: #fffb00;
+  --logo: rgba(133, 132, 132, 0.384);
+  --h1: -webkit-linear-gradient(#fffb00, #00ff22);
+  --text-color: #ffffff;
+  --boder: #fffb00;
+  --hover: #000000;
+}
+
+html.css-theme {
+  --banner: rgba(0, 225, 255, 0.376);
+  --theme-color: #00e1ff;
+  --logo: rgba(133, 132, 132, 0.384);
+  --h1: -webkit-linear-gradient(#00e1ff, #0011ff);
+  --text-color: #ffffff;
+  --boder: #00e1ff;
+  --hover: #000000;
+}
+
+html.html-theme {
+  --banner: #ff7b0060;
+  --theme-color: #ff7b00;
+  --logo: rgba(133, 132, 132, 0.384);
+  --h1: -webkit-linear-gradient(#ff7b00, #ffc400);
+  --text-color: #ffffff;
+  --boder: #ff7b00;
+  --hover: #000000;
+}
+
+body {
+  background-color: #000000;
+}
+
+.banner {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, var(--banner) 100%), url("../images/banner.png") no-repeat top center/cover;
+  border-bottom: 1px solid var(--theme-color);
+  align-items: center;
+}
+
+.banner-content {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  background-color: var(--logo);
+  height: 150px;
+  width: 150px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  background: var(--h1);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
+}
+
+button {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid var(--theme-color);
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header button:hover,
+header button:hover a {
+  background-color: var(--theme-color);
+  color: var(--hover);
+  transition: 0.2s;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--theme-color);
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#course-content {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--theme-color);
+  border-top: 1px solid var(--theme-color);
+}
+
+.modules-list {
+  margin: 60px 0;
+}
+
+.modules-list li {
+  color: var(--text-color);
+  list-style: none;
+  width: 530px;
+  margin: 0 auto 20px;
+  border: 1px solid var(--theme-color);
+  background-color: #252525;
+  padding: 15px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.modules-list li:hover,
+.modules-list li:hover span {
+  background-color: var(--theme-color);
+  color: #000000;
+  transition: 0.2s;
+}
+.modules-list span {
+  color: var(--theme-color);
+}
+
+#transform-world,
+#professional-challenges {
+  height: 100vh;
+  width: 100vw;
+}
+
+#transform-world {
+  background-size: cover;
+  background-image: url("../images/woman-code.png");
+  background-attachment: fixed;
+  border-top: 1px solid var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+  padding: 100px;
+}
+
+#transform-world p {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  max-width: 250px;
+  text-shadow: 3px 2px var(--theme-color);
+}
+
+#professional-challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+}
+
+#professional-challenges h2 {
+  margin-bottom: 24px;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(50, 168, 219, 0), var(--banner));
+  border-top: 1px solid var(--theme-color);
+}
+
+footer .dio-logo {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--theme-color);
+  padding: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#css a,
+#html a,
+#js a {
+  color: var(--text-color);
+}
+
+#html {
+  border: 1px solid #ff0000;
+  padding: 4px;
+}
+
+#html:hover {
+  background-color: #ff000060;
+  color: var(--text-color);
+}
+
+#css {
+  border: 1px solid #0000ff;
+  padding: 4px;
+}
+
+footer > #css:hover {
+  background-color: #0000ff60;
+  color: var(--text-color);
+}
+
+#js {
+  border: 1px solid #ffff00;
+  padding: 4px;
+}
+
+#js:hover {
+  background-color: #ffff0060;
+  color: var(--text-color);
+}
+
+#seta-cima,
+#seta-baixo {
+  position: fixed;
+  bottom: 20px;
+  font-size: 2em;
+  color: var(--theme-color);
+  cursor: pointer;
+}
+
+#seta-baixo {
+  right: 20px;
+}
+
+#seta-cima {
+  right: 20px;
+  display: none; /* Para esconder a seta para cima inicialmente */
+}

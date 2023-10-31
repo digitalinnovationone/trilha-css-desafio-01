@@ -1,0 +1,132 @@
+*{
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+   background-image: url('../assets/images/banner.png');
+   object-fit: fill;
+   background-attachment: scroll;
+   display: flex;
+   justify-content: center;
+   /* background: linear-gradient(to bottom, #000000 0%, #31a8dd 100%);
+   background-blend-mode: color; */
+}
+
+.banner-content {
+    background-color: transparent;
+   text-align: center;
+   width: 510px;
+   justify-content: center;
+   background-blend-mode: overlay;
+}
+
+.logo{
+    background-color: transparent;
+}
+
+.logo-image{
+    background-color: transparent;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: transparent;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.text-header{
+    text-wrap: wrap;
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+button{
+    border: solid 2px #31A8DD;
+    padding: 19px 91px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #31A8DD;
+    margin-top: 24px;
+}
+
+main{
+    text-align: center;
+    padding: 118px;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #31A8DD;
+}
+
+.course-content{
+    display: flex;
+}
+
+.text-content{
+    padding: 1.5rem;
+}
+
+.module-list{
+    display: flex;
+    gap:24px;
+}
+
+.module{
+    padding: 1rem 8rem;
+    border: solid 1px #31A8DD;
+    border-radius: 57px;
+    margin-bottom: 24px;
+    background-color: #252525;
+}
+
+span{
+    background-color: #252525;
+    color: #31A8DD;
+}
+
+#transform-world{
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    text-wrap: wrap;
+    padding: 250px 14%;
+    background-image: url('../assets/images/woman-code.png');
+    background-size: cover;
+}
+
+.text-tranform{
+    padding: 0;
+    /* box-sizing: 244px 241px; */
+    text-wrap: wrap;
+    background-color: transparent;
+}
+
+#professional-challenges{
+    padding-top: 5rem;
+}
+
+footer{
+    text-align: center;
+}
+
+.dio-logo{
+    width: 310px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #31A8DD;
+    padding-bottom: 38px;
+}
+

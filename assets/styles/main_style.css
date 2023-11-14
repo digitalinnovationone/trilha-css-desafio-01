@@ -4,20 +4,22 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+    /* font-weight: 900; */
+}
+
 .banner {
-    background-image:  url("../images/banner.png"),
-        linear-gradient(
-            rgba(0,0,0.6),
-            rgba(49, 168, 221),
-            rgba(0,0,0.6)
-        );
+    background-image:  linear-gradient(rgba(49, 168, 221, 0.6), rgba(0,0,0,0.6)),
+        url("../images/banner.png");
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
     justify-content: center;
-    padding: 4vh 20%;
+    padding: 7% 0%;
     height: 100vh;
     width: 100%;
 }
@@ -28,8 +30,36 @@
     align-items: center;
     justify-content: space-evenly;
     height: 90%;
+    font-family: Raleway, 'Franklin Gothic', sans-serif;
+    padding: 0% 25%;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    background-color: rgb(0, 0, 138);
+    background-image: linear-gradient(rgb(51, 168, 219), rgb(20, 114, 183));
+    background-clip: text;
+    font-weight: 900;
+    font-size: 320%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 1px rgb(10, 10, 10);
+}
+
+.banner-content button {
+    font-weight: 600px;
+    
 }
 
 .logo {
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(
+        rgba(0,0,0.2),
+    );
+    border-radius: 100%;
 }

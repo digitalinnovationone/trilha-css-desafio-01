@@ -144,3 +144,41 @@ section#course-content p{
     background-color: transparent;
     color: rgb(51, 168, 219)
 }
+
+/* SECTION: Transform World */
+
+section#transform-world {
+    margin-bottom: 1.5%;
+    border: 1px solid rebeccapurple;
+    background-image: url("../images/woman-code.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#transform-world p {
+    background-color: transparent;
+    font-weight:  bolder;
+    line-height: 120%;
+    font-size: 220%;
+    text-align: left;
+    width: 20%;
+    text-transform: lowercase;
+    text-shadow: 0.08em 0.08em 0 rgb(51, 168, 219);
+    margin-left: 14%;
+}
+
+/* SECTION: Professional Challenges */
+
+section#professional-challenges {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+footer {
+    height: 20vh;
+}

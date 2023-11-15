@@ -34,6 +34,7 @@ body {
     padding: 7% 0%;
     height: 100vh;
     width: 100%;
+    border-bottom: 1px solid rgb(49,168,221);
 }
 
 .banner-content {
@@ -109,6 +110,7 @@ body {
     padding: 0% 20%;
     height: 100vh;
     width: 100%;
+    border-bottom: 1px solid rgb(51, 168, 219);
 }
 
 h2 {
@@ -155,7 +157,6 @@ section#course-content p{
 
 section#transform-world {
     margin-bottom: 1.5%;
-    border: 1px solid rebeccapurple;
     background-image: url("../images/woman-code.png");
     background-size: cover;
     background-attachment: fixed;
@@ -163,6 +164,7 @@ section#transform-world {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 1px solid rgb(51, 168, 219);
 }
 
 section#transform-world p {
@@ -173,7 +175,7 @@ section#transform-world p {
     text-align: left;
     width: 20%;
     text-transform: lowercase;
-    text-shadow: 0.08em 0.08em 0 rgb(51, 168, 219);
+    text-shadow: 0.06em 0.06em 0 rgb(51, 168, 219);
     margin-left: 14%;
 }
 

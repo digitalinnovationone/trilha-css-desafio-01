@@ -103,7 +103,6 @@
     padding: 0% 20%;
     height: 100vh;
     width: 100%;
-    border: 1px solid red;
 }
 
 h2 {
@@ -123,9 +122,25 @@ section#course-content p{
 .modules-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35%
 }
 
 .module {
-    display: flex;
-    border: solid 1px red;
+    border: solid 1px rgb(51, 169, 219);
+    background-color: rgb(25,25,25);
+    border-radius: 100dvh;
+    padding: 3% 8%;
+    width: 130%;
+    box-shadow: inset 0 0 10px rgb(37, 37, 37);
+}
+
+.module:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.module span {
+    background-color: transparent;
+    color: rgb(51, 168, 219)
 }

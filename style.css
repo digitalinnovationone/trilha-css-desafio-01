@@ -1,0 +1,200 @@
+/* Importando um arquivo reset para padronização de estilos entre navegadores */
+
+@import url('reset.css');
+
+/* Estilos gerais para o corpo do documento */
+
+body {
+  background-color: black; /* Define o fundo preto */
+}
+
+/* Estilos para títulos de segundo nível */
+
+h2 {
+  font-size: 2rem; /* Define o tamanho da fonte */
+  color: #33A8DB; /* Define a cor do texto */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  letter-spacing: 4px; /* Adiciona espaçamento entre letras */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  margin-bottom: 24px; /* Adiciona margem inferior */
+}
+
+/* Estilos para parágrafos */
+
+p {
+  color: white; /* Define a cor do texto como branco */
+}
+
+/* Estilos para seções */
+
+section {
+  margin: 100px auto; /* Define margens superior e inferior automáticas e laterais de 100px */
+}
+
+/* Estilos para a seção de banner */
+
+.banner {
+  /* Define uma imagem de fundo com gradiente e imagem */
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('./assets/images/banner.png');
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o elemento */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  height: 600px; /* Define a altura do banner */
+  padding-top: 60px; /* Adiciona espaçamento superior interno */
+  border-bottom: 1px solid #33A8DB80; /* Adiciona uma borda na parte inferior com transparência */
+}
+
+/* Estilos para o conteúdo dentro do banner */
+
+.banner .banner-content {
+  color: white; /* Define a cor do texto como branco */
+  width: 600px; /* Define a largura do conteúdo */
+  margin: auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o título dentro do banner */
+
+.banner h1 {
+  /* Define o estilo de gradiente para o texto */
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  font-weight: 900; /* Define o peso da fonte como negrito */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  color: transparent; /* Torna o texto transparente */
+  background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Adiciona gradiente ao texto */
+  background-clip: text; /* Aplica o gradiente apenas ao texto */
+  -webkit-background-clip: text; /* Suporte para navegadores WebKit */
+}
+
+/* Estilos para parágrafos dentro do banner */
+
+.banner p {
+  font-size: 1.25rem; /* Define o tamanho da fonte */
+  margin: 16px 0 24px; /* Define margens */
+}
+
+/* Estilos para o logo dentro do banner */
+
+.banner .logo {
+  /* Define um estilo de fundo para o logo */
+  background-color: rgba(0, 0, 0, .2); /* Define a cor de fundo com transparência */
+  height: 260px; /* Define a altura */
+  width: 260px; /* Define a largura */
+  margin: auto; /* Centraliza horizontalmente */
+  border-radius: 50%; /* Adiciona um efeito de borda redonda */
+  padding: 16px; /* Adiciona preenchimento interno */
+  margin-bottom: 16px; /* Adiciona margem inferior */
+}
+
+/* Estilos para a imagem dentro do logo */
+
+.banner .logo img {
+  margin: auto; /* Centraliza a imagem */
+  width: 100%; /* Define a largura da imagem */
+  height: 100%; /* Define a altura da imagem */
+  object-fit: contain; /* Faz com que a imagem caiba dentro do contêiner */
+}
+
+/* Estilos para o botão dentro do banner */
+
+.banner .banner-content button {
+  color: #31A8DD; /* Define a cor do texto */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  padding: 16px 32px; /* Adiciona preenchimento interno */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 4px; /* Adiciona espaçamento entre letras */
+  background-color: transparent; /* Define o fundo como transparente */
+  border-image: linear-gradient(#3BA1CD, #1572B7); /* Adiciona uma borda com gradiente */
+  border-image-slice: 10; /* Define a espessura da borda */
+  border-radius: 30px; /* Adiciona um efeito de borda arredondada */
+}
+
+/* Estilos para o conteúdo do curso */
+
+#course-content {
+  width: 800px; /* Define a largura do conteúdo do curso */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para a lista de módulos do curso */
+
+#course-content .modules-list {
+  margin: 24px 0; /* Define margens */
+}
+
+/* Estilos para cada módulo na lista */
+
+#course-content .modules-list .module {
+  color: white; /* Define a cor do texto como branco */
+  width: 530px; /* Define a largura do módulo */
+  margin: 0 auto 24px; /* Centraliza horizontalmente e define margem inferior */
+  border: 1px solid #33A8DB; /* Adiciona uma borda sólida */
+  background-color: #252525; /* Define a cor de fundo */
+  padding: 16px; /* Adiciona preenchimento interno */
+  border-radius: 100px; /* Adiciona um efeito de borda arredondada */
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Adiciona uma sombra interna */
+}
+
+/* Estilos para elementos de destaque nos módulos */
+
+#course-content .modules-list .module span {
+  color: #33A8DB; /* Define a cor do texto em destaque */
+}
+
+/* Estilos para a seção 'Transforme o mundo' */
+
+#transform-world {
+  height: 560px; /* Define a altura */
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o elemento */
+  background-image: url("./assets/images/woman-code.png"); /* Define a imagem de fundo */
+  background-attachment: fixed; /* Fixa a imagem de fundo */
+  border-top: 1px solid #33A8DB80; /* Adiciona uma borda na parte superior com transparência */
+  border-bottom: 1px solid #33A8DB80; /* Adiciona uma borda na parte inferior com transparência */
+  padding: 200px; /* Adiciona preenchimento interno */
+}
+
+/* Estilos para parágrafos dentro da seção 'Transforme o mundo' */
+
+#transform-world p {
+  font-weight: 900; /* Define o peso da fonte como negrito */
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  text-transform: lowercase; /* Transforma o texto em minúsculas */
+  max-width: 250px; /* Define a largura máxima */
+  text-shadow: 3px 2px #33A8DB; /* Adiciona um sombreamento ao texto */
+}
+
+/* Estilos para a seção de 'Desafios Profissionais' */
+
+#professional-challenges {
+  text-align: center; /* Centraliza o texto */
+  width: 800px; /* Define a largura */
+}
+
+/* Estilos para imagens na seção de 'Desafios Profissionais' */
+
+#professional-challenges img {
+  margin: 32px 0; /* Define margens */
+}
+
+/* Estilos para o rodapé */
+
+footer {
+  padding: 60px 0; /* Adiciona preenchimento interno */
+  text-align: center; /* Centraliza o texto */
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Adiciona um gradiente ao fundo */
+  border-top: 1px solid #33A8DB80; /* Adiciona uma borda na parte superior com transparência */
+}
+
+/* Estilos para o logo da dio no rodapé */
+
+footer .dio-logo {
+  width: 300px; /* Define a largura do logo */
+}
+
+/* Estilos para links no rodapé */
+
+footer a {
+  color: #33A8DB; /* Define a cor do texto dos links */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  text-decoration: none; /* Remove a decoração padrão dos links */
+}

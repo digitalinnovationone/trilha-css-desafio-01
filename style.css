@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&family=Raleway:wght@200;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.banner {
+    position: relative;
+    height: 93vh;
+    background: linear-gradient(#000000, #001222, #000000), url(./assets/images/banner.png);
+    background-size: cover;
+    background-blend-mode:lighten;
+    border-top:solid #33A8D8;
+    border-bottom:solid #33A8D8;
+}
+
+.banner .banner-content {
+    position: relative;
+    margin: 0 auto;
+    width: 510px;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-content .logo {
+    width: 248px;
+    height: 248px;
+}
+
+.banner .banner-content h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*Criando o efeito de degradê no texto*/
+    background-image: linear-gradient( #3BA1CD, #1572B7);/*Definindo cor de fundo*/
+    /*Deixando o back apenas atrás do texto*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    /*Deixando o texto trsnparente e deixando apenas o back*/
+    -webkit-text-fill-color: transparent;
+    /*Definindo uma cor padrão caso o efeito não funcione em algum navegador*/
+    color: #33A8D8;
+}
+
+.banner .banner-content p {
+    font-size: 1.24rem;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner .banner-content button {
+    width: 326px;
+    height: 57px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #3BA1CD;
+    color: #3BA1CD;
+    letter-spacing: 2px;
+    transition: 200ms linear;
+}
+
+.banner .banner-content button:hover {
+    background-color: #3BA1CD;
+    color: white;
+}

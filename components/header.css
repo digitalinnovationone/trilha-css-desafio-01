@@ -58,6 +58,7 @@
     border: 2px solid #3BA1CD;
     color: #3BA1CD;
     letter-spacing: 2px;
+    cursor: pointer;
     transition: 200ms linear;
 }
 

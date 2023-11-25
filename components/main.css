@@ -45,6 +45,7 @@ main .modules-list {
     background-color: #252525;
     font-size: 1rem;
     font-weight: 300;
+    cursor: pointer;
     transition: .3s linear;
  }
 

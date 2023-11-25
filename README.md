@@ -1,6 +1,6 @@
 # Desafio 01: Criando sua primeira Landing Page com HTML e CSS
 
-Olá pessoal, tudo bem.?
+Olá pessoal, tudo bem?
 Nesse Desafio, eu quis fazer a parte do HTML também para treinar a semântica. Então substituir o arquivo HTML na nova branch(desafio-trilha-css-euller). Espero que não se importem. 😅
 
 Bem vindo(a) ao primeiro desafio da Trilha de CSS da DIO! Nela, você vai construir sua primeira Landing Page com HTML e CSS, colocando em prática os fundamentos do CSS,

@@ -1,0 +1,169 @@
+body{
+background-color: #000000;
+color:#ffffff;
+font-family: 'Calibri Light', Helvetica, sans-serif;
+}
+
+/* ESTILIZANDO O CABEÇALHO */
+#banner{
+    display:grid;
+    justify-items:center; 
+    border-bottom:solid 2px steelblue;
+    background-color: transparent;
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0,0.1), rgb(51, 151, 190,0.1), rgb(64, 128, 224,0.1)), url('https://github.com/digitalinnovationone/trilha-css-desafio-01/blob/main/assets/images/banner.png?raw=true');
+}
+
+#logo{
+    background-color:rgba(0,0,0,0.2);
+    border-radius:20rem;
+    margin:5rem 0 1rem 0;
+    padding:10px;
+}
+
+.title{
+    color:steelblue;
+    font-family:'Arial Black';
+    font-size: 42px;
+    background-image:linear-gradient(to bottom, rgb(7, 117, 180), rgb(51, 151, 190), rgb(64, 128, 224));
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button{
+    font-size:20px;
+    color: steelblue;
+    margin:6px 0 30px 0;
+    width:333px;
+    height:62px;
+    font-family:'Arial Black';
+    background-color:rgba(0,0,0,0.0);
+    border:solid 3px steelblue;
+}
+
+button:hover{
+    color:#ffffff;
+    border:solid 3px #ffffff;
+    -webkit-transition: 0.8s;
+}
+
+header p{
+    font-size:28px;
+    width:618px;
+    margin:10px;
+    text-align:center;
+}
+
+div img{
+    opacity: none;
+}
+
+/* ESTILIZANDO A PARTE DOS MÓDULOS */
+
+.modules{
+    display:grid;
+    justify-items:center;  
+    padding-bottom:80px;   
+}
+
+.modules h1{
+    margin:90px 0 20px 0;
+    font-family:'Arial';
+    text-justify: distribute;
+}
+
+.modules p{
+    font-size:23px;
+    max-width: 970px;
+    text-justify:distribute-all-lines;
+    text-align:center;
+}
+
+.mod{
+   width:700px; 
+   height:60px;   
+   padding:10px;
+   background-color:#252525;
+   margin:20px;
+   border-radius: 3rem;
+   font-size:20px;
+   text-align:center;
+   border:solid 2px steelblue;
+   box-shadow:inset 1px 5px 5px #000000;
+}
+
+.module{
+    color: #33A8DB    ;
+}
+
+/* ESTILIZANDO A PARTE TRANSFORME */
+.transform{
+    display:grid;
+    background-image: url('https://github.com/digitalinnovationone/trilha-css-desafio-01/blob/main/assets/images/woman-code.png?raw=true');
+    height:400px;
+    border-top: solid 2px steelblue;
+    border-bottom:solid 2px steelblue;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.transform p{
+     font-size:45px;
+     width:310px;
+     margin-left:150px;
+     font-family: 'Arial Black';
+     text-shadow: 3px 2px 2px #33A8DB;
+}
+
+/* ESTILIZANDO EVOLUA */
+
+.evolua{
+    display:grid;
+    justify-items:center;
+    border-bottom:solid 2px steelblue;
+}
+
+.evolua h1{
+    margin-top:40px;
+    font-family: 'Microsoft JhengHei UI';
+    font-size:40px;
+    width:900px;
+    text-align:center;
+}
+
+.evolua img{
+    margin:25px;
+}
+
+.evolua p{
+    width:880px;
+    font-size:20px;
+    text-align:center;
+    margin-bottom:70px;
+}
+
+/* ESTILIZANDO O RODA PÉ */
+
+footer{
+    display:grid;
+    justify-items:center;
+    padding-top:60px;
+    padding-bottom:30px;
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0,0.1), rgb(51, 151, 190,0.1), rgb(64, 128, 224,0.1));
+}
+
+footer p{
+    font-size:20px;
+}
+
+footer a{
+    text-decoration:none;
+    color:#33A8DB;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color:#900000;
+    -webkit-transition: 0.8s;
+}

@@ -1,11 +1,11 @@
 .banner {
     position: relative;
     height: 93vh;
-    background: linear-gradient(#000000, #001222, #000000), url(./assets/images/banner.png);
+    background: linear-gradient(#000000, #001222, #000000), url(../assets/images/banner.png);
     background-size: cover;
     background-blend-mode:lighten;
-    border-top:solid #33A8D8;
-    border-bottom:solid #33A8D8;
+    border-top: 2px solid #33A8D8;
+    border-bottom:2px solid #33A8D8;
 }
 
 .banner .banner-content {

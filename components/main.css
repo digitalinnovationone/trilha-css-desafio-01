@@ -45,6 +45,12 @@ main .modules-list {
     background-color: #252525;
     font-size: 1rem;
     font-weight: 300;
+    transition: .3s linear;
+ }
+
+ main .modules-list .module:hover {
+    background-color: #001222;
+    font-weight: 600;
  }
 
  main .modules-list .module span {
@@ -64,14 +70,15 @@ main .modules-list {
 
  main #transform-world p {
     position:absolute;
-    top: 5rem;
+    top: 7.5rem;
     left: 5rem;
-    padding-right: 77.5rem;
+    padding-right: 65.5rem;
+    padding-left: 10rem;
     text-transform: lowercase;
     text-shadow: 1.5px 1.5px #33A8DB;
     color: #FFFFFF;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.3rem;
     align-items: center;
  }
 

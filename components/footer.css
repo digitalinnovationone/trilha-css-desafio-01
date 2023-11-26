@@ -23,3 +23,29 @@ footer p a {
     color: #33A8DB;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    footer .dio-logo {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        padding: .5rem;
+    }
+
+    footer .dio-logo {
+        width: 150px;
+        padding: .5rem;
+    }
+
+    footer p {
+        font-size: .5rem;
+    }
+}

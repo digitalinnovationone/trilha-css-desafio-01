@@ -61,6 +61,7 @@ main .modules-list {
     background-color: #000000;
     background-size: cover;
     background-position:center;
+    background-attachment: fixed;
     height: 25rem;
     border-top: 2px solid #33A8DB;
     border-bottom: 2px solid #33A8DB;

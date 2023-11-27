@@ -1,0 +1,109 @@
+.banner {
+    height: 93vh;
+    background: linear-gradient(#000000, #001222, #000000), url(../assets/images/banner.png);
+    background-size: cover;
+    background-blend-mode:lighten;
+    border-top: 2px solid #33A8D8;
+    border-bottom:2px solid #33A8D8;
+}
+
+.banner .banner-content {
+    margin: 0 auto;
+    width: 510px;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-content .logo {
+    width: 248px;
+    height: 248px;
+}
+
+.banner .banner-content h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*Criando o efeito de degradê no texto*/
+    background-image: linear-gradient( #3BA1CD, #1572B7);/*Definindo cor de fundo*/
+    /*Deixando o back apenas atrás do texto*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    /*Deixando o texto trsnparente e deixando apenas o back*/
+    -webkit-text-fill-color: transparent;
+    /*Definindo uma cor padrão caso o efeito não funcione em algum navegador*/
+    color: #33A8D8;
+}
+
+.banner .banner-content p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner .banner-content button {
+    width: 326px;
+    height: 57px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #3BA1CD;
+    color: #3BA1CD;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+
+.banner .banner-content button:hover {
+    background-color: #3BA1CD;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .banner .banner-content .logo img {
+        width: 230px;
+
+    }
+
+    .banner .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner .banner-content {
+        width: 380px;
+        text-align: center;
+    }
+
+    .banner .banner-content p {
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+
+    .banner .banner-content  button {
+        font-size: .8rem;
+        width: 230px;
+        height: 40;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner .banner-content {
+        justify-content: center;
+        width: 300px;
+        align-items: center;
+    }
+
+    .banner .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner .banner-content button {
+        width: 150px;
+    }
+}

@@ -1,0 +1,185 @@
+main {
+   background-color: #000000;
+   margin: 0 auto;
+}
+
+main #course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #course-content h2 {
+    text-transform: uppercase;
+    color: #33A8DB;
+    letter-spacing: .4rem;
+    font-size: 1.8rem;
+    margin: 6.5rem auto 2.5rem;
+}
+
+main #course-content p {
+    padding: 0 23rem 2.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+main .modules-list {
+    margin: 0 auto 6.5rem;
+}
+ main .modules-list .module {
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    margin: 0 auto 1.5rem;
+    width: 35rem;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #252525;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .3s linear;
+ }
+
+ main .modules-list .module:hover {
+    background-color: #001222;
+    font-weight: 600;
+ }
+
+ main .modules-list .module span {
+    color: #33A8DB;
+ }
+
+ main #transform-world {
+    position: relative;
+    background-image: url(../assets/images/woman-code.png);
+    background-color: #000000;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    height: 25rem;
+    border-top: 2px solid #33A8DB;
+    border-bottom: 2px solid #33A8DB;
+ }
+ main #transform-world p {
+   position: absolute;
+    top: 7.5rem;
+    left: 10rem;
+    max-width: 250px;
+    text-transform: lowercase;
+    text-shadow: 1.5px 1.5px #33A8DB;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 2.3rem;
+    align-items: center;
+ }
+ main #professional-challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    padding-top: 3rem;
+ }
+ main #professional-challenges h2 {
+   color: #33A8DB;
+   font-size: 2.4rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: .25rem;
+   margin: 0 auto;
+   padding: 20px 200px;
+ }
+ main #professional-challenges img {
+    width: 659px;
+    height: 429px;
+    margin-bottom: 2rem;
+ }
+ main #professional-challenges p {
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 30px 350px 100px;
+    font-weight: 300;
+ }
+
+ @media (max-width: 1024px){
+   main #course-content h2{
+      font-size: 1.5rem;
+   }
+   main #course-content p {
+      padding: 0 12.5rem 2.5rem;
+      font-size: .8rem;
+   }  
+   main #professional-challenges p {
+      font-size: 1rem;
+      padding: 50px 70px 100px;
+   }
+ }
+
+ @media (max-width: 768px) {
+   main #course-content p {
+      padding: 0 4.5rem 2rem;
+
+   }
+   main #transform-world p {
+      font-size: 1.5rem;
+      left: 5rem;
+      width: 150px;
+   }
+   main #professional-challenges h2 {
+      font-size: 1.5rem;
+      padding: 20px 20px;
+   }
+
+   main #professional-challenges img {
+      width: 400px;
+      height: 300px;
+   }
+   main #professional-challenges p {
+      font-size: .8rem;
+   }
+
+ }
+
+/*Telas abaixo de 600px*/
+ @media (max-width: 600px){
+   main #course-content h2 {
+      font-size: .8rem;
+   }
+
+   main #course-content .modules-list .module{
+      max-width: 250px;
+      font-size: .5rem;
+   }
+
+   main #course-content .modules-list .module span {
+      font-size: .7rem;
+   }
+   main #transform-world p {
+      font-size: 2rem;
+      top: 150px;
+      left: 50px;
+      line-height: 3rem;
+      width: 100%;
+   }
+
+   main #professional-challenges h2 {
+      font-size: 1rem;
+      padding: 0 10px;
+   }
+   main #professional-challenges img {
+      width: 300px;
+      padding-top: 100px;
+   }
+   main #professional-challenges p {
+      font-size: .6rem;
+      padding: 30px 10px 30px;
+      text-align: center;
+   }
+ }

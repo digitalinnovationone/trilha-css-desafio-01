@@ -1,0 +1,51 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#000000, #001222);
+    padding: 3rem;
+    border: 2px solid #33A8DB;
+}
+
+footer .dio-logo {
+    width: 310px;
+    padding-bottom: 2rem;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer p a {
+    color: #33A8DB;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    footer .dio-logo {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        padding: .5rem;
+    }
+
+    footer .dio-logo {
+        width: 150px;
+        padding: .5rem;
+    }
+
+    footer p {
+        font-size: .5rem;
+    }
+}

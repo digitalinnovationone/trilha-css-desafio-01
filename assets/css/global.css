@@ -1,0 +1,9 @@
+/* Utilizando da importacao da fonte */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+/*font-face*/
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+}

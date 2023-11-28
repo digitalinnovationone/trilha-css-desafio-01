@@ -1,0 +1,78 @@
+@import url(./reset.css);
+@import url(./global.css);
+
+.banner {
+    width: 1440px;
+    height: 605px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000;
+    background: url(/assets/images/banner.png) lightgray 50% / cover no-repeat;
+}
+
+.banner-content {
+    width: 510px;
+    height: 393px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    padding: 56px 465px 156px 465px;
+}
+
+.logo {
+    width: 268px;
+    height: 268px;
+    border-radius: 268px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+img {
+    object-fit: cover;
+    padding: 27px 10px 27px 10px;
+}
+
+.logo+h1 {
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1+p {
+    width: 510px;
+    height: 46px;
+    text-align: center;
+    font-family: Raleway;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    background-color: transparent;
+    display: flex;
+    width: 326px;
+    padding: 19px 91px;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    border: 2px solid #3BA1CD;
+    color: #31A8DD;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 3.36px;
+}

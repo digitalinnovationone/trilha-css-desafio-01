@@ -1,78 +1,129 @@
 @import url(./reset.css);
 @import url(./global.css);
 
+* {
+    font-family: Raleway;
+}
+
+body {
+    background-color: #000;
+}
+
+p {
+    color: #FFF;
+}
+
+.banner-content,
+#course-content {
+    width: 510px;
+    /*height: 393px;*/
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*header - Cabeçalho - inicio*/
 .banner {
-    width: 1440px;
-    height: 605px;
-    border: 1px solid #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #000;
-    background: url(/assets/images/banner.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)),
+        url(/assets/images/banner.png) no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #33A8DB;
 }
 
-.banner-content {
-    width: 510px;
-    height: 393px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    color: white;
+.banner .banner-content {
     padding: 56px 465px 156px 465px;
+    gap: 16px;
+
 }
 
-.logo {
+.banner .logo {
     width: 268px;
     height: 268px;
     border-radius: 268px;
     background-color: rgba(0, 0, 0, 0.20);
 }
 
-img {
+.banner img {
     object-fit: cover;
     padding: 27px 10px 27px 10px;
 }
 
-.logo+h1 {
+.banner h1 {
     font-family: Raleway;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-h1+p {
+.banner p {
     width: 510px;
-    height: 46px;
-    text-align: center;
     font-family: Raleway;
-    color: #FFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
+    margin: 16px 0 24px;
 }
 
-button {
-    background-color: transparent;
+.banner button {
+    /*formato button*/
     display: flex;
     width: 326px;
-    padding: 19px 91px;
+    padding: 19px 41px;
     justify-content: center;
     align-items: center;
-    gap: 31px;
-    border: 2px solid #3BA1CD;
-    color: #31A8DD;
-    text-align: center;
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     letter-spacing: 3.36px;
+    color: #33A8DB;
+    border: 2px solid #33A8DB;
+    background-color: transparent;
+}
+
+/*header - Cabeçalho - final*/
+
+h2 {
+    color: #33A8DB;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+/*section id="course-content" - conteúdo do curso*/
+
+#course-content {
+    width: 792px;
+    padding: 118px 324px;
+    gap: 24px;
+}
+
+#course-content p{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#course-content .modules-list{
+    color: #FFF;
+    padding: 16px 127px;
 }

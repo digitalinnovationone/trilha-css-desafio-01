@@ -1,0 +1,224 @@
+@import url(./reset.css);
+@import url(./global.css);
+
+* {
+    font-family: Raleway;
+}
+
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+p {
+    color: #FFF;
+}
+
+.banner-content,
+#course-content {
+    width: 510px;
+}
+
+.banner-content,
+#course-content,
+#professional-challenges,
+footer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*header - Cabeçalho - inicio*/
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../images/banner.png);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    border-bottom: 2px solid #33A8DB;
+}
+
+.banner .banner-content {
+    padding: 60px 465px;
+    gap: 16px;
+}
+
+.banner .logo {
+    width: 268px;
+    height: 268px;
+    border-radius: 268px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.banner img {
+    object-fit: cover;
+    padding: 27px 10px 27px 10px;
+}
+
+.banner h1 {
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    margin: 16px 0 24px;
+}
+
+.banner button {
+    /*formato button*/
+    display: flex;
+    width: 326px;
+    padding: 19px 41px;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    color: #33A8DB;
+    border: 2px solid #33A8DB;
+    background-color: transparent;
+}
+
+/*header - Cabeçalho - final*/
+
+h2 {
+    color: #33A8DB;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+/*section id="course-content" - conteúdo do curso - inicio*/
+#course-content {
+    width: 800px;
+    padding: 118px 324px;
+    /* gap: 24px; */
+}
+
+#course-content p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+#course-content .modules-list .module {
+    color: #FFF;
+    width: 535px;
+    background-color: #252525;
+    text-align: center;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+/*section id="course-content" - conteúdo do curso - fim*/
+
+/* section id="transform-world" - transforme o mundo - inicio*/
+
+#transform-world {
+    height: 400px;
+    background: url('../images/woman-code.png') center / cover no-repeat fixed;
+    border-top: 2px solid #33A8DB;
+    border-bottom: 2px solid #33A8DB;
+}
+
+#transform-world p {
+    width: 244px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: lowercase;
+    line-height: 47px;
+    text-shadow: 3px 2px 0px #33A8DB;
+    padding: 118px;
+}
+
+/* section id="transform-world" - transforme o mundo - fim*/
+
+/* section id="professional-challenges" - inicio*/
+
+#professional-challenges {
+    border-bottom: 2px solid #33A8DB;
+}
+
+#professional-challenges h2,
+p {
+    width: 800px;
+    text-align: center;
+}
+
+#professional-challenges p {
+    margin-bottom: 91px;
+}
+
+#professional-challenges h2 {
+    margin-top: 87px;
+}
+
+#professional-challenges img {
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+/* section id="professional-challenges" - fim*/
+
+/* footer - rodape- inicio (parte final do codigo)*/
+
+footer {
+    background: linear-gradient(180deg, rgba(51, 168, 219, 0.00) 0%, rgba(51, 168, 219, 0.20) 99.99%, rgba(51, 168, 219, 0.20) 100%);
+    gap: 10px;
+}
+
+footer .dio-logo {
+    width: 310px;
+    margin-top: 59px;
+}
+
+footer p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+footer a{
+    text-decoration: none;
+    color: #33A8DB;
+    font-weight: 700;
+}
+
+
+/* footer - rodape - final (parte final do codigo)*/

@@ -5,6 +5,10 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 
 [Clique aqui](https://micheleambrosio.github.io/dio-trilha-css-desafio-01/) para acessar o resultado final da Landing Page criada a partir do desafio!
 
+ou
+
+[Clique aqui](https://micheleambrosio.github.io/dio-trilha-css-desafio-01/) para acessar o resultado final da Landing Page criada a partir do desafio!
+
 ![image](https://user-images.githubusercontent.com/55519539/183538055-6cce606c-7d1d-4d15-a4be-ffeb5b37c956.png)
 
 Para você realizar o desafio, basta fazer um **fork** para o seu GitHub e começar a mexer no projeto.

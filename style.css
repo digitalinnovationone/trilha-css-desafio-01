@@ -33,6 +33,32 @@ footer {
   padding: 3.78rem 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  color: #31a8dd;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  background-color: transparent;
+  border-image: linear-gradient(#3ba1cd, #1572b7);
+  border-image-slice: 10;
+}
+
 .banner {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
@@ -45,6 +71,16 @@ footer {
   padding-top: 3.78125rem;
 }
 
+.module {
+  border: 1px solid #33a8db;
+  border-radius: 100px;
+  width: 33.125rem;
+  margin: 0 auto 1.5rem;
+  padding: 1rem;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+  background-color: #252525;
+}
+
 #transform-world {
   height: 22.6875rem;
   background-image: url(./assets/images/woman-code.png);
@@ -54,15 +90,9 @@ footer {
 #professional-challenges {
 }
 
-.my-gradient {
+.gradient-text {
   color: transparent;
   background: linear-gradient(#33a8db, #1472b7);
   -webkit-background-clip: text;
   background-clip: text;
-}
-
-.tittle {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
 }

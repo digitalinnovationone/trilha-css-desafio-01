@@ -1,8 +1,68 @@
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  background-color: #000000;
+}
+
+main {
+  border-top: 1px solid #33a8db;
+}
+
+footer {
+  height: 10.625rem;
+  border-top: 1px solid #33a8db;
+  background-image: linear-gradient(
+    rgba(50, 168, 219, 0),
+    rgba(50, 168, 219, 0.2)
+  );
+  padding: 3.78rem 0;
+}
+
+.banner {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(49, 168, 221, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(./assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3.78125rem;
+}
+
+#transform-world {
+  height: 22.6875rem;
+  background-image: url(./assets/images/woman-code.png);
+  background-attachment: fixed;
+}
+
+#professional-challenges {
+}
+
+.my-gradient {
+  color: transparent;
+  background: linear-gradient(#33a8db, #1472b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.tittle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }

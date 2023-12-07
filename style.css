@@ -20,12 +20,12 @@ body {
 }
 
 main {
-  border-top: 1px solid #33a8db;
+  border-top: 1px solid #33a8db80;
 }
 
 footer {
   height: 10.625rem;
-  border-top: 1px solid #33a8db;
+  border-top: 1px solid #33a8db80;
   background-image: linear-gradient(
     rgba(50, 168, 219, 0),
     rgba(50, 168, 219, 0.2)
@@ -60,6 +60,7 @@ button {
 }
 
 .banner {
+  height: 37.5rem;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(49, 168, 221, 0.2),
@@ -82,12 +83,16 @@ button {
 }
 
 #transform-world {
-  height: 22.6875rem;
+  height: 35rem;
+  padding: 12.5rem;
   background-image: url(./assets/images/woman-code.png);
+  background-size: cover;
   background-attachment: fixed;
+  border-top: 1px solid #33a8db80;
 }
 
 #professional-challenges {
+  border-top: 1px solid #33a8db80;
 }
 
 .gradient-text {

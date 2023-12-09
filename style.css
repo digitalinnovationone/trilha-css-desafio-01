@@ -11,7 +11,6 @@
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -34,7 +33,13 @@ footer {
     rgba(50, 168, 219, 0),
     rgba(50, 168, 219, 0.2)
   );
-  padding: 3.78rem 0;
+  padding: 3.75rem 0;
+}
+
+footer a {
+  color: #33a8db;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 h1 {
@@ -103,6 +108,14 @@ button {
   margin: 1rem 0 1.5rem;
 }
 
+#course-content {
+  width: 50rem;
+}
+
+.modules-list {
+  margin: 1.5rem 0;
+}
+
 .module {
   border: 1px solid #33a8db;
   border-radius: 100px;
@@ -111,6 +124,10 @@ button {
   padding: 1rem;
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
   background-color: #252525;
+}
+
+.module span {
+  color: #33a8db;
 }
 
 #transform-world {
@@ -137,6 +154,10 @@ button {
 
 #professional-challenges img {
   margin: 2rem 0;
+}
+
+.dio-logo {
+  width: 18.75rem;
 }
 
 .gradient-text {

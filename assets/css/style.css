@@ -1,0 +1,112 @@
+@import url('reset.css');
+
+* {
+    text-align: center;
+    font-family: "Arial","Times New Roman";
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 2em;
+    background: linear-gradient(0deg, rgba(33,140,205,1) 0%, rgba(16,119,193,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin: 25px 10px 10px;
+}
+
+h2{
+    font-size: 2em;
+    color: rgba(33,140,205,1);
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+p{
+    margin: 0.5em auto;
+    max-width: 30em;
+}
+
+header{
+    background-image: url('../images/banner.png');
+    background-color: #061a23;
+    background-blend-mode: hard-light;
+    border: 5px solid transparent;
+}
+
+img{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.banner-content{
+    margin: 5%;
+}
+.banner-content p{
+    margin: 0.5em auto;
+    max-width: 30em;
+}
+
+button{
+    font-size: 1.5em;
+    border: 3px solid rgba(33,140,205,1);
+    background: linear-gradient(0deg, rgba(33,140,205,1) 0%, rgba(16,119,193,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin: 25px 10px 10px;
+    padding: 20px 40px;
+}
+
+main{
+    background-color: black;
+}
+
+section{
+    border-top: 1px solid blue;
+    padding: 75px 20px;
+}
+
+.module{
+    border: 1px solid rgba(33,140,205,1);
+    border-radius: 50px;
+    padding: 18px;
+    margin: 25px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: inset -5px 5px 8px black;
+}
+
+span{
+    color: rgba(33,140,205,1);
+}
+
+#transform-world{
+    padding: 250px;
+    background-image: url('../images/woman-code.png');
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 2px 2px 1px rgba(33,140,205,1);
+    text-transform: lowercase;
+}
+#transform-world p{
+    margin: 0.5em auto;
+    max-width: 30em;
+    text-align: left;
+}
+
+footer{
+    padding: 55px;
+    border-top: 1px solid blue;
+    background-image: linear-gradient(black, rgb(7, 32, 48));
+}
+.dio-logo{
+    border-radius: 0%;
+    background-color: transparent;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(33,140,205,1);
+}

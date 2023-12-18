@@ -1,0 +1,29 @@
+@import url(reset.css);
+
+.banner {
+  background-image: url(../images/banner.png),
+  linear-gradient(rgba(0, 0, 0, 1), rgb(11, 54, 72), rgba(0, 0, 0, 1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  padding-top: 60px;
+}
+
+div.banner-content {
+  text-align: center;
+}
+
+div.logo {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

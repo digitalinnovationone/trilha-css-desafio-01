@@ -65,3 +65,37 @@ h1 {
   border-image-slice: 20%;
   background-color: transparent;
 }
+
+section {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+}
+
+#course-content h2 {
+  color: #33A8DB;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 23px;
+}
+
+#course-content p {
+  width: 800px;
+  margin: auto;
+}
+
+.module {
+  background-color: #252525;
+  padding: 16px;
+  border: 1px solid #33A8DB;
+  border-radius: 50px;
+  width: 530px;
+  margin: 24px auto;
+  box-shadow: -5px 4px 8px inset black;
+}
+
+.module span {
+  color: #33A8DB;
+}

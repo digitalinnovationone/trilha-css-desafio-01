@@ -66,10 +66,12 @@ h1 {
   background-color: transparent;
 }
 
-section {
+#course-content {
   margin-top: 100px;
   color: white;
   text-align: center;
+  padding-bottom: 75px;
+  border-bottom: #33A8DB80 solid 1px;
 }
 
 #course-content h2 {
@@ -98,4 +100,22 @@ section {
 
 .module span {
   color: #33A8DB;
+}
+
+#transform-world {
+  background-image: url(../images/woman-code.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 555px;
+  border-bottom: #33A8DB80 solid 1px;
+  padding: 200px;
+}
+
+#transform-world p {
+  width: 250px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  text-transform: lowercase;
+  text-shadow: 4px 2px #33A8DB;
 }

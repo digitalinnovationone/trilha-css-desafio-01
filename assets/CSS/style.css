@@ -1,12 +1,17 @@
 @import url(reset.css);
 
+body {
+  background-color: black;
+}
+
 .banner {
   background-image: url(../images/banner.png),
-  linear-gradient(rgba(0, 0, 0, 1), rgb(11, 54, 72), rgba(0, 0, 0, 1));
+  linear-gradient(rgb(0, 0, 0), rgb(7, 37, 50), rgb(0, 0, 0));
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 600px;
   padding-top: 60px;
+  border-bottom: #33A8DB80 solid 1px;
 }
 
 div.banner-content {
@@ -18,12 +23,45 @@ div.logo {
   border-radius: 50%;
   width: 260px;
   height: 260px;
+  padding: 16px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+h1 {
+  text-transform: uppercase;
+  background-image: linear-gradient(#33A8DB, #1472B7);
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+
+.banner p {
+  width: 600px;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.banner button {
+  margin-top: 25px;
+  padding: 16px 32px;
+  color: #31A8DD;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(#3BA1CD, #1572B7);
+  border-image-slice: 20%;
+  background-color: transparent;
 }

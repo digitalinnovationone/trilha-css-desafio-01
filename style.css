@@ -76,9 +76,11 @@ body{
     width: 792px;
     height: 40vh;
     margin:  2rem auto;
+    
 }
 
 #course-content h2{
+    margin-top: 10rem;
     text-transform: uppercase;
     font-weight: bold;
     
@@ -97,4 +99,28 @@ body{
     text-align: center;
     font-size: 1rem;
     font-weight: 4  00;
+}
+
+.modules-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.modules-list .module{
+    color: white;
+    padding: 1rem 1rem;
+    width: 32rem;
+    text-align: center;
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    box-shadow: 0px 5px 10px  2px inset black;
+    border-radius:45px;
+}
+
+.modules-list .module > span{
+    color: #3BA1CD;
 }

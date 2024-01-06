@@ -34,6 +34,7 @@ body{
     align-items: center;
 }
 
+
 .banner-content h1{
     margin-top: 1rem;
      text-transform: uppercase;
@@ -73,14 +74,15 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 792px;
-    height: 40vh;
-    margin:  2rem auto;
+    width: 800px;
+    height: 330px;
+
     
 }
 
+
+
 #course-content h2{
-    margin-top: 10rem;
     text-transform: uppercase;
     font-weight: bold;
     
@@ -93,12 +95,15 @@ body{
     font-size: 2rem;
 
 }  
+section{
+    margin: 100px auto;
+}
 
 #course-content p{
     color: white;
     text-align: center;
     font-size: 1rem;
-    font-weight: 4  00;
+    font-weight: 400;
 }
 
 .modules-list{
@@ -123,4 +128,66 @@ body{
 
 .modules-list .module > span{
     color: #3BA1CD;
+}
+
+#transform-world{
+    width: 100%;
+    height: 560px;
+    border: 1px solid #3BA1CD;
+    background: url("./assets/images/woman-code.png") fixed;
+    background-size: cover;
+    padding: 200px;
+}
+
+#transform-world p{
+    text-transform: lowercase;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+    filter: drop-shadow(2px 2px #3ba1cd);
+    width: 250px;
+}
+
+#professional-challenges{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#professional-challenges h2{
+    background-image: linear-gradient(white, #33A8DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    color: #33A8DB;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+}
+
+#professional-challenges p{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   background:linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    width: 100%;
+    height: 10rem;
+    border-top: 1px solid #3ba1cd;
+}
+
+footer p{
+ color: white;
+}
+footer a{
+    color: #1472B7;
+    text-decoration: none;
+    font-weight: bold;
 }

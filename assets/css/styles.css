@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  background-image: url(../images/banner.png), radial-gradient(circle, #121d22, #2a3b41, #2c5364);
+  height: 350px;
+}
+
+header img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #050e1273;
+  border-radius: 50%;
+}
+
+header h1{
+  color: #258FCA;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+header p{
+  color: #fff;
+  font-size: .8rem;
+  text-align: center;
+}
+
+header button{
+  background-color: transparent;
+  border: 1px solid #258FCA;
+  color: #258FCA;
+  cursor: pointer;
+  display: block;
+  font-size: .7rem;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#course-content{
+  background-color: #000;
+  height: 350px;
+}
+
+#course-content h2{
+  color: #258FCA;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+}
+
+#course-content p{
+  color: #fff;
+  font-size: .6rem;
+  text-align: center;
+}
+
+.modules-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.modules-list span{
+  color:#258FCA
+}
+
+.module{
+  background-color: #646262;
+  color: #fff;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+#transform-world{
+  background-image: url(../images/woman-code.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+#transform-world p{
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 50px;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;
+}
+
+#professional-challenges{
+  background-color: #000;
+}
+
+#professional-challenges h2{
+  color: #258FCA;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+}
+
+#professional-challenges p{
+  color: #fff;
+  font-size: .6rem;
+  text-align: center;
+}
+
+#professional-challenges img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer{
+  background: linear-gradient(to bottom, #000000, #081921, #091C25);
+  height: 100px;
+}
+
+footer p{
+  color: #fff;
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}

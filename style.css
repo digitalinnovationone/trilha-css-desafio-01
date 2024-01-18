@@ -1,0 +1,236 @@
+@import url('reset.css');
+
+
+.banner{
+    width: auto;
+    height: 605px;
+    border: 1px solid #33A8DB;
+    box-shadow: inset 10px 10px 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50)0%, rgba(51, 168, 219, 0.15)50%, rgba(0, 0, 0, 0.08)100%), url('./assets/images/banner.png');
+    background-color: black;
+    margin: auto;
+
+}
+
+.banner-content{
+    width: 510px;
+    height: 393px;
+    top: 56px;
+    left: 465px;
+    gap: 16px;
+    margin: auto;
+
+}
+
+.logo{
+    width: 248px;
+    height: 214px;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: Center;
+    margin: auto;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: bisque;
+
+}
+
+button {
+    width: 326px;
+    height: 57px;
+    margin-top: 20px;
+    margin-left: 90px;
+    background: linear-gradient(180deg, #33a8db 0%, #1472B7 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing:5px;
+    text-transform: uppercase;
+    border-image-source: linear-gradient(#33a8db 0%, #1472B7 100%);
+    border-image-slice: 10 10 10 10; 
+    border-image-repeat: round;
+
+}
+
+#course-content{
+    width: auto;
+    height: 525px;
+    margin:auto;
+    background-color: black;
+    border:1px solid #33A8DB
+}
+
+#course-content p {
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 50px;
+    letter-spacing: 0em;
+    color: bisque;
+    text-align: center;
+    word-break: normal;
+    
+}
+
+h2 {
+    width: 477px;
+    height: 38px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: left;
+    margin:auto;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    color: transparent;
+    line-height: 50px;
+}
+
+.modules-list {
+    width: 792px;
+    height: 325px;
+    margin: auto;
+}
+
+.module {
+    width: 535px;
+    height: 51px;
+    Border: 1px solid #33A8DB;
+    margin: auto;
+    background-color: #232a30;
+    text-align: center;
+    color: white;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 50px;
+    box-shadow: inset #000000 3px 3px 4px ;
+
+}
+
+span{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    color: #33A8DB;
+    background-color: #232a30;
+}
+
+#transform-world{
+    Width: auto;
+    Height: 500px;
+    margin: auto;
+    background-image: url('assets/images/woman-code.png');
+    background-attachment: fixed;
+    background-color: #000000;
+    background-size: 2000px;
+    background-position: 50% 40%;
+    border:1px #33A8DB solid;
+}
+
+#transform-world p {
+    width: 244px;
+    height: 141px;
+    font-family: Raleway;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    text-transform: lowercase;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-align: center;
+    text-shadow: #33A8DB 3px 3px;
+}
+
+#professional-challenges{
+    width: auto;
+    height: 791px;
+    margin: auto;
+    background-color: #000000;
+    border: 1px #33A8DB solid;
+    }
+
+#professional-challenges h2{
+    width: 746px;
+    height: 76px;
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+#professional-challenges img{
+    width: 659px;
+    height: 429px;
+    margin-left: 600px;
+    margin-top: -200px;
+
+}
+#professional-challenges p {
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+footer {
+    width: auto;
+    height: 170px;
+    border-bottom: #33A8DB solid 1px;
+    margin: auto;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50)0%, rgba(51, 168, 219, 0.15)50%)
+}
+
+.dio-logo{
+    width: 310px;
+    height: 44px;
+    margin-left: 800px;
+    margin-right: 800px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color:#33a8db;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}

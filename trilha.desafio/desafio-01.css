@@ -6,7 +6,7 @@
   width: 268px;
   height: 268px;
   background: rgba(0, 0, 0, 0.20);
-  border-radius: 50%; /* Para criar um círculo ao redor do logotipo */
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,7 @@
 
 .logo {
   width: 100%;
-  height: 80%; /* Usar 100% para preencher todo o espaço do contêiner*/
-   /* Para criar um círculo ao redor do logotipo */
+  height: 80%;
 }
 
 .banner-content {

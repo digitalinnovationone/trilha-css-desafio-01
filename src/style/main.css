@@ -1,0 +1,227 @@
+.banner-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50)0%, rgba(51, 168, 219, 0.15)50%, rgba(0, 0, 0, 0.08)100%),
+        url('../images/banner.png');
+    height: 605px;
+    border: 0px, 0px, 1px, 0px;
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+    text-align: center;
+}
+
+.banner-content .logo {
+    margin: auto;
+    width: 268px;
+    height: 268px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    
+}
+
+.banner-content .logo img {
+    width: 248px;
+    height: 214px;
+    margin-top: 30px;
+}
+
+.banner-content #trilha-css {
+    margin-top: 50px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    letter-spacing: 0em;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.banner-content p {
+    width: 510px;
+    height: 46px;
+    margin: auto;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 23.48px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.banner-content button {
+    width: 326px;
+    height: 57px;
+    margin-top: 23px;
+    padding: 19px, 91px, 19px, 91px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgba(49, 168, 221, 1);
+    border: 2px solid;
+    border-image-width: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    background: transparent;
+}
+
+.course-content {
+    height: 430px;
+    align-items: center;
+}
+
+.course-content #o-que-vamos-aprender {
+    height: 38px;
+    margin-top: 150px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    color: rgba(51, 168, 219, 1);
+}
+
+.course-content p {
+    width: 792px;
+    height: 38px;
+    margin: auto;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.course-content .modules-list .module {
+    width: 535px;
+    height: 51px;
+    margin: 20px auto;
+    border-radius: 57px;
+    border: 1px;
+    gap: 10px;
+    border: 1px solid rgba(51, 168, 219, 1);
+    background: linear-gradient(0deg, #252525, #252525),
+        linear-gradient(0deg, #33A8DB, #33A8DB);
+}
+
+.modules-list .module li {
+    margin-top: 15px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.modules-list .module span {
+    background: linear-gradient(0deg, #33A8DB, #33A8DB);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.transform-world {
+    height: 463px;
+    border: 1px, 1px, 1px, 0px;
+    border-style: solid;
+    border-color: rgba(51, 168, 219, 1);
+    background-image: url(../images/woman-code.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.transform-world p {
+    width: 244px;
+    height: 141px;
+    margin: 111px 198px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    text-shadow: 3px 2px 0px #33A8DB;
+}
+
+.evolve-proffesion h2 {
+    width: 752px;
+    height: 76px;
+    margin: 80px auto;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    background: #33A8DB;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.evolve-proffesion img {
+    width: 659px;
+    height: 429px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evolve-proffesion p {
+    width: 792px;
+    height: 76px;
+    margin: 55px auto 80px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer {
+    height: 170px;
+    background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+    border-top: 1px solid #33A8DB;
+}
+
+footer img {
+    width: 310px;
+    height: 44px;
+    display: flex;
+    margin: 59px auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    width: 259px;
+    height: 19px;
+    margin: 13px auto;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer p a {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: linear-gradient(0deg, #33A8DB, #33A8DB),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}

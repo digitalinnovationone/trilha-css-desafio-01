@@ -1,0 +1,52 @@
+
+
+*{
+
+}
+header{
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+body{
+    background-image: url(woman-code.png);
+
+
+}
+h1{
+
+font-weight: 900;
+font-size: 40px;
+background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+}
+section{
+    background-color: rgba(0, 0, 0, 0.955);
+    color: white;
+        text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+        
+}
+button{
+   border: solid 5px yellow;
+    color:  #33A8DB;
+    background-color: black;
+    width:200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+}

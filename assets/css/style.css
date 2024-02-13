@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: url(../images/fundo\ rosa.png);    
+    height: 768px;
+    color:#327080;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: -140px;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+}
+
+header p{
+    display: flex;
+    justify-content: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+   
+}
+
+header button{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #327080;
+    color: #FFD7DF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0.21em;
+    text-align: center;
+    border: 2px solid;
+    width: 326px;
+    height: 57px;
+    top: 473px;
+    left: 557px;
+    padding: 20px, 91px, 19px, 91px;
+    cursor: pointer;
+    transition: filter;
+    margin-top: 0px;
+}
+
+header button:hover {
+    filter: brightness(0.9); /* Escurece o botão em 20% ao passar o mouse */
+}
+
+main{
+    background-color: #FFD7DF;
+    margin-top: -30px;
+}
+
+#course-content{
+    display:block;
+    height: 534px;
+    color: #327080;
+}
+
+#course-content h2{
+    padding-top: 100px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+}
+
+#course-content p{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 792px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+   padding-top: 15px;
+}
+
+.modules-list{
+    margin-top: 60px;    
+}
+
+.module{
+    width: 500px;
+    background-color: #327080;
+    height: 51px;
+    border-radius: 57px;
+    border: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex; /* Usando flexbox para alinhar verticalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; 
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFD7DF;
+    box-shadow: -2px 6px 4px 0px #00000066 inset;
+}
+
+#transform-world{
+    background-image: url(../images/meio-da-pagina.png);
+    height: 363px;
+    background-attachment: fixed;
+
+}
+
+#transform-world p{
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #327080;
+    width: 344px;
+    height: 141px;
+    padding-top: 85px;
+    padding-left: 198px;
+}
+
+#professional-challenges{
+    height: 710px;
+}
+
+#professional-challenges h2{
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    color: #327080;
+    padding-top: 76px;
+}
+
+#professional-challenges img{
+    margin-top: -120px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#professional-challenges p{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 792px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -70px;
+    color: #327080;
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #FFD7DF, #327080);
+}
+
+footer img{
+    height: 150px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.19em;
+    text-align: center;
+    color: #FFD7DF; 
+    margin-top: -15px;
+    margin-bottom: 0;
+}

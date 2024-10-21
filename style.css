@@ -1,0 +1,151 @@
+@import url('reset.css'); /* Importa o arquivo reset.css para redefinir os estilos padrão dos navegadores, garantindo uma base uniforme. */
+
+body {
+  background-color: black; /* Define a cor de fundo da página como preto. */
+}
+
+h2 {
+  font-size: 2rem; /* Define o tamanho da fonte para 2rem (relativo ao tamanho da fonte raiz). */
+  color: #33A8DB; /* Define a cor do texto como azul (#33A8DB). */
+  font-weight: bold; /* Aplica negrito ao texto. */
+  letter-spacing: 4px; /* Define um espaçamento entre letras de 4px. */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas. */
+  margin-bottom: 24px; /* Adiciona uma margem inferior de 24px. */
+}
+
+p {
+  color: white; /* Define a cor do texto dos parágrafos como branco. */
+}
+
+section {
+  margin: 100px auto; /* Adiciona uma margem de 100px no topo e embaixo e centraliza horizontalmente. */
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png'); /* Aplica uma imagem de fundo com um gradiente sobreposto. */
+  background-size: cover; /* A imagem cobre o elemento inteiro. */
+  background-repeat: no-repeat; /* Evita que a imagem se repita. */
+  height: 600px; /* Define a altura da banner como 600px. */
+  padding-top: 60px; /* Adiciona um espaçamento interno no topo de 60px. */
+  border-bottom: 1px solid #33A8DB80; /* Adiciona uma borda inferior de 1px com opacidade. */
+}
+
+.banner .banner-content {
+  color: white; /* Define a cor do texto como branco. */
+  width: 600px; /* Define a largura do conteúdo como 600px. */
+  margin: auto; /* Centraliza o conteúdo horizontalmente. */
+  text-align: center; /* Centraliza o texto. */
+}
+
+.banner h1 {
+  font-size: 2.5rem; /* Define o tamanho da fonte como 2.5rem. */
+  font-weight: 900; /* Aplica negrito extremo ao texto. */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas. */
+  color: transparent; /* Define a cor do texto como transparente. */
+  background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Aplica um gradiente ao texto. */
+  background-clip: text; /* Faz o gradiente se aplicar ao texto. */
+  -webkit-background-clip: text; /* Versão específica para WebKit. */
+}
+
+.banner p {
+  font-size: 1.25rem; /* Define o tamanho da fonte como 1.25rem. */
+  margin: 16px 0 24px; /* Adiciona margem de 16px em cima e 24px embaixo. */
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, .2); /* Aplica um fundo preto com 20% de opacidade. */
+  height: 260px; /* Define a altura da logo como 260px. */
+  width: 260px; /* Define a largura da logo como 260px. */
+  margin: auto; /* Centraliza o elemento horizontalmente. */
+  border-radius: 50%; /* Aplica bordas arredondadas, formando um círculo. */
+  padding: 16px; /* Adiciona um preenchimento de 16px. */
+  margin-bottom: 16px; /* Adiciona uma margem inferior de 16px. */
+}
+
+.banner .logo img {
+  margin: auto; /* Centraliza a imagem dentro do logo. */
+  width: 100%; /* A imagem ocupa toda a largura do container. */
+  height: 100%; /* A imagem ocupa toda a altura do container. */
+  object-fit: contain; /* A imagem se ajusta sem distorcer. */
+}
+
+.banner .banner-content button {
+  color: #31A8DD; /* Define a cor do texto como azul claro (#31A8DD). */
+  font-size: 1rem; /* Define o tamanho da fonte como 1rem. */
+  font-weight: bold; /* Aplica negrito ao texto. */
+  padding: 16px 32px; /* Define preenchimento vertical de 16px e horizontal de 32px. */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas. */
+  letter-spacing: 4px; /* Define espaçamento entre letras de 4px. */
+  background-color: transparent; /* Define o fundo como transparente. */
+  border-image: linear-gradient(#3BA1CD, #1572B7); /* Aplica um gradiente nas bordas. */
+  border-image-slice: 10; /* Determina o quanto da imagem de borda será usada. */
+  border-radius: 30px; /* Arredonda as bordas do botão em 30px. */
+}
+
+#course-content {
+  width: 800px; /* Define a largura da seção como 800px. */
+  text-align: center; /* Centraliza o texto. */
+}
+
+#course-content .modules-list {
+  margin: 24px 0; /* Adiciona margens de 24px acima e abaixo. */
+}
+
+#course-content .modules-list .module {
+  color: white; /* Define a cor do texto como branco. */
+  width: 530px; /* Define a largura de cada módulo como 530px. */
+  margin: 0 auto 24px; /* Centraliza horizontalmente e adiciona 24px de margem inferior. */
+  border: 1px solid #33A8DB; /* Define uma borda sólida de 1px azul. */
+  background-color: #252525; /* Define a cor de fundo como cinza escuro (#252525). */
+  padding: 16px; /* Adiciona 16px de preenchimento interno. */
+  border-radius: 100px; /* Arredonda as bordas em 100px. */
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Adiciona uma sombra interna. */
+}
+
+#course-content .modules-list .module span {
+  color: #33A8DB; /* Define a cor do texto dentro do span como azul (#33A8DB). */
+}
+
+#transform-world {
+  height: 560px; /* Define a altura da seção como 560px. */
+  background-size: cover; /* A imagem de fundo cobre toda a área do elemento. */
+  background-image: url(assets/img/woman-code.png); /* Define a imagem de fundo da seção. */
+  background-attachment: fixed; /* A imagem de fundo fica fixa ao rolar a página. */
+  border-top: 1px solid #33A8DB80; /* Aplica uma borda superior azul clara com opacidade. */
+  border-bottom: 1px solid #33A8DB80; /* Aplica uma borda inferior azul clara com opacidade. */
+  padding: 200px; /* Adiciona 200px de preenchimento. */
+}
+
+#transform-world p {
+  font-weight: 900; /* Aplica negrito extremo ao texto. */
+  font-size: 2.5rem; /* Define o tamanho da fonte como 2.5rem. */
+  text-transform: lowercase; /* Transforma o texto em minúsculas. */
+  max-width: 250px; /* Define a largura máxima do parágrafo em 250px. */
+  text-shadow: 3px 2px #33A8DB; /* Adiciona uma sombra ao texto com cor azul (#33A8DB). */
+}
+
+#professional-challenges {
+  text-align: center; /* Centraliza o texto. */
+  width: 800px; /* Define a largura da seção como 800px. */
+}
+
+#professional-challenges img {
+  margin: 32px 0; /* Adiciona uma margem de 32px acima e abaixo da imagem. */
+}
+
+footer {
+  padding: 60px 0; /* Adiciona 60px de preenchimento vertical. */
+  text-align: center; /* Centraliza o texto. */
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Aplica um gradiente de fundo. */
+  border-top: 1px solid #33A8DB80; /* Adiciona uma borda superior azul clara com opacidade. */
+}
+
+footer .dio-logo {
+  width: 300px; /* Define a largura da imagem do logotipo como 300px. */
+}
+
+footer a {
+  color: #33A8DB; /* Define a cor do link como azul (#33A8DB). */
+  font-weight: bold; /* Aplica negrito ao texto do link. */
+  text-decoration: none; /* Remove o sublinhado do link. */
+}

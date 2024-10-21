@@ -1,58 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br">
+<!-- Indica que o idioma do documento -->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha de CSS - DIO</title>
+    <meta charset="UTF-8">
+      <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=, initial-scale=1.0">
+  <!-- Garante a compatibilidade com o Internet Explorer no modo mais recente -->
+    <title>Trilha de CSS</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta html ao css-->
 </head>
 <body>
-  <header class="banner">
-    <div class="banner-content">
-      <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
-      </div>
-      <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
-    </div>
-  </header>
-  <main>
+    <!-- O conteúdo visível da página começa aqui -->
+    <header class="banner">
+    <!-- Define a área de cabeçalho com a classe "banner" -->
+        <div class="banner-content">
+      <!-- Agrupa o conteúdo do banner -->
+            <div class="logo">
+                <!-- Contém o logotipo da página -->
+                <img src="assets/img/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+                <!-- Exibe o logotipo, com descrições de título e texto alternativo -->
+            </div>
+            <h1>Trilha de CSS da DIO</h1>
+            <!-- Título principal da página -->
+            <p>A nova Trilha de CSS da DIO está disponível. Acesse já e <br> aprenda do zero como desenvolver sites profissionais.</p>
+            <!-- Parágrafo explicativo sobre a trilha de CSS -->
+            <button>Quero me inscrever</button>
+            <!-- Botão de ação para inscrição -->
+        </div>
+    </header>
+
+    <main>
+    <!-- Conteúdo principal da página -->
     <section id="course-content">
-      <h2>O que vou aprender?</h2>
-      <p>
-        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
-        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
-      </p>
-      <div class="modules-list">
-        <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
+        <!-- Seção que descreve o conteúdo do curso, com id único para referência -->
+        <h2>O que vou aprender?</h2>
+        <!-- Título secundário desta seção -->
+        <p>Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.</p>
+        <!-- Parágrafo descrevendo o conteúdo dos módulos -->
+        <div class="modules-list">
+          <!-- Agrupa a lista de módulos -->
+          <div class="module">
+            <!-- Módulo individual -->
+            <span>Módulo 01:</span> primeiros passos com CSS
+            <!-- A tag <span> é usada aqui para estilizar ou destacar "Módulo 01" sem quebrar o fluxo de texto no bloco -->
+          </div>
+          <div class="module">
+            <span>Módulo 02:</span> trabalhando com layouts no CSS
+            <!-- O uso de <span> permite que "Módulo 02" seja estilizado de maneira diferente, se necessário, mantendo o texto em linha -->
+          </div>
+          <div class="module">
+            <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+            <!-- A tag <span> é frequentemente usada para estilização específica de texto ou pequenas seções de texto sem afetar o layout ao redor -->
+          </div>
         </div>
-        <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
-        </div>
-        <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
-        </div>
-      </div>
-    </section>
-    <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
-    </section>
-    <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
-        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
-        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
-        além do conhecimento técnico. 
-        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
-      </p>
-    </section>
-  </main>
-  <footer>
-    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
-  </footer>
+      </section>
+  
+      <section id="transform-world">
+        <!-- Seção com uma mensagem motivacional -->
+        <p>TRANSFORME O MUNDO COM A GENTE</p>
+        <!-- Parágrafo com chamada à ação -->
+      </section>
+  
+      <section id="professional-challenges">
+        <!-- Seção sobre desafios profissionais -->
+        <h2>Evolua e encare novos desafios profissionais</h2>
+        <!-- Título secundário desta seção -->
+        <img src="assets/img/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+        <!-- Imagem relacionada aos desafios profissionais, com título e descrição alternativa -->
+        <p>Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.</p>
+        <!-- Parágrafo explicando como a plataforma conecta talentos com oportunidades profissionais -->
+      </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+        <img class="dio-logo" src="assets/img/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+        <!-- Exibe o logotipo da DIO com texto alternativo e título -->
+        <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+        <!-- Parágrafo que inclui um link para o site da DIO -->
+      </footer>
 </body>
 </html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+section { 
+    margin: 100px auto;
+
+}
+
+.banner {
+    background-color: black;
+    border: 0px 0px 50px 0px solid #33A8DB;
+
+}
+
+.banner-content {
+    border-bottom: 2px solid #33A8DB;
+    padding: 8rem;
+    background-image: linear-gradient(#040404, #102735), url('assets/img/banner.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+.logo > img {
+    width: 248px;
+    height: 214px;
+    top: 27px;
+    left: 131px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0.5rem;
+    border: 1px solid #00000033;
+    background-color:#00000033;
+    border-radius: 50%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #33A8DB;
+
+    font-weight: 900;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 23.48px;
+}
+
+button {
+    text-transform: uppercase;
+    margin: .5rem;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #33A8DB;
+    background-color: transparent;
+    border: 2px solid #33A8DB;
+    padding: 1rem;
+    width: 21rem;
+}
+
+#course-content {
+    text-align: center;
+
+}
+
+#course-content > h2 {
+    color: #33A8DB;
+    line-height: 2px;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 5rem;
+}
+
+#course-content > p {
+    margin: 2rem;
+    color: #fff;
+    font-weight: 400;
+    size: 16px;
+}
+
+#course-content .modules-list .module {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+}
+
+span {
+    color: #33A8DB;
+}
+
+#transform-world {
+    height: 560px;
+    padding: 200px;
+    padding: 9rem;
+    background-image: url(assets/img/woman-code.png ) ;
+    border-top: 1px solid #33A8DB;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#transform-world > p {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    margin:2rem;
+    line-height: 50px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#professional-challenges {
+    text-align: center;
+    margin: 2rem;
+}
+
+#professional-challenges > h2 {
+    text-transform: uppercase;
+    color: #33A8DB;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#professional-challenges > p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer {
+    background-image: linear-gradient(#040404, #102735);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer > p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #33A8DB;
+    text-decoration: none;
+}

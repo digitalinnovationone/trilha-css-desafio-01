@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: #252525;
+  }
+  
+  header.banner {
+    background-image: url(assets/images/banner.png);
+    background-color: #111111;
+    color: rgb(255, 248, 248);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .banner-content .logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  button {
+    background-color: #374cc4;
+    border: 10px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0921a7;
+    color: #ffffff;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section#course-content {
+    background-color: #252525;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  section#course-content h2 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  
+  .modules-list .module {
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  section#transform-world {
+    background-image: url('assets/images/woman-code.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-align:left;
+    padding: 100px 20px; 
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+section#transform-world p {
+    font-family: Blippo;
+    font-size: 3.5em;
+    margin: 0;
+    background: linear-gradient(to right, #560ae2, #ff3300);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.164); 
+    position: relative; 
+    z-index: 1; 
+}
+
+
+
+  
+  section#professional-challenges {
+    text-align: center;
+  }
+  
+  section#professional-challenges img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

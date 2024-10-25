@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --purple-500: #0073ff;
+    --purple-600: #0073ff;
+    --purple-700: #0073ff;
+    --purple-800: #0073ff;
+    --purple-900: #0073ff;
+    --fontEmphasis: 'Josefin Sans', sans-serif;
+    --fontStandard: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+}
+.banner{
+    width: 100%;
+    background-image: linear-gradient(#00000006, #0073ff5e, #00000006), url(../assets/images/banner.png);
+    background-size: cover;
+    height: 100vh;
+    padding: 50px;
+    border-bottom: 1px solid var(--purple-500);
+}
+.banner-content{
+    width: 600px;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.logo{
+    margin: auto;
+    height: 260px;
+    width: 260px;
+}
+.logo img{
+    margin: auto;
+    height: 260px;
+    width: 260px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.banner-content h1{
+    font-family: var(--fontEmphasis);
+    margin: auto;
+    color: #0073fffe;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+.banner-content p{
+    font-family: var(--fontStandard);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 20px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px var(--purple-900);
+    
+}
+.banner-content button{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 5px solid black;
+    border-image: linear-gradient(var(--purple-500),var(--purple-600),var(--purple-700),var(--purple-800),var(--purple-900));
+    border-image-slice: 10;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #0073fffe;
+    margin: 20px;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+#course-content{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 100px 30px;
+    border-bottom: 1px solid var(--purple-500);
+}
+#course-content h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: var(--fontEmphasis);
+    color: var(--purple-500);
+    margin: 20px;
+}
+#course-content p{
+    width: 700px;
+    font-family: var(--fontStandard);
+    font-size: 1.25em;
+    padding: 10px;
+    margin: 20px auto;
+}
+#course-content .module{
+    font-family: var(--fontStandard);
+    width: 500px;
+    padding: 15px;
+    margin: 0 auto 24px;
+    background-color: var(--purple-700);
+    border: 2px solid var(--purple-900);
+    border-radius: 20px;
+    
+}
+#course-content .module span{
+    color: #000000;
+}
+#transform-world{
+    height: 80vh;
+    background-image: url(../assets/images/woman-code.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 250px;
+    border-bottom: 1px solid var(--purple-500);
+}
+#transform-world p{
+    font-size: 3em;
+    text-transform: lowercase;
+    font-family: var(--fontEmphasis);
+    color: #ffffff;
+    text-shadow: 5px 5px 2px var(--purple-700);
+    width: 300px;
+    text-align: left;
+}
+#professional-challenges{
+    width: 100%;
+    height: auto;
+    padding: 100px 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--purple-500);
+}
+#professional-challenges h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: var(--fontEmphasis);
+    color: var(--purple-500);
+    width: 600px;
+    margin: auto;
+}
+#professional-challenges p{
+    font-family: var(--fontStandard);
+    font-size: 1.25em;
+    padding: 10px;
+    margin: 30px auto;
+    width: 1000px;
+}
+footer{
+    width: 100%;
+    padding: 60px 0;
+    height: auto;
+    text-align: center;
+    font-family: var(--fontStandard);
+    background-image: linear-gradient( #00000050, #00000050 );
+
+}
+footer img{
+    width: 300px;
+    margin: auto 50px;
+}
+footer p{
+    font-family: var(--fontStandard);
+    font-size: 1.25em;
+    padding: 10px;
+    margin: auto;
+    width: 400px;
+}
+footer p a{
+    color: var(--purple-500);
+    text-decoration: none;
+    font-weight: 800;
+}

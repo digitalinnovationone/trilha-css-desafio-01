@@ -1,0 +1,153 @@
+@import url('reset.css');
+
+body {
+    background-color: black;
+}
+
+
+h2 {
+    text-transform: uppercase; /* trasnforma o texto em caixa alta nesse caso*/
+    color: #69cff5;
+    font-weight: bold; /* mudando a fonte para negrito */
+    margin-bottom: 25px; /* espaçamento externo no parte inferior */
+    font-size: 2rem; /* tamanho da fonte usando a unidade de medida rem */
+    letter-spacing: 4px; /* espaçamento entre as letras */
+}
+p {
+    color: white;
+}
+.banner p {
+    margin: 16px 0 24px;
+    font-size: 1.25rem;
+}
+section {
+    margin: 100px auto;
+}
+.banner h1 { /* formatando o h1 que estiver dentro da class banner */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: transparent; /* deixando o texto transparente */
+    background: -webkit-linear-gradient(#1472b7, #33a8db); /* colocando degradê no titulo */
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.banner {
+    background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(/assets/images/banner.png); /* cria um gradiente com uma imagem de fundo */
+    height: 600px; /* altura do header */
+    padding-top: 60px;/* espaçamento na parte interna superior */
+    background-size: cover; /* essa propriedade define o tamanho da imagem de fundo do elemento e com o valor cover dimensiona a imagem no menor tamanho possivel para caber no contêiner */
+    background-repeat: no-repeat;/* nao repetir a imagem  */
+    border-bottom: 1px solid #33a8DB80; /* borda inferior */
+}
+.banner .banner-content {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.banner .logo {
+    height: 260px;
+    width: 260px;
+    padding: 16px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+.banner .logo img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+.banner .banner-content button {
+    color:  #31a8dd;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image-slice: 10;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.banner .banner-content button:hover {
+    border-image: linear-gradient(rgb(59, 161, 205), #1572b7);
+    border-image-slice: 10;
+    transform: scale(1.10); 
+    box-shadow: 0 1px 15px rgba(59,161,255,0.6);
+    
+}
+#course-content { 
+    width: 800px;
+    text-align: center;
+    
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 1px 15px rgba(59, 168,255, .7);
+}
+#course-content .modules-list .module:hover {
+    box-shadow: -5px 1px 15px rgba(59, 168,255, .7);
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+  }
+  
+  #transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url(/assets/images/woman-code.png);
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+  }
+  
+  #transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+  }
+  
+  #professional-challenges {
+    text-align: center;
+    width: 800px;
+  }
+  
+  #professional-challenges img {
+    margin: 32px 0;
+  }
+  
+  footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .5), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+  }
+  
+  footer .dio-logo {
+    width: 300px;
+  }
+  
+  footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+  }

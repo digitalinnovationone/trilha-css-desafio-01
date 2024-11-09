@@ -1,0 +1,127 @@
+/* Importando a fonte Raleway do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+
+/* Reset de todos os elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Estilos básicos para o body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Melhorar a renderização da fonte no webkit */
+  -moz-osx-font-smoothing: grayscale; /* Melhorar a renderização da fonte no Firefox */
+}
+
+/* Remover o sublinhado dos links e resetar o comportamento de links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: inherit; /* Defina a cor desejada ao passar o mouse */
+}
+
+/* Normalizar o comportamento de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Normalizar o comportamento de tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Garantir que todos os inputs e campos de formulário sejam consistentes */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+input,
+textarea {
+  -webkit-appearance: none; /* Remover o estilo nativo dos campos de entrada */
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Remover bordas e preenchimentos automáticos em campos de formulário */
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Estilo básico para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilizando o comportamento de elementos de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; /* Normaliza o peso da fonte */
+  margin: 0; /* Remove margens indesejadas */
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Garantir que botões e outros elementos interativos sejam facilmente acessíveis */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(50, 168, 219, 0.5); /* Sombra sutil para foco */
+}
+
+/* Garantir que os formulários funcionem corretamente em todos os navegadores */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+/* Remover bordas e margens de iframes */
+iframe {
+  border: 0;
+}
+
+/* Normalizar o comportamento de elementos de formulário em dispositivos móveis */
+textarea {
+  resize: vertical; /* Permite redimensionamento apenas na direção vertical */
+}

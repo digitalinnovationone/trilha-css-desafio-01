@@ -1,0 +1,50 @@
+#course-content {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    background-size: 100%;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+} 
+
+#course-content h2 {
+    width: 447px;
+    color: #33A8DB;
+    text-transform: uppercase;
+
+    text-align: center;
+    margin-top: 5rem;
+    align-self: center;
+
+}
+#course-content p {
+    color: white;
+    gap: 50px;
+    width: 792px;
+    text-align: center;
+    align-self: center;
+}
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+.modules-list .module {
+    border: 1px solid white;
+    border-radius: 20px;
+    border-color: #33A8DB;
+    background-color: #252525;
+    width: 500px;
+    height: 40px;
+}
+
+.modules-list .module span {
+    color: #33A8DB;
+}

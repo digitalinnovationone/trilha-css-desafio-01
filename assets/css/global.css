@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --main-color: rgb(5, 1, 29);
+    --second-color: white;
+    --third-color: rgb(38, 114, 185);
+    --fourth-color: black;
+    --hover-color: black;
+
+    --main-font: 'Krona One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}

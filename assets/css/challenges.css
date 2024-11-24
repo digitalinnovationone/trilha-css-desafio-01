@@ -1,0 +1,36 @@
+#professional-challenges {
+    background-color: black
+}
+
+#professional-challenges h2 {
+    display: flex;
+    justify-self: center;
+    color: #33A8DB;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 746px;
+    height: 76px;
+    font-size: 32px;
+    padding-top: 50px;
+    font-family: var(--main-font);
+}
+
+#professional-challenges img {
+    display: flex;
+    justify-self: center;
+    width: 659px;
+    margin-top: 100px;
+}
+
+#professional-challenges p {
+    display: flex;
+    justify-self: center;
+    color: white;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    width: 792px;
+    height: 76px;
+    margin-top: 50px ;
+}

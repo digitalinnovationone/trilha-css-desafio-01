@@ -1,0 +1,23 @@
+footer {
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(2, 32, 44) 35%, rgba(3,10,11,1) 100%);;
+}
+
+.dio-logo {
+    display: flex;
+    justify-self: center;
+    width: 310px;
+    padding-top: 5rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: var(--main-font);
+    font-size: 16px;
+    padding-top: 1rem;
+}
+footer p a {
+    color: #33A8DB;
+}

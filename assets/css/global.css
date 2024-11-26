@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --main-color: rgb(5, 1, 29);
+    --second-color: white;
+    --third-color: rgb(38, 114, 185);
+    --fourth-color: black;
+    --hover-color: black;
+    --main-font: 'Raleway', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+section {
+  padding: 50px;
+}

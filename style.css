@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Gluten:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    padding: 4px;
+}
+
+
+
+.banner-content {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-image: url(assets/images/banner.png);
+    object-fit: cover;
+    
+}
+.logo {
+    z-index: 1;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background: radial-gradient(ellipse farthest-corner, rgb(16, 16, 70), rgb(0, 0, 0.8));
+}
+p {
+    font-family: 'gluten';
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+#course-content, #professional-challenges {
+    background: black;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 1rem;
+}
+
+section {
+    padding: 32px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(51, 129, 247, 0.644);
+}
+
+.banner-content {
+    border-bottom: 2px solid rgba(51, 129, 247, 0.644);
+}
+ 
+.module {
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    color: #f0f0f0;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(51, 129, 247, 0.644);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(51, 129, 247, 0.644);
+    font-family: 'gluten';
+    font-size: 1rem;
+
+}
+
+.man-book {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h1, h2, button {
+    text-align: center;
+    margin: 1.875rem;
+    font-family: 'Dynapuff', sans-serif;
+    text-shadow: 0 3px 6px #000000;
+    border-radius: 2px;
+    color: rgba(32, 99, 245, 0.877);
+    padding-bottom: 8px 16px;
+    
+}       
+button {
+    width: 20rem;
+    height: 5rem;
+    background: none;
+    box-shadow: 0 2px 4px rgba(51, 129, 247, 0.644);
+    border-color: rgba(51, 129, 247, 0.644);
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 3px;
+    font-size: 1.6rem;
+
+}  
+                                                                                                                                                                               
+
+
+#transform-world {
+   
+   position: relative;
+   width: 100%;
+   height: 25rem;
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+   padding: 3rem;
+
+}
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    text-align: center;
+    
+    background-color: black ;
+    padding: 20px;
+    margin-top: 4;
+    border-top: 2px solid rgba(51, 129, 247, 0.644);
+}
+

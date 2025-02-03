@@ -1,0 +1,186 @@
+body {
+    background-color: black; /* Fundo da Pagina*/
+}
+
+* {
+    font-family: 'Raleway', serif; /* Fonte ultilizada em toda pagina */
+    box-sizing: border-box; /* Garante que padding e borda sejam incluídos na largura e altura do elemento */
+    margin: 0; /* Remove margens padrão dos elementos */
+}
+
+section {
+    margin: 100px auto; /* Define espaçamento ao redor das seções */
+}
+.banner {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(49, 168, 211, 0.2), rgba(0, 0, 0, 0.6) ), /* Background aplicando cor gradiente na imagem*/
+    url('../images/banner.png'); /* Caminho para a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    padding-top: 60px; /* Define o preenchimento superior (espaço) de um elemento */
+    height: 605px; /* ADefine altura do banner */
+    border: 1px solid rgba(51, 168, 219, 0.5); /* Borda azul */
+    position: relative; /* Permite o uso de propriedades como "top" e "left" */
+}
+
+.logo {
+background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+width: 248px;
+height: 214px;
+margin: auto;
+border-radius: 55%; /* Deixa a borda arredondada */
+padding: 16px; /* Espaçamento interno */
+margin-bottom: 16px; /* Espaço abaixo do logo */
+
+}
+
+.banner .banner-content {
+    display: flex; /*  Layout para organizar itens em linhas ou colunas. */
+    flex-direction: column; /*  Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    gap: 16px; /* Espaçamento entre os elementos */
+    color: white;
+    width: 600px;
+    margin: auto;
+}
+
+.banner p {
+    font-size: 20px; /* Define o tamanho do texto */
+    margin: 16px 0 24px; /* Define espaçamentos ao redor do parágrafo */
+}
+
+p {
+    color: white;
+}
+
+.banner h1 {
+    
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase; /* Transforma todos os caracteres em maiusculo */
+    background: linear-gradient(rgba(51, 168, 219, 1) , rgba(20, 114, 183, 1)); 
+    -webkit-background-clip: text; /* Garante que o fundo do texto receba o gradiente para alguns navegadores */
+    -webkit-text-fill-color: transparent; /* Torna o fundo do texto visível */
+}
+
+.banner .logo img {
+    margin: auto;
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 100%;  /* Ajusta a altura da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+
+.banner-content button {
+    color: rgb(49, 168, 221); /* Define a cor do texto do botão */
+    font-size: 16px; 
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 16px 32px; 
+    text-transform: uppercase; /* Transforma o texto do botão em maiúsculas */
+    background-color: transparent; /* Define o fundo do botão como transparente */
+    border-image: linear-gradient(rgba(59,161,205,1), rgba(21, 144, 183, 1)); /* Adiciona um efeito gradiente na borda */
+    border-image-slice: 10; /* Define a "parte" da borda para o gradiente */
+    border-radius: 30px; /* Arredonda as bordas do botão */
+}
+
+
+#course-content {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+
+}
+
+#course-content .modules-list {
+    margin: 25px 0; /* Define espaçamento acima e abaixo da lista de módulos */
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(51, 168, 219);
+    font-weight: bold;
+    letter-spacing: 4px; /* Define espaçamento entre letras */
+    text-transform: uppercase;
+    margin-bottom: 24px; /* Define espaçamento abaixo do título */
+}
+
+
+#course-content .modules-list .module {
+    color: white;
+    width: 600px;
+    margin: 0 auto 24px; /* Centraliza e adiciona espaçamento abaixo */
+    border: 1px solid rgb(51, 168, 219);
+    background-color: rgb(37, 37, 37);
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7); /* Adiciona sombra interna */
+}
+
+.module:hover /* Não tem no layout original do desafio */
+ {
+    transition: all 0.3s ease-in-out; /* Suaviza a transição dos efeitos */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona efeito de relevo */
+    transform: translateY(-5px); /* Eleva o módulo ao passar o mouse */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+
+#course-content .modules-list .module span {
+    color: rgb(51, 169, 219);
+    font-size: 20px;
+}
+
+#transform-world {
+    height: 560px;
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-image: url('../images/woman-code.png');
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    border-top: 1px solid rgba(51, 174, 219, 0.8);
+    border-bottom: 1px solid rgba(51, 174, 219, 0.8);
+    padding: 200px;
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: lowercase; /* Mantém o texto em minúsculas */
+    max-width: 250px;
+    text-shadow: 3px 2px rgb(1, 117, 170); /* Adiciona sombra ao texto */
+
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+}
+
+footer {
+    padding:  60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, 0), rgba(50, 168, 219, 0.2));
+    border-top: 1px solid rgba(51, 174, 219, 0.8) ;
+
+}
+
+footer .dio-logo {
+    width: 300px;
+
+}
+footer a {
+    color: rgb(51, 174, 219);
+    font-weight: bold; /* Define fonte em negrito */
+    text-decoration: none;  /* Remove sublinhado do link */
+}
+
+button /* Não tem no layout original do desafio */ 
+ {
+    cursor: pointer; /* Altera o cursor para a "mãozinha" ao passar sobre o botão */
+}

@@ -1,0 +1,50 @@
+/* Importa a fonte Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  /* Garante que a fonte Raleway seja usada de forma consistente */
+}
+
+/* Remove estilos padrão de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove a decoração padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ajusta fontes para tags principais */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Evita espaçamento abaixo da imagem */
+}
+
+/* Define o corpo para usar altura total */
+html, body {
+  height: 100%;
+  line-height: 1.5; /* Ajusta a linha de altura para melhorar a legibilidade */
+  background-color: #fff; /* Adiciona uma cor de fundo padrão */
+  font-size: 16px; /* Define o tamanho padrão da fonte */
+  color: #333; /* Cor de texto padrão */
+}
+
+/* Garante que a estrutura da página ocupe a altura completa da tela */
+body {
+  display: flex;
+  flex-direction: column;
+}
+/* Copyright © 2024 Lilian. All rights reserved. */

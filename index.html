@@ -5,9 +5,199 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <style>
+    /* Variáveis para cores dinâmicas */
+    :root {
+      --primary-color: #7c7b7b;
+      --secondary-color: #2ecc71;
+      --background-color: #2c3e50;
+      --text-color: #faf5f5;
+      --header-background: #2c3e50;
+      --footer-background: #2c3e50;
+      --button-background: #2c3e50;
+      --button-hover: #2c3e50;
+    }
+
+    /* Estilos Gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      padding: 1rem 2rem;
+      background-color: var(--header-background);
+      color: #ffffff;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .banner-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Botão de Seleção de Idiomas */
+    .language-selector {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .language-button {
+      background-color: var(--button-background);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .language-button:hover {
+      background-color: var(--button-hover);
+    }
+
+    .language-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color:#12045e;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 150px;
+      z-index: 10;
+      border-radius: 5px;
+    }
+
+    .language-menu a {
+      display: block;
+      padding: 0.5rem;
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    .language-menu a:hover {
+      background-color: #12045e;
+    }
+
+    .language-selector:hover .language-menu {
+      display: block;
+    }
+
+    /* Estilo para o Conteúdo */
+    main {
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      color: var(--primary-color);
+    }
+
+    h2 {
+      color: var(--primary-color);
+    }
+
+    .modules-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .module {
+      background-color: var(--primary-color);
+      color: rgb(249, 248, 250);
+      padding: 1rem;
+      width: 80%;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: var(--footer-background);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function changeLanguage(lang) {
+      const texts = {
+        "pt": {
+          "banner_title": "Trilha de CSS da DIO",
+          "banner_description": "A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.",
+          "btn_register": "Quero me inscrever",
+          "course_title": "O que vou aprender?",
+          "course_description": "Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.",
+          "module_1": "Módulo 01: Primeiros passos com CSS",
+          "module_2": "Módulo 02: Trabalhando com layouts no CSS",
+          "module_3": "Módulo 03: Refinando os estilos CSS das nossas páginas",
+          "transform_title": "Transforme o mundo com a gente",
+          "professional_challenges_title": "Evolua e encare novos desafios profissionais",
+          "professional_challenges_text": "Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.",
+          "footer_text": "Acesse dio.me e se cadastre agora."
+        },
+        "en": {
+          "banner_title": "CSS Track by DIO",
+          "banner_description": "The new CSS Track by DIO is available. Start from scratch and learn how to develop professional websites.",
+          "btn_register": "I want to register",
+          "course_title": "What will I learn?",
+          "course_description": "We have 3 modules packed with content from basic to advanced, so you can learn how to develop professional websites using only HTML and CSS: no additional libraries or frameworks.",
+          "module_1": "Module 01: Getting Started with CSS",
+          "module_2": "Module 02: Working with Layouts in CSS",
+          "module_3": "Module 03: Refining CSS Styles for Our Pages",
+          "transform_title": "Transform the world with us",
+          "professional_challenges_title": "Grow and face new professional challenges",
+          "professional_challenges_text": "Join our ecosystem and help transform the world! Every day, dozens of companies access our platform to find the most creative, dynamic, and collaborative talents, in addition to technical knowledge. Our mission is to prepare you to connect with the best opportunities.",
+          "footer_text": "Visit dio.me and register now."
+        }
+      };
+
+      // Alterando o idioma da página
+      document.querySelector("html").lang = lang;
+      document.querySelector(".banner h1").textContent = texts[lang].banner_title;
+      document.querySelector(".banner p").textContent = texts[lang].banner_description;
+      document.querySelector(".btn-inscrever").textContent = texts[lang].btn_register;
+      document.querySelector("#course-content h2").textContent = texts[lang].course_title;
+      document.querySelector("#course-content p").textContent = texts[lang].course_description;
+      document.querySelectorAll(".module")[0].textContent = texts[lang].module_1;
+      document.querySelectorAll(".module")[1].textContent = texts[lang].module_2;
+      document.querySelectorAll(".module")[2].textContent = texts[lang].module_3;
+      document.querySelector("#transform-world p").textContent = texts[lang].transform_title;
+      document.querySelector("#professional-challenges h2").textContent = texts[lang].professional_challenges_title;
+      document.querySelector("#professional-challenges p").textContent = texts[lang].professional_challenges_text;
+      document.querySelector("footer p").textContent = texts[lang].footer_text;
+    }
+  </script>
 </head>
 <body>
   <header class="banner">
+    <div class="language-selector">
+      <button class="language-button">Idioma</button>
+      <div class="language-menu">
+        <a href="javascript:void(0)" onclick="changeLanguage('pt')">Português</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('en')">English</a>
+        <!-- Adicione mais idiomas conforme necessário -->
+      </div>
+    </div>
     <div class="banner-content">
       <div class="logo">
         <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">

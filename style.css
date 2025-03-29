@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: Raleway, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 632px;
+    background-image: url(./assets/images/banner.png), linear-gradient(to bottom, #000000, #252b2d 60%, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #31A8DD;
+}
+
+.banner-content {
+    width: 510px;
+    height: 393px;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    height: 268px;
+    border-radius: 50%;
+    background-color: rgba(12, 14, 15, 0.5);
+}
+
+.banner-content h1 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to top, #1472B7, #33A8DB);
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.banner-content p {
+    width: 510px;
+    height: 46px;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    margin: 25px 0;
+}
+
+.banner-content button {
+    background-color: transparent;
+    border: 2px solid #31A8DD;
+    padding: 19px 50px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to top, #1472B7, #33A8DB);
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#course-content {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    border-bottom: 3px solid #31A8DD;
+}
+
+#course-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #33A8DB;
+    text-transform: uppercase;
+}
+
+#course-content p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    width: 792px;
+    text-align: center;
+}
+
+.module {
+    width: 535px;
+    height: 51px;
+    margin: 20px 0;
+    color: white;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    box-shadow: inset -2px 6px 4px rgb(18, 18, 18);
+    gap: 5px;
+}
+
+.module span {
+    color: #31A8DD;
+}
+
+#transform-world {
+    width: 100%;
+    height: 363px;
+    border-bottom: 3px solid #31A8DD;
+    background-image: url(./assets/images/woman-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#transform-world p {
+    color: white;
+    filter: drop-shadow(3px 2px 0px #33A8DB);
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    text-transform: lowercase;
+    width: 244px;
+}
+
+#professional-challenges {
+    width: 100%;
+    height: 758px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #31A8DD;
+}
+
+#professional-challenges h2 {
+    color: #33A8DB;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 892px;
+}
+
+#professional-challenges img {
+    width: 659px;
+    height: 429px;
+}
+
+#professional-challenges p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 792px;
+}
+
+footer {
+    width: 100%;
+    height: 170px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer p a {
+    color: #31A8DD;
+    font-weight: 700;
+}

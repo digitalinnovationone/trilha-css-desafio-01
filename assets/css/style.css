@@ -1,0 +1,243 @@
+
+body{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    background-color: #000000ed;
+    margin: 0 auto;
+    width: 1440px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 5px 0;
+
+
+}
+.banner {
+    width: 1440px;
+    height: 605px;
+    border: 1px solid #33A8DB;
+    background-image:  url('../images/banner.png');
+    background-clip: border-box;
+}
+
+.banner p{
+    width: 510px;
+    height: 46px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: justify;
+}
+
+h1{
+    -webkit-background-clip: text;
+    color:transparent;
+    background-clip: text;
+    background-image:linear-gradient(#3ba1cd, #1572B7) ;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 248px;
+    height: 214px;
+    top: 27px;
+    left: 131px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 19%;
+    margin: 0 auto;
+}
+
+h2, button{
+    color:#33A8DB;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.banner-content{
+    width: 510px;
+    height: 393px;
+    top: 56px;
+    left: 485px;
+    gap: 16px;
+    margin: auto;
+    padding: 30px 0;
+    
+    
+}
+
+
+
+button {
+    position: absolute;
+    width: 326px;
+    height: 57px;
+    top: 473px;
+    left: 557px;
+    border: 2px solid;
+    border-image-source: linear-gradient(#3ba1cd, #1572B7);
+    border-image-slice: 10;
+    background: transparent;
+    padding: auto;
+    gap: 31px;
+    color: #33A8DB;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 21%;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: #33A8DB
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #88bae1;
+}
+
+
+#transform-world {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    width: 1440px;
+    height: 363px;
+    top: 1138px;
+    background: url('../images/woman-code.png') center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    border: 1px solid #33A8DB;
+}
+
+
+#transform-world > p{
+    width: 244px;
+    height: 141px; 
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    text-shadow: 3px 3px 1px #33A8DB;
+    text-transform: lowercase;
+    text-align: left;
+
+}
+
+#course-content{
+    position: absolute;
+    width: 792px;
+    height: 325px;
+    top: 723px;
+    left: 324px;
+    gap: 24px;
+
+    
+}
+
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.module{
+    height: 51px;
+    width: 535px;
+    align-content: center;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    box-shadow: inset 5px 5px 10px rgba(black, black, #000000, 0.4);
+    
+}
+
+
+#professional-challenges {
+    position: absolute;
+    width: 659px;
+    height: 429px;
+    top: 1685px;
+    left: 390px;
+}
+
+
+#course-content p, .module, #professional-challenges p, footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#professional-challenges h2 {
+    width: 746px;
+    height: 76px;
+    top: 1577px;
+    left: 347px;
+}
+
+#professional-challenges p {
+    width: 792px;
+    height: 76px;
+    top: 2154px;
+    left: 324px;
+}
+#professional-challenges img {
+    width: 656px;
+    height: 429px;
+    top:1685px;
+    left: 390px
+}
+.module > span {
+    color: #33A8DB;
+}
+
+footer{
+    position: absolute;
+    top: 2321px;
+    height: 170px;
+    width: inherit;
+    border-top: 1px solid #33A8DB;
+}
+
+footer img {
+    position: absolute;
+    width: 310px;
+    height: 44px;
+    top: 59px;
+    left: 565px;
+}
+
+footer p {
+    position: absolute;
+    width: 259px;
+    height: 19px;
+    top: 113px;
+    left: 591px;
+}
+

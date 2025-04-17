@@ -1,0 +1,16 @@
+{
+  "name": "site__dio",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass source/main.scss  build/styles.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}

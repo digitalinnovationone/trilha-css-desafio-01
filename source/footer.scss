@@ -1,0 +1,24 @@
+footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(51, 168, 219, 0) 0%,
+    rgba(51, 168, 219, 0.2) 99.99%,
+    rgba(51, 168, 219, 0.2) 100%
+  );
+
+  a {
+    text-decoration: none;
+    color: #01adf7;
+    font-weight: 700;
+  }
+  p {
+    color: #ffffff;
+    padding: 16px;
+  }
+}

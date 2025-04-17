@@ -1,0 +1,26 @@
+.professional {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom: 2px solid #1472b7;
+  &__h2 {
+    color: #01adf7;
+    text-transform: uppercase;
+    letter-spacing: 19%;
+    font-weight: 700;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__sub {
+    margin-top: 40px;
+    color: #ffffff;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,57 @@
+@use "./header.scss";
+@use "./Curso.scss";
+@use "./profi.scss";
+@use "./footer.scss";
+
+$font: "Raleway", sans-serif;
+
+* {
+  font-family: $font;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+@media only screen and (max-width: 340px) {
+  body {
+    margin: 2px;
+  }
+  .course__content,
+  .module {
+    width: 100%;
+  }
+  .modules-list {
+    margin-top: 250px;
+  }
+  .module {
+    margin: 24px 0 24px 0;
+  }
+  .sec {
+    background-position-x: center;
+    padding: 0;
+  }
+  .sec__p {
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+  }
+  .prof__img {
+    width: 100%;
+  }
+  .dio-logo {
+    width: 100%;
+  }
+  .professional__h2 {
+    width: 100%;
+  }
+  .banner__btn {
+    width: auto;
+    padding: 10px;
+  }
+  .banner___texto--font,
+  .course__h2 {
+    text-align: center;
+  }
+}

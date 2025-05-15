@@ -1,47 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" href="assets/CSS/styles.css" />
 </head>
 <body>
-  <header class="banner">
+  <header class="banner" role="banner" aria-label="Banner principal do site">
     <div class="banner-content">
-      <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+      <div class="logo" aria-label="Logotipo Trilha de CSS DIO">
+        <img src="assets/images/logo.png" alt="Logotipo Trilha de CSS DIO" />
       </div>
       <h1>Trilha de CSS da DIO</h1>
       <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
+      <button type="button" aria-label="Botão para inscrição">Quero me inscrever</button>
     </div>
   </header>
-  <main>
-    <section id="course-content">
-      <h2>O que vou aprender?</h2>
+
+  <main role="main">
+    <section id="course-content" aria-labelledby="course-title">
+      <h2 id="course-title">O que vou aprender?</h2>
       <p>
         Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
         desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
       </p>
-      <div class="modules-list">
-        <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
-        </div>
-        <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
-        </div>
-        <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
-        </div>
-      </div>
+      <ul class="modules-list">
+        <li class="module">
+          <strong>Módulo 01:</strong> primeiros passos com CSS
+        </li>
+        <li class="module">
+          <strong>Módulo 02:</strong> trabalhando com layouts no CSS
+        </li>
+        <li class="module">
+          <strong>Módulo 03:</strong> refinando os estilos CSS das nossas páginas
+        </li>
+      </ul>
     </section>
-    <section id="transform-world">
+
+    <section id="transform-world" aria-label="Seção transforme o mundo com a gente">
       <p>TRANSFORME O MUNDO COM A GENTE</p>
     </section>
-    <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+
+    <section id="professional-challenges" aria-labelledby="professional-title">
+      <h2 id="professional-title">Evolua e encare novos desafios profissionais</h2>
+      <img 
+        src="assets/images/professional-challenges.png" 
+        alt="Homem lendo depoimentos em um tablet" 
+        title="Homem lendo depoimentos em um tablet" 
+        loading="lazy" 
+      />
       <p>
         Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
@@ -50,9 +59,16 @@
       </p>
     </section>
   </main>
-  <footer>
-    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+
+  <footer role="contentinfo">
+    <img 
+      class="dio-logo" 
+      src="assets/images/dio-logo.png" 
+      alt="Logotipo DIO com o texto make the change" 
+      title="Logotipo DIO com o texto make the change" 
+    />
+    <p>Acesse <a href="https://dio.me" target="_blank" rel="noopener noreferrer">dio.me</a> e se cadastre agora</p>
   </footer>
 </body>
 </html>
+

@@ -1,0 +1,190 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    text-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+.modules-list span {
+color: #1472B7;
+}
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(assets/images/banner.png);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
+}
+.logo {
+    text-align: center;
+}
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-sizing: border-box;
+}
+.banner p {
+    font-size: 23px;
+    text-align: center;
+    margin: 16px 0 24px;
+    color: white;
+    object-fit: fill;
+}
+.banner button {
+    color: #31A8DD;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+#course-content {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
+}
+#course-content h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #33A8DB;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37.57px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+}
+#course-content p{
+    text-align: center;
+    text-transform:none;
+    color: white;
+    font-weight:normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+.modules-list {
+    margin: 24px 0px;
+}
+.module-1 {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+.module-2 {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+.module-3 {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+#transform-world {
+    background-image: url(assets/images/woman-code.png);
+    background-color: black;
+    height: 560px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+}
+#transform-world p{
+    text-transform: lowercase;
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+    max-width: 290px;
+    text-align: left;
+    text-shadow: 3px 2px #33A8DB;
+}
+#professional-challenges {
+    background-color: black;
+}
+#professional-challenges h2 {
+    font-size: 32px;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 100px solid black;
+    border-left: 300px solid black;
+    border-right: 300px solid black;
+    border-bottom: 70px solid black;
+}
+#professional-challenges img {
+    width: 659px;
+    height: 429px;
+    top: 1685px;
+    left: 390px;
+}
+#professional-challenges p {
+color: white;
+size: 16px;
+font-weight: 400;
+line-height: 18.78px;
+text-align: center;
+border-top: 70px solid #000000;
+border-left: 300px solid #000000;
+border-right: 300px solid #000000;
+border-bottom: 100px solid #000000;
+max-width: 100%;
+align-items: center;
+}
+footer {
+    background-color: #000000;
+    border-top: 1px solid #33A8DB80
+}
+footer img {
+    border-top: 70px solid #000000;
+}
+footer p {
+    color: white;
+    border-bottom: 70px solid #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-align: center;
+}
+footer a {
+    color: #33A8DB;
+    border-bottom: 70px solid #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,173 @@
+@import url(font.css);
+
+.banner{
+    width: 100%;
+    height: 605px;
+    background-color: black;
+    background-image: url(/trilha-css-desafio-01/assets/images/banner.png), linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
+}
+
+.banner-content{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, .2);
+  height: 260px;
+  width: 260px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.banner .logo img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.banner p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin: 16px 0 24px;
+}
+
+
+button{
+    color: #3ba1cd;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 21%;
+    text-align: center;
+    border-radius: 0px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    padding: 16px 32px;
+    text-transform: uppercase;
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+main{
+    background-color: black;
+}
+#course-content {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-bottom: 100px;
+    
+}
+
+h2{
+    color: #33A8DB;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+#course-content p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin: 16px 0 24px;
+}
+
+#course-content .modules-list{
+    margin: 24px 0;
+}
+
+.module{
+    color: white;
+    width: 530px;
+    border: 1px solid #33A8DB;
+    margin: 0 auto 20px;
+    background-color: #252525;
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+span{
+  color: #33A8DB;
+}
+
+#transform-world{
+    padding: 130px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    background-image: url(/trilha-css-desafio-01/assets/images/woman-code.png);
+}
+
+#transform-world p{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#professional-challenges {
+  text-align: center;
+  padding: 80px;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+#professional-challenges p{
+    color: white;
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer{
+    height: 170px;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    background-color: black;
+    border-top: 1px solid rgba(51, 168, 219, 1);
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+footer p a{
+    color: #33A8DB;
+    font-weight: 700;
+    text-decoration: none;
+}

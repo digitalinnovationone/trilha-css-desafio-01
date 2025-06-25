@@ -1,0 +1,155 @@
+body {
+    background-color: var(--dark-color);
+    font-family: 'Raleway', sans-serif;
+    color: var(--light-color);
+}
+
+.section {
+    border-bottom: 2px solid var(--main-color);
+    padding-block: 80px;
+}
+
+.title {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.banner {
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.banner-content .logo {
+    background: #00000057;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.banner-content h1 {
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.banner-content p {
+    color: var(--light-color);
+    font-size: 1.3rem;
+    text-align: center;
+    width: 55%;
+}
+
+.banner-content button {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--main-color);
+    border: solid var(--main-color) 2px;
+    padding: 15px 80px;
+    border-image: linear-gradient(#33A8DB, #1472B7);
+    border-image-slice: 10;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.course-content {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.course-content p {
+    font-size: 1.3rem;
+    padding-inline: 50px;
+}
+
+.course-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+.course-content .modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.course-content .modules-list .module {
+    cursor: pointer;
+    background-color: var(--gray-color);
+    border: solid 2px var(--main-color);
+    border-radius: 40px;
+    padding: 20px 100px;
+    box-shadow: inset var(--dark-color) -5px 6px 8px;
+}
+
+.course-content .modules-list .module span {
+    color: var(--main-color);
+}
+
+.transform-world {
+    background-image: url(../images/woman-code.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100dvh;
+    padding: 20% 20%;
+}
+
+.transform-world p {
+    width: 350px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    text-shadow: 4px 3px 2px var(--main-color);
+}
+
+.professional-challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.professional-challenges h2 {
+    font-size: 2.5rem;
+}
+
+.professional-challenges img {
+    width: 80%;
+}
+
+.professional-challenges p {
+    font-size: 1.3rem;
+    width: 75%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2));
+}

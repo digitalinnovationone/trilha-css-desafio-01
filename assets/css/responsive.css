@@ -1,0 +1,64 @@
+@media(max-width: 700px) {
+
+    body .title {
+        font-size: 7vw;
+    }
+
+    .banner-content {
+        padding-inline: 10px;
+        text-align: center;
+    }
+
+    .banner-content .logo {
+        padding: 10px;
+        margin-inline: 30px;
+    }
+
+    .banner-content .logo img {
+        width: 100%;
+    }
+
+    .banner-content p {
+        font-size: 5vw;
+    }
+
+    .banner-content button {
+        margin-inline: 30px;
+    }
+
+    .course-content p {
+        font-size: 3.2vw;
+    }
+
+    .course-content .modules-list {
+        padding-inline: 10px;
+    }
+
+    .course-content .modules-list .module {
+        padding: 10px 40px;
+        font-size: 3vw;
+    }
+
+    .transform-world {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: -350px;
+    }
+
+    .transform-world p {
+        font-size: 9vw;
+        width: 100%;
+    }
+
+    .professional-challenges p {
+        font-size: 3.5vw;
+    }
+
+    footer img {
+        width: 100%;
+        padding-inline: 30px;
+    }
+
+}

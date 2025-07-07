@@ -1,0 +1,192 @@
+/* Importa a fonte Raleway do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+/* Estilização do corpo da página */
+body {
+    background-color: black; /* Define o fundo preto */
+    font-family: 'Raleway'; /* Aplica a fonte Raleway ao corpo */
+}
+
+/* Estilização dos parágrafos */
+p {
+    color: white; /* Define a cor do texto dos parágrafos como branco */
+}
+
+/*INICIO CABEÇALHO (HEADER)*/
+
+/* Estilização do banner principal */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('assets/images/banner.png'); /* Gradiente e imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 600px; /* Altura fixa */
+    padding-top: 60px; /* Espaço superior */
+    border-bottom: 1px solid #33A8DB80; /* Borda inferior */
+}
+
+/* Conteúdo centralizado dentro do banner */
+.banner .banner-content {
+    color: white; /* Texto branco */
+    width: 600px; /* Largura fixa */
+    margin: auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título do banner com gradiente */
+.banner h1 {
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Gradiente azul */
+    background-clip: text; /* Aplica gradiente ao texto */
+    -webkit-background-clip: text; /* Compatibilidade Webkit */
+    font-size: 2.5rem; /* Tamanho grande */
+    font-weight: 900; /* Negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+    color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+}
+
+/* Parágrafo dentro do banner */
+.banner p {
+    font-size: 1.25rem; /* Tamanho do texto */
+    margin: 16px 0 24px; /* Espaçamento */
+}
+
+/* Área circular para o logo no banner */
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2); /* Fundo escuro translúcido */
+    height: 260px; /* Altura fixa */
+    width: 260px; /* Largura fixa */
+    margin: auto; /* Centraliza */
+    border-radius: 50%; /* Deixa circular */
+    padding: 16px; /* Espaçamento interno */
+    margin-bottom: 16px; /* Espaço abaixo */
+}
+
+/* Imagem do logo dentro da área circular */
+.banner .logo img {
+    margin: auto; /* Centraliza */
+    width: 100%; /* Ocupa toda a área */
+    height: 100%; /* Ocupa toda a área */
+    object-fit: contain; /* Mantém proporção da imagem */
+}
+
+/* Botão estilizado dentro do banner */
+.banner .banner-content button {
+    background-color: transparent; /* Fundo transparente */
+    border-image: linear-gradient(#3BA1CD, #1572B7); /* Gradiente na borda */
+    border-image-slice: 10; /* Fatia da borda */
+    color: #31A8DD; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    padding: 16px 32px; /* Espaçamento interno */
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/*FIM CABEÇALHO (HEADER)*/
+
+
+/* Estilização geral das seções */
+section {
+    margin: 100px auto; /* Espaçamento vertical e centralização */
+}
+
+/*INICIO CONTEUDO PRINCIPAL (MAIN)*/
+
+/* Conteúdo do curso centralizado */
+#course-content {
+    width: 800px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização dos títulos h2 */
+h2 {
+    color: #33A8DB; /* Cor azul */
+    text-transform: uppercase; /* Letras maiúsculas */
+    font-weight: bold; /* Negrito */
+    font-size: 2rem; /* Tamanho da fonte */
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    margin-bottom: 24px; /* Espaço abaixo */
+}
+
+/* Lista de módulos do curso */
+#course-content .modules-list {
+    margin: 24px 0; /* Espaçamento vertical */
+}
+
+/* Estilização de cada módulo */
+#course-content .modules-list .module {
+    color: white; /* Texto branco */
+    width: 530px; /* Largura fixa */
+    margin: 0 auto 24px; /* Centraliza e espaça abaixo */
+    border: 1px solid #33A8DB; /* Borda azul */
+    background-color: #252525; /* Fundo escuro */
+    padding: 16px; /* Espaçamento interno */
+    border-radius: 100px; /* Bordas arredondadas */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Sombra interna */
+}
+
+/* Destaque azul para spans dentro dos módulos */
+#course-content .modules-list .module span {
+    color: #33A8DB; /* Cor azul */
+}
+
+/* Seção com imagem de fundo fixa (parallax) */
+#transform-world {
+    height: 560px; /* Altura fixa */
+    background-size: cover; /* Cobre toda a área */
+    background-image: url("assets/images/woman-code.png"); /* Imagem de fundo */
+    background-attachment: fixed; /* Efeito parallax */
+    border-top: 1px solid #33A8DB80; /* Borda superior */
+    border-bottom: 1px solid #33A8DB80; /* Borda inferior */
+    padding: 200px; /* Espaçamento interno */
+}
+
+/* Parágrafo estilizado dentro da seção parallax */
+#transform-world p {
+    font-weight: 900; /* Negrito */
+    font-size: 2.5rem; /* Tamanho grande */
+    text-transform: lowercase; /* Letras minúsculas */
+    max-width: 250px; /* Largura máxima */
+    text-shadow: 3px 2px #33A8DB; /* Sombra azul */
+}
+
+/* Seção de desafios profissionais */
+#professional-challenges {
+    text-align: center; /* Centraliza o texto */
+    width: 800px; /* Largura fixa */
+}
+
+/* Imagem dentro da seção de desafios */
+#professional-challenges img {
+    margin: 32px 0; /* Espaçamento vertical */
+}
+
+/*FIM CONTEUDO PRINCIPAL (MAIN)*/
+
+
+/*INICIO CONTEUDO FINAL RODAPE (FOOTER)*/
+/* Estilização do rodapé */
+footer {
+    padding: 60px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Gradiente de fundo */
+    border-top: 1px solid #33A8DB80; /* Borda superior */
+}
+
+/* Logo da DIO no rodapé */
+footer .dio-logo {
+    width: 300px; /* Largura do logo */
+}
+
+/* Links no rodapé */
+footer a {
+    color: #33A8DB; /* Cor dos links */
+    font-weight: bold; /* Negrito */
+    text-decoration: none; /* Remove sublinhado */
+}
+/*FIM CONTEUDO FINAL RODAPE (FOOTER)*/

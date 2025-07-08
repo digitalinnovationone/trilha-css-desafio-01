@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+.banner{
+    background-image: url("/assets/images/banner.png");    
+
+}
+.logo{
+    padding-top: 27px;
+}
+.logo img{
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 100px 0px rgba(29, 29, 54, 0.993);
+}
+.banner-content{
+    text-align: center;
+}
+
+.banner-content h1{
+    text-transform: uppercase;
+    color: #33A8DB;
+    font-weight: bolder;
+}

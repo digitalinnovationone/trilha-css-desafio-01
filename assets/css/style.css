@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Relaway-regular";
+    src: url("/assets/images/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: "Relaway-black";
+    src: url("/assets/images/Raleway-Black.ttf");
+}
+
+body{
+    font-family:"Relaway-black";
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+/*HEADER */
+.banner{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.349), #33a9db41, rgba(0, 0, 0, 0.479)), url("/assets/images/banner.png");
+    background-size: cover;
+   
+}
+.logo{
+    
+    padding-top: 56px;
+    
+    
+}
+.logo img{
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.562);
+}
+.banner-content{
+    font-family: "Relaway-regular";
+    text-align: center;
+}
+
+.banner-content h1{
+    background-image: linear-gradient(to bottom, #33a9db,#1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.banner-content p{
+    font-size: 20px;
+}
+
+.banner-content button{
+    background-image: linear-gradient(to bottom, #33a9db,#1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-family: "Relaway-black";
+    border: solid #33a9db;
+    padding: 19px 91px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 94px;
+}
+
+
+/* O QUE VOU APRENDER? container principal */
+#course-content h2, #professional-challenges h2{
+    /* estilização básica */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 32px;
+    margin-top: 62px;
+
+    /*GRADIENTE*/
+    background-image: linear-gradient(to bottom, #33a9db,#1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#course-content p, #professional-challenges p{
+    font-family: "Relaway-regular";
+    text-align: center;
+    width: 850px;
+}
+
+#course-content{
+    display: block;
+    justify-items: center;
+    margin-bottom:144px;
+}
+
+/*MÓDULOS DAS AULAS*/
+.module{
+    /*ESTILZAÇÃO BÁSICA*/
+    font-family: "Relaway-regular";
+
+    /*FORMATAÇÃO DO BOTÃO*/
+    text-align: center;
+    border: solid 2px #33a9db;
+    padding: 16px 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    /*ESTILIZAÇÃO*/
+    background-color: #252525;
+    box-shadow: inset 0px 5px #00000054;
+
+}
+.module span{
+    color:#33a9db
+}
+
+
+/*TRANSFORME O MUNDO */
+#transform-world p{
+    width: 250px;
+    text-transform: lowercase;
+    font-size: 40px;
+    margin-left: 198px;
+    padding-top:200px;
+    text-shadow: 3px 2px 0px #33a9db;
+}
+#transform-world{
+    background-image: url(/assets/images/woman-code.png);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+#professional-challenges{
+    justify-items: center;
+    margin-bottom: 91px;
+}
+
+#professional-challenges h2{
+    width: 900px;
+}
+
+
+/* FOOTER */
+footer{
+     background-image: linear-gradient(rgb(0, 0, 0), #33a9db2c);
+    justify-items: center;
+    font-family: "Relaway-regular";
+    border: solid 0.1px black;
+}
+footer a{
+    font-family: "Relaway-black";
+    text-decoration: none;
+    color:#33a9db;
+   
+}

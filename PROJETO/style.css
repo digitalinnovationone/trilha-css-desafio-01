@@ -1,0 +1,202 @@
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+.logo img {
+  width: 100%;
+  border-radius: 50%; 
+  display: block;
+}
+.logo{
+   
+ width: 20rem;
+  border-radius: 50%;
+  padding: 20px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 100%);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.8); 
+  margin: 0 auto;
+}
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.banner{
+    object-fit: cover;
+    height: 600px;
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)),  url(assets/images/banner.png);
+}
+.banner-content{
+    margin: auto;
+    text-align: center;
+    border-bottom: 0.1rem solid #33A8DB;
+}
+.banner h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.banner p {
+    font-size: 1.7rem;
+    margin: 16px 0 24px;
+    color: white;
+}h1 {
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+    p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+button{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    color: #33A8DB;
+    font-size: 1.7rem;
+}
+.banner .banner-content button{
+    color: #31A8DD;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+    margin-bottom: 5rem;
+}
+#course-content{
+    
+    border-bottom: 1px solid #33A8DB;
+    padding-bottom: 4.5rem;
+}
+#course-content h2{
+    
+    padding: 0rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#course-content p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 20rem 1.5rem 20rem;
+    color: white;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+
+}
+.module span{
+    color: #33A8DB;;
+}
+.modules-list .module {  
+  width: 50rem;
+  background-color:rgb(37, 37, 37);
+  border: 1px solid #33A8DB;
+  border-radius: 50px;
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+#transform-world{
+    height: 700px;
+    background-size: cover;
+    background-image: url(assets/images/woman-code.png);
+    background-attachment: fixed;
+    padding: 200px;
+    
+    
+}
+#transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+}
+#professional-challenges{
+    text-align: center;
+    border-bottom: 1px solid #33A8DB;
+}
+#professional-challenges h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+     padding: 0rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#professional-challenges img{
+    width: 50rem;
+}
+#professional-challenges p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 20rem 1.5rem 20rem;
+    color: white;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+footer{
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    margin-top: 5rem;
+    text-align: center;
+    padding: 60px;
+}
+footer p{
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: #33A8DB;
+    
+    font-weight: bold;
+}

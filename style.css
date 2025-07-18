@@ -1,0 +1,172 @@
+body{   /*OK*/
+    background-color: black;
+}
+
+
+p {  /*OK*/
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section {  /*OK*/
+  margin: 100px auto;
+}
+
+
+.banner {   /*OK*/
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('banner.png');
+  background-size: cover;
+  height: 600px;
+  padding-top: 60px;
+  border-bottom: 1px solid #33A8DB80;
+}
+
+
+.banner .logo {  /*OK*/
+  margin:auto;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+
+.banner .logo img{   /*OK*/
+  margin-top: 16px;
+  object-fit: contain;
+}
+
+
+.banner h1{   /*OK*/
+  text-align: center;
+  background:  -webkit-linear-gradient(#33A8DB, #1472B7);
+  background-clip:text;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 2.5rem;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-linear-gradient:text;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.banner p{  /*OK*/
+  font-size: 1.25rem;
+  margin:16px  0  24px;
+}
+
+
+.banner .banner-content{   /*OK*/
+  color:white;
+  width: 600px;
+  margin: auto;
+  text-align:center;
+}
+
+
+.banner .banner-content button{  /*OK*/
+  background-color: transparent;
+  color: #31A8DD;
+  border-image: linear-gradient(#3BA1CD, #1572B7);
+  border-image-slice:10; /*define como uma imagem de borda (border-image) é dividida em partes para ser usada nos lados da borda de um elemento.*/
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-image-slice:10;
+}
+
+
+h2{  /*OK*/
+  color: #33A8DB;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: arial;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+
+#course-content{   /*OK*/
+  width: 800px;
+  text-align: center;
+}
+
+
+#course-content .modules-list .module{  /*pode junta elementos parentes*/   /*OK*/
+  background-color: #252525;
+  color: white;
+  border-radius: 100px;
+  margin:0 auto 24px;
+  text-align: center;
+  width: 530px;
+  border: 1px solid #33A8DB;
+  padding: 16px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+
+#course-content .modules-list .module span {  /*OK*/
+  color: #33A8DB;
+}
+
+
+#transform-world {  /*OK*/
+  background-image: url("woman-code.png");
+  background-attachment: fixed;
+  padding:200px;
+  background-size: cover;
+  border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+}
+
+
+#transform-world p{  /*OK*/
+  text-transform: lowercase;
+  text-shadow: 3px 2px #33A8DB;
+  font-weight: 900;
+  font-size: 2.5rem;
+  max-width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#professional-challenges {  /*OK*/
+  text-align: center;
+  width: 800px;
+}
+
+
+#professional-challenges img{  /*OK*/
+  margin: 32px 0;
+}
+
+
+footer{  /*OK*/
+  text-align: center;
+  border-top: 1px  solid  #33A8DB;
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+  padding: 60px  0;
+}
+
+
+footer p{  /*OK*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .dio-logo {   /*OK*/
+  width: 300px;
+}
+
+footer a{  /*OK*/
+  color: #33A8DB;
+  text-decoration: none;
+  font-weight: bold
+}

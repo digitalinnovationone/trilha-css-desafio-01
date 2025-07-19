@@ -119,7 +119,7 @@ h2{  /*OK*/
 
 
 #transform-world {  /*OK*/
-  background-image: url("../img/woman-code.png");
+  background-image: url("../assets/images/woman-code.png");
   background-attachment: fixed;
   padding:200px;
   background-size: cover;

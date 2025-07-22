@@ -1,0 +1,224 @@
+@font-face {
+    font-family: raleway-regular;
+    src: url("fonts/Raleway/static/Raleway-Regular.ttf");
+    font-weight: regular; }
+@font-face {
+    font-family: raleway-bold;
+    src: url("fonts/Raleway/static/Raleway-Bold.ttf");
+    font-weight: bold; }
+@font-face {
+    font-family: raleway-black;
+    src: url("fonts/Raleway/static/Raleway-Black.ttf");
+    font-weight: 900; }
+@font-face {
+    font-family: raleway-light;
+    src: url("fonts/Raleway/static/Raleway-Light.ttf");
+ }
+@font-face {
+    font-family: raleway-thin;
+    src: url("fonts/Raleway/static/Raleway-Thin.ttf");
+    }
+
+
+body {
+ background-color: black;
+}
+
+.banner {
+    background-image: linear-gradient( #0c2935,#00000006),
+    url(assets/images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #33a8db;
+}
+
+.banner .banner-content {
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 510px;
+    height: 393px;
+    padding-top: 56px;
+}
+ 
+#titulo-header {
+    font-family: raleway-black;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    -webkit-background-clip: text;
+    font-weight: 900px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: transparent;
+   
+}
+
+.banner p {
+    font-family: raleway-light;
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+        
+}
+
+.banner .logo {
+    background-color: rgba(00, 00, 00, 0.2);
+    border-radius: 50%;
+    height: 260px;
+    width:260px;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 16px;
+   
+}
+
+#logo {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.banner .banner-content button {
+    border: 2px solid;
+    background-color: transparent;
+    color: #31A8DD;
+    font-family: raleway-black;
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    border-image: linear-gradient(to right,#3BA1CD, #1572B7) 1;
+    transition: 0.3s ease;    
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+h2{
+    font-family: raleway-light;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700 bold;
+    font-size: 2rem;
+    color: #33A8DB;
+    text-align: center;
+    padding: 32px 32px 16px 32px;
+ 
+
+}
+
+#course-content { 
+    width: 792px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.description {
+    font-family: raleway-light;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+    padding-bottom: 4rem;
+}
+
+#course-content .modules-list .module { 
+    color: white;
+    font-size: 16px;
+    font-family: raleway-light;
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    width:530px;
+    border-radius: 100px;
+    padding: 16px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    margin: 0 auto 24px;
+
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB; }
+
+
+
+#transform-world {
+    background-image: url("assets/images/woman-code.png");
+    background-attachment: fixed;
+    height: 363px;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 40% ;
+    border-top: 1px solid #33A8DB;
+    border-bottom: 1px solid #33A8DB;
+  
+}
+    
+#transform-world p {
+    font-family: raleway-black;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 2px #33A8DB;
+    text-transform: lowercase;
+    width: 244px;
+    font-weight: 900;
+    padding-left: 198px;
+    padding-top: 90px;
+
+}
+
+#professional-challenges {
+    text-align: center;
+    
+}
+
+#evolve {
+    font-family: raleway-bold;
+    width: 746px;
+    margin: auto;
+}
+
+#juntese {
+    width: 792px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 76px;
+    font-family: raleway-light;
+    font-size: 16px;
+}
+
+footer {
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid  #33A8DB80;
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+#foot {
+    font-family: raleway-light;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+#foot-img {
+    text-align: center;
+    width: 300px;
+}
+
+#foot a {
+    font-family: raleway-bold;
+    text-decoration: none;
+    color: #33A8DB;
+    font-weight: bold;
+
+}

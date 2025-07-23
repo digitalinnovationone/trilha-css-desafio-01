@@ -1,0 +1,426 @@
+/* === BANNER PRINCIPAL === */
+.banner {
+  background: black;
+  height: 600px;
+  background-image: linear-gradient(rgb(0, 0, 0, .5), rgba(1, 33, 47, 0.7), rgb(0, 0, 0, .5)), url("../images/banner.png");
+  background-size: 1800px cover;
+  background-repeat: repeat;
+  background-position: center;
+  border-bottom: 2px solid #33a8db;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 60px;
+  position: relative;
+}
+
+.banner .banner-content {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+/* === LOGO REDONDA === */
+.banner .logo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.banner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* === TÍTULO === */
+.banner h1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 47px;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+/* === PARÁGRAFO === */
+.banner p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: white;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+/* === BOTÃO === */
+.banner button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 19px;
+  letter-spacing: 0.21em;
+  color: #31A8DD;
+  background: transparent;
+  border: 2px solid #31A8DD;
+  padding: 16px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.banner button:hover {
+  background-color: #31A8DD;
+  color: #000;
+}
+
+/* BANNER SECUNDÁRIO */
+
+#course-content {
+/* Auto layout */
+background-color: #000;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-bottom: 2px solid #33a8db80;
+align-items: center;
+padding: 0px;
+gap: 24px;
+width: 100%;
+height: 520px;
+left: 332px;
+top: 669px;
+}
+
+
+/* O QUE VOU APRENDER? */
+h2 {
+width: 477px;
+height: 38px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+text-transform: uppercase;
+margin-left: 150px;
+width: 600px;
+line-height: 38px;
+/* identical to box height */
+letter-spacing: 0.15em;
+
+color: #33A8DB;
+}
+
+p {
+/* Inside auto layout */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 450;
+font-size: 16px;
+align-items: center;
+line-height: 19px;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+
+/* Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais. */
+
+width: 792px;
+height: 180px;
+color: #ffffff;
+}
+
+#course-content .modules-list .module1 {
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* CAIXA MÓDULO 1 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 127px;
+gap: 10px;
+margin-top: -140px;
+margin-bottom: 2rem;
+padding: 25px;
+
+
+width: 535px;
+height: 51px;
+
+background: #252525;
+border: 1px solid #33A8DB;
+box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+border-radius: 57px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Módulo 01: primeiros passos com CSS */
+
+width: 550px;
+height: 19px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+justify-content: center;
+align-items: center;
+line-height: 19px;
+gap: 5px;
+
+/* identical to box height */
+
+color: #33A8DB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#course-content .modules-list .module2 {
+/* CAIXA MÓDULO 2 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 127px;
+margin-bottom: 2rem;
+gap: 10px;
+padding: 25px;
+
+
+width: 535px;
+height: 51px;
+
+background: #252525;
+border: 1px solid #33A8DB;
+box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+border-radius: 57px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Módulo 02: trabalhando com layouts no CSS */
+
+width: 550px;
+height: 19px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+justify-content: center;
+align-items: center;
+line-height: 19px;
+gap: 5px;
+
+/* identical to box height */
+
+color: #33A8DB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#course-content .modules-list .module3 {
+/* CAIXA MÓDULO 3 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 127px;
+gap: 10px;;
+padding: 25px;
+
+
+width: 535px;
+height: 51px;
+
+background: #252525;
+border: 1px solid #33A8DB;
+box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+border-radius: 57px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Módulo 03: refinando os estilos CSS das nossas páginas */
+
+width: 550px;
+height: 19px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+justify-content: center;
+align-items: center;
+line-height: 19px;
+gap: 5px;
+
+/* identical to box height */
+
+color: #33A8DB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+#transform-world {
+width: 100%;
+height: 560px;
+background-size: cover;
+border-bottom: 2px solid #33a8db;
+background-image: url("../images/woman-code.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+opacity: 100%;
+}
+
+/* transforme o mundo com a gente */
+#transform-world p {
+  text-shadow: 5px 3px 0px #33A8DB;
+  width: 250px;
+  margin-left: 200px;
+  height: 300px;
+  line-height: 47px;
+  text-align: center;
+  word-wrap: var(com a gente);
+  padding-top: 250px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  text-align: left;
+  display: flex; 
+}
+
+/* BANNER QUARTENÁRIO */
+#professional-challenges {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Homem lendo depoimentos em um tablet */
+#professional-challenges img {
+/* image 3 */
+width: 60%;
+max-width: 659px;
+height: auto;
+margin-bottom: 40px;
+padding-top: 50px;
+}
+
+/* EVOLUA E ENCARE NOVOS DESAFIOS PROFISSIONAIS */
+#professional-challenges h2 {
+font-family: 'Raleway';
+font-weight: 700;
+font: 35px;
+width: 900px;
+letter-spacing: 0.15em;
+color: #33A8DB;
+margin-bottom: 20px;
+word-wrap: var(profissionais);
+margin-left: 300px;
+padding-bottom: 10px;
+}
+/* Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades. */
+#professional-challenges p {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+max-width: 800px;
+margin: 0 auto;
+
+color: #ffffff;
+}
+
+/* BANNER QUINQUENÁRIO */
+footer {
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 168, 219, 0.2));
+background-color: #000000;
+border-top: 2px solid #33A8DB;
+width: 100%;
+height: auto;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+align-items: center;
+text-align: center;
+text-decoration: none;
+flex-direction: column;
+padding-top: 150px;
+}
+
+footer p {
+  color: #ffffff;
+  margin-left: 350px;
+  margin-top: 0.2rem;
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+}
+
+
+

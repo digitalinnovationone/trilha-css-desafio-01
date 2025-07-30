@@ -1,0 +1,203 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Raleway", sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+}
+.banner{
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('/assets/images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-content{
+    width: 510px;
+    height: 393px;
+    margin: auto;
+    text-align: center;
+}
+.logo{
+    width: 268px;
+    height: 268px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    margin: auto;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.logo img{
+    margin-top: 27px;
+}
+h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(#33A8DB, #1472B7);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 16px 0 24px;
+    line-height: 100%;
+    word-spacing: 0%;
+}
+.banner-content button{
+    font-weight: 900;
+    font-size: 16px;
+    color: #31A8DD;
+    border-image-source: linear-gradient(#31A8DD, #1472B7);
+    border-image-slice: 1;
+    border-image-width: 2px;
+    border-spacing: 31px;
+    border-radius: 50px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    padding: 15px 31px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+#course-content{
+    margin: 0 auto 150px;
+    width: 792px;
+    top: 669px;
+    left: 332px;
+    gap: 24px;
+    text-align: center;
+    opacity: 1;
+}
+#course-content h2{
+    margin: 50px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+    letter-spacing: 19%;
+    color: #33A8DB;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#course-content p{
+    margin: 0 auto 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    word-spacing: 0%;
+    text-align: center;
+    opacity: 1;
+}
+.modules-list .module{
+
+    width: 535px;
+    height: 35px;
+
+    margin: 0 auto 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    border-radius: 57px;
+    padding-top: 16px;
+    background: #252525;
+    border: 1px solid #33A8DB;
+    box-shadow: -2px 6px 4px 0px #00000066 inset;
+    opacity: 1;
+}
+.module span{
+    color: #33A8DB;
+}
+
+#transform-world p{
+    max-width: 250px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-shadow: 3px 2px 0px #33A8DB;
+    text-transform: lowercase;
+}
+#transform-world{
+    height: 960px;
+    opacity: 1;
+    top: -250px;
+
+    padding-top: 200px;
+
+    background-image: url('/assets/images/woman-code.png');
+    background-size: cover;
+    background-attachment: fixed;
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: #33A8DB;
+
+}
+
+#professional-challenges{
+    margin: 100px auto;
+    text-align: center;
+}
+#professional-challenges h2{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 19%;
+
+    color: #33A8DB;
+    text-transform: uppercase;
+
+}
+#professional-challenges p{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+
+}
+
+#professional-challenges img{
+    width: 659px;
+    height: 429px;
+    opacity: 1;
+    top: 1685px;
+    left: 390px;
+}
+
+footer{
+    padding: 80px 0px;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+
+footer img{
+    width: 310px;
+    height: 44px;
+    top: 59px;
+    left: 565px;
+    opacity: 1;
+}
+
+footer p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 1;
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dio-logo {
+  width: 300px;
+}
+

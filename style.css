@@ -1,0 +1,211 @@
+/* ====== Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ====== Banner inicial ====== */
+.banner {
+  background: url('assets/images/banner-bg.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.banner-content .logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+  color: #33A8DB;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.banner-content button {
+  padding: 12px 30px;
+  border: 1px solid #33A8DB;
+  background: transparent;
+  color: #33A8DB;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.banner-content button:hover {
+  background: #33A8DB;
+  color: #000;
+}
+
+/* ====== O que vou aprender ====== */
+#course-content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#course-content h2 {
+  color: #33A8DB;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#course-content p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #ccc;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.module {
+  background: #111;
+  border-radius: 50px;
+  padding: 15px 20px;
+  border: 1px solid #33A8DB;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.module span {
+  color: #33A8DB;
+}
+
+.module:hover {
+  background: #33A8DB;
+  color: #000;
+}
+
+/* ====== Transforme o mundo ====== */
+#transform-world {
+  background: url('assets/images/transform-world.png') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+#transform-world .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+#transform-world p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: lowercase;
+}
+
+/* ====== Desafios profissionais ====== */
+#professional-challenges {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#professional-challenges h2 {
+  font-size: 1.8rem;
+  color: #33A8DB;
+  margin-bottom: 20px;
+}
+
+#professional-challenges img {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#professional-challenges p {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* ====== Rodapé ====== */
+footer {
+  background: linear-gradient(to top, #000, #022);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer .dio-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #33A8DB;
+  text-decoration: none;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 1.6rem;
+  }
+  .banner-content p {
+    font-size: 0.9rem;
+  }
+  #transform-world p {
+    font-size: 1.5rem;
+  }
+  #course-content p,
+  #professional-challenges p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 1.4rem;
+  }
+  .banner-content p {
+    font-size: 0.85rem;
+  }
+  .banner-content button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  #transform-world p {
+    font-size: 1.2rem;
+  }
+}

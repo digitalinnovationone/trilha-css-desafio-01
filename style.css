@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    font-family: raleway;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        "header "
+        "navbar "
+        "main-content-1"
+        "main-content-2"
+        "main-content-3"
+        "footer";
+}
+header{
+    border: 1px solid;
+    border-color: #000000;
+    grid-area: header;
+    background-image: url(./assets/images/banner.png), linear-gradient(#000000 60%, #31A8DD, #000000 10%);
+    background-size: cover;
+    background-position: center;
+}   
+.logo img{
+    width: 150px;
+    margin-top: 3.1rem;
+}
+.banner-title{
+    color: #33A8DB;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-image: linear-gradient(to top, #1572B7, #3BA1CD); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.banner-content p{
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 150;
+}
+.banner-content button{
+    color: #31A8DB;
+    border: 1px solid #31A8DB;
+    background-image: linear-gradient(to top, #1572B7, #3BA1CD);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.17rem;
+    padding: 0.6rem;
+    margin-bottom: 2.5rem;
+}
+#course-content{
+    border: 1px solid ;
+    border-color: #33A8DB #000000;
+    grid-area: main-content-1;
+    background-color: #000000;    
+    text-align: center;
+}
+#course-content h2{
+    background-image: linear-gradient(to top, #1572B7, #3BA1CD);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.17rem;
+    text-transform: uppercase;
+    padding-top: 1.25rem;
+}
+#course-content p{
+    color: #FFFFFF;
+    font-size: 0.6rem;
+}
+.modules-list{
+    margin-bottom: 5rem;
+    padding: 0.6rem 35.6rem;
+}
+.module{
+    color: #FFFFFF;
+    margin-bottom: 0.9rem;
+    background-color: #252525;
+    font-size: 0.6rem;
+    border: 1px solid;
+    border-color: #1572B7  #3BA1CD #3BA1CD;
+    border-radius: 0.9rem;
+    box-shadow: inset 0px 0px 10px 0px black;
+    padding: 0.6rem;
+    text-decoration: none;
+}
+.module span{
+    color: #33A8DB;
+}
+#transform-world{
+    border: 1px solid;
+    border-color: #000000 #000000 #33A8DB;
+    grid-area: main-content-2;
+    background-image: url(./assets/images/woman-code.png), linear-gradient(to left, #000000 60%, #31A8DD);
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    background-attachment: fixed;
+    padding: 3.1rem;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: lowercase;
+    text-align: left;
+    text-shadow: 2px 3px #31A8DB;
+}
+#transform-world p{
+    padding-left: 6.25rem;
+}
+#professional-challenges{
+    border: 1px solid;
+    border-color: #000000 #000000 #33A8DB;
+    grid-area: main-content-3;
+    background-color: #000000;
+}
+#professional-challenges img{
+    max-width: 100%;
+    width: 450px;
+}
+#professional-challenges h2{
+    color: #31A8DB;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+    line-height: 100%;
+    padding-top: 1.8rem;
+    line-height: 1.3; 
+}
+#professional-challenges p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.6rem;
+    line-height: 100%;
+    padding-top: 0.9rem;
+    padding-bottom: 3.1rem;
+    line-height: 1.3;
+}
+footer{
+    border: 1px solid;
+    border-color:#000000;
+    grid-area: footer;
+    background-color: #000000;
+    padding-top: 1.25rem;
+}
+footer p{
+    color: #FFFFFF;
+    margin-bottom: 1.8rem;
+    font-size: 0.6rem;
+}
+footer p a{
+    color: #31A8DB;
+    text-decoration: none;
+    font-weight: 700;
+}
+footer img{
+    max-width: 100%;
+    width: 200px;
+}
+.dio-logo{
+    margin-top: 1.25rem;
+}
+
+@media (max-width: 1400px){
+    .modules-list{
+        padding: 0.6rem 31.25rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .modules-list{
+        padding: 0.6rem 18.75rem;
+    }
+}
+
+@media (max-width: 600px){
+    .modules-list{
+        padding: 0.6rem 12.5rem;
+    }
+}
+

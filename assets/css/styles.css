@@ -1,0 +1,315 @@
+@import url('reset.css');
+
+/* Configurações Gerais e de Acessibilidade */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Fonte mais legível e padrão */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Títulos */
+h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsivo para tamanhos de tela */
+  color: #33A8DB;
+  font-weight: 700; /* Mais forte que bold */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Parágrafos */
+p {
+  color: #e0e0e0; /* Um branco ligeiramente menos intenso para conforto visual */
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+/* Seções Principais */
+section {
+  margin: 100px auto;
+  padding: 0 20px; /* Espaçamento lateral para telas menores */
+  max-width: 1200px; /* Limite de largura para conteúdo principal */
+}
+
+/* Banner Principal */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(49, 168, 221, 0.3), rgba(0, 0, 0, 0.7)), url('../images/banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh; /* Altura responsiva baseada na viewport */
+  padding-top: 80px;
+  border-bottom: 2px solid #33A8DB80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .banner-content {
+  color: white;
+  width: 90%; /* Ocupa mais espaço em telas menores */
+  max-width: 700px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animação de entrada para o banner */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.banner h1 {
+  font-size: clamp(2rem, 8vw, 4rem); /* Título responsivo */
+  font-weight: 900;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #33A8DB, #1472B7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin: 16px 0 32px;
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #33A8DB;
+  box-shadow: 0 0 15px rgba(51, 168, 219, 0.5);
+}
+
+.banner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner .banner-content button {
+  color: #31A8DD;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #3BA1CD, #1572B7) 1;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner .banner-content button:hover {
+  background-color: #33A8DB;
+  color: #000;
+  box-shadow: 0 0 10px rgba(51, 168, 219, 0.7);
+}
+
+/* Conteúdo do Curso */
+#course-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#course-content .modules-list {
+  margin: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#course-content .modules-list .module {
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #33A8DB;
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(51, 168, 219, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#course-content .modules-list .module:hover {
+  transform: translateY(-5px);
+  box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.7), 0 8px 20px rgba(51, 168, 219, 0.4);
+}
+
+#course-content .modules-list .module span {
+  color: #33A8DB;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+/* Seção Transform World */
+#transform-world {
+  height: 60vh;
+  background-image: url('../images/woman-code.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid #33A8DB80;
+  border-bottom: 2px solid #33A8DB80;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+#transform-world p {
+  font-weight: 900;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  text-transform: lowercase;
+  text-shadow: 4px 4px 8px #33A8DB;
+  max-width: 350px;
+}
+
+/* Desafios Profissionais */
+#professional-challenges {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#professional-challenges img {
+  max-width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Rodapé */
+footer {
+  padding: 80px 20px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(50, 168, 219, 0.05), rgba(50, 168, 219, 0.2));
+  border-top: 2px solid #33A8DB80;
+}
+
+footer .dio-logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;
+    padding-top: 40px;
+  }
+
+  .banner .banner-content {
+    width: 95%;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner .logo {
+    height: 180px;
+    width: 180px;
+  }
+
+  #course-content .modules-list .module {
+    max-width: 90%;
+  }
+
+  #transform-world {
+    padding-left: 5%;
+    justify-content: center;
+  }
+
+  #transform-world p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+
+  .banner .logo {
+    height: 150px;
+    width: 150px;
+  }
+
+  .banner .banner-content button {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    letter-spacing: 2px;
+  }
+
+  #course-content .modules-list .module {
+    padding: 16px;
+  }
+
+  #transform-world {
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  #transform-world p {
+    font-size: 1.8rem;
+  }
+
+  footer .dio-logo {
+    width: 200px;
+  }
+}

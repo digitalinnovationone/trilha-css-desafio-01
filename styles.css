@@ -1,0 +1,169 @@
+/* Reset e variáveis */
+:root {
+	--bg-dark: #0b0d12;
+	--bg-darker: #06070a;
+	--text: #f5f9ff;
+	--muted: #c8d0e4;
+	--primary: #6c5ce7;
+	--secondary: #00d4ff;
+	--accent: #00ffa3;
+	--surface: #121520;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+	color: var(--text);
+	background: radial-gradient(1200px 600px at 80% -10%, rgba(108,92,231,0.18), transparent 60%),
+		radial-gradient(800px 500px at -10% 20%, rgba(0,212,255,0.15), transparent 50%),
+		linear-gradient(180deg, var(--bg-dark), var(--bg-darker));
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; display: block; }
+
+/* Layout base */
+header.banner {
+	position: relative;
+	isolation: isolate;
+	background: url("assets/images/banner.png") center/cover no-repeat, linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.8));
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.banner::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(6,7,10,0) 0%, rgba(6,7,10,1) 85%);
+	pointer-events: none;
+}
+
+.banner-content {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 88px 20px 56px;
+	display: grid;
+	gap: 20px;
+	text-align: center;
+}
+
+.logo img { width: 160px; margin: 0 auto 8px; }
+
+h1 { font-size: 40px; letter-spacing: -0.02em; }
+
+.banner-content p { color: var(--muted); max-width: 760px; margin: 0 auto; }
+/* Deixa o primeiro parágrafo do banner em branco para maior destaque */
+.banner-content h1 + p { color: #ffffff; }
+
+.primary-cta {
+	margin: 12px auto 0;
+	padding: 14px 22px;
+	border-radius: 10px;
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	color: #0a0c12;
+	font-weight: 700;
+	border: 0;
+	cursor: pointer;
+	box-shadow: 0 8px 24px rgba(0, 212, 255, 0.25);
+	transition: transform .15s ease, filter .2s ease, box-shadow .2s ease;
+}
+
+.primary-cta:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.primary-cta:active { transform: translateY(0); filter: brightness(.95); }
+
+main { max-width: 1100px; margin: 0 auto; padding: 56px 20px 80px; }
+
+/* Section: Course content */
+#course-content { display: grid; gap: 16px; }
+#course-content p { color: var(--muted); }
+
+.modules-list { display: grid; gap: 12px; margin-top: 6px; }
+.module {
+	padding: 14px 16px;
+	background: var(--surface);
+	border: 1px solid rgba(255,255,255,0.06);
+	border-radius: 12px;
+	box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.module span { font-weight: 700; margin-right: 8px; color: #fff; }
+
+/* Section: Transform World */
+#transform-world {
+	margin: 56px 0 0;
+	padding: 56px 20px;
+	background: url("assets/images/woman-code.png") right center/auto 80% no-repeat;
+	background-color: transparent;
+	min-height: 240px;
+	border-top: 1px solid rgba(255,255,255,0.06);
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+
+
+#transform-world p {
+	font-size: 28px;
+	font-weight: 900;
+	letter-spacing: 0.08em;
+}
+
+/* Section: Professional challenges */
+#professional-challenges { display: grid; gap: 16px; margin-top: 56px; }
+#professional-challenges p { color: var(--muted); }
+#professional-challenges img { width: 100%; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); }
+
+/* Footer */
+footer { border-top: 1px solid rgba(255,255,255,0.06); padding: 28px 20px 48px; text-align: center; }
+footer .dio-logo { width: 180px; margin: 0 auto 10px; opacity: .9; }
+footer a { color: var(--secondary); text-underline-offset: 4px; }
+
+/* Gradientes de texto */
+.gradient-text {
+	background: linear-gradient(90deg, #ffffff 0%, #a9beff 45%, #5ff7d2 95%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow: 0 1px 8px rgba(0, 212, 255, 0.18);
+}
+
+
+.gradient-text-strong {
+	background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	text-shadow: 0 1px 10px rgba(0, 229, 255, 0.25);
+}
+
+/* Fallback para navegadores sem suporte ao background-clip de texto */
+@supports not (-webkit-background-clip: text) {
+	.gradient-text,
+	.gradient-text-strong {
+		background: none;
+		-webkit-text-fill-color: initial;
+		color: var(--text);
+	}
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+	h1 { font-size: 56px; }
+	#transform-world p { font-size: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* { transition: none !important; }
+}

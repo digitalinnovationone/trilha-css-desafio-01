@@ -1,0 +1,223 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "section-1"
+    "section-2"
+    "section-3"
+    "footer"    
+    
+    ;
+margin: auto;
+
+}
+
+
+header{
+    grid-area: header;
+    background-image: url(/assets/images/banner-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px ;
+    
+
+    
+}
+
+.banner .logo{
+    border-radius: 50%;
+    background-color: rgba(250, 250, 250, 0.052);
+    margin: auto;
+    max-width: 60%;
+    width: 200px;
+
+}
+
+.banner .logo img{
+    
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+header h1{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(rgb(3, 33, 55), rgb(6, 196, 239), rgb(0, 221, 255));
+    color: transparent;
+    font-family: coiny, arial;
+    font-size: 2rem;  
+}
+
+header p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header button{
+color: rgb(255, 255, 255);
+background-color: transparent;
+border: 1px solid rgb(0, 183, 255);
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+padding: 10px;
+font-weight: bold;
+margin-top: 10px;
+cursor: pointer;
+margin-bottom: 20px;
+
+}
+
+header button:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(0, 166, 255);
+}
+
+#course-content{
+    color: white;
+    grid-area: section-1;
+    padding: 10px;
+    background-image: url(/assets/images/gradiente-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-top: 2px solid rgb(29, 32, 241);
+    
+
+    
+}
+#course-content h2{
+    font-family: coiny, arial;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(rgb(3, 33, 55), rgb(6, 196, 239), rgb(0, 221, 255));
+    text-transform: uppercase;
+
+}
+#course-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.module{
+    border: 1px solid rgb(15, 220, 243);
+    margin: 0 auto 24px;
+    border-radius: 100px;
+    box-shadow: inset -5px 10px 15px  rgba(24, 3, 82, 0.386);
+    padding: 16px;
+    font-size: 1.2rem;
+    width: 500px;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.modules-list span{
+    color: rgb(0, 225, 255);
+}
+
+
+#transform-world{
+    grid-area: section-2;
+    background-image: url(/assets/images/woman-code.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    padding: 20px;  
+    min-height: 300px;
+    background-attachment: fixed;
+   
+    
+    
+}
+#transform-world p{
+    color: white;
+    text-shadow: 2px 2px rgb(0, 221, 255);
+    font-weight: bold;
+    max-width: 250px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 10px;
+    
+
+}
+
+#professional-challenges{
+    grid-area: section-3;
+    background-image: url(/assets/images/gradiente-banner.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 20px;
+    border-top: 2px solid blue;
+
+    
+   
+
+}
+#professional-challenges h2{
+     font-family: coiny, arial;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(rgb(3, 33, 55), rgb(6, 196, 239), rgb(0, 221, 255));
+    text-transform: uppercase;
+}
+
+#professional-challenges img{
+    margin: 32px 0;
+}
+
+#professional-challenges p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 13px;
+}
+
+
+footer a{
+    color: rgb(0, 234, 255);
+    text-decoration: none;
+    font-weight: 200;
+}
+footer p {
+    color: white;
+}
+
+footer{
+    background-image: url(/assets/images/banner-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: footer;
+    border-top: 2px solid rgb(29, 32, 241);
+    padding: 40px 20px;
+
+    
+    
+}
+
+@media (max-width: 768px){
+    body{
+        grid-template-rows: auto auto auto auto auto;
+        
+    }
+    button{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@font-face {
+    font-family: Coiny;
+    src: url(/assets/fonts/Coiny/Coiny-Regular.ttf);
+    
+}

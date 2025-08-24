@@ -1,0 +1,61 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background-image: url(./assets/images/woman-code.png);
+    background-size: auto 100%;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    background-color: blueviolet;
+    /* background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0.2) 50%, rgba(0, 0, 0, 0.6) 100%), url(./assets/images/banner.png); */
+    background-size: cover;
+}
+
+.banner-content {
+    margin: 27px auto;
+    background-color: aqua;
+    width: 50%;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+main {
+    background-color: tomato;
+}
+
+#course-content {
+    background-color: yellowgreen;
+}
+
+.modules-list {
+    background-color: orange;
+}
+
+.module {
+    background-color: lightblue;
+}
+
+#transform-world {
+    background-color: aqua;
+}
+
+footer {
+    background-color: blue;
+}

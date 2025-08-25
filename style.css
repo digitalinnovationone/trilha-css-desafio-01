@@ -1,31 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
-    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     margin: 0;
+    font-family: Raleway;
+    color: #33a8d8;
+    text-align: center;
 }
 
 body {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
-    background-image: url(./assets/images/woman-code.png);
-    background-size: auto 100%;
-    background-position: fixed;
+    /* background-image: url(./assets/images/woman-code.png);
+    background-size: 100% auto;
+    background-position: fixed; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+p {
+    color: #fff;
+}
+
 .banner {
     width: 100%;
-    background-color: blueviolet;
-    /* background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0.2) 50%, rgba(0, 0, 0, 0.6) 100%), url(./assets/images/banner.png); */
+    /* background-color: black; */
+    /* background-image: linear-gradient(0deg,rgb(0, 0, 0) 0%, rgb(49, 168, 221) 50%, rgb(0, 0, 0) 100%), url(./assets/images/banner.png); */
+    /* -webkit-mask-image: linear-gradient(0deg,rgb(0, 0, 0) 0%, rgb(49, 168, 221) 50%, rgb(0, 0, 0) 100%); */
+    background-image: linear-gradient(0deg, #000000 0%, #092531 50%, #000000 100%);
     background-size: cover;
 }
 
 .banner-content {
+    background-image: url(./assets/images/banner.png);
     margin: 27px auto;
-    background-color: aqua;
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content * {
+    margin: 10px 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0;
+    background: -webkit-linear-gradient(#33a8d8, #1472b7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    /* color: linear-gradient(90deg, #33a8db, #1472b7); */
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    /* text-align: center; */
+    /* text-align: justify; */
+    word-spacing: 0.05rem;
+    width: 40%;
 }
 
 .logo {
@@ -34,28 +72,98 @@ body {
 
 .logo img {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+header button {
+    background-color: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(to top, #1472b7 0%, #33a8cd 100%) 1;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 main {
-    background-color: tomato;
+    background-color: black;
+}
+
+h2 {
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
 #course-content {
-    background-color: yellowgreen;
+    background-color: black;
+    /* text-align: center; */
 }
 
 .modules-list {
-    background-color: orange;
+
 }
 
 .module {
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    height: 10vh;
+    width: 75vw;
+    color: #fff;
+    background-color: #252525;
+    border: 1px solid #33a8d8;
+    border-radius: calc(10vh / 2);
+    margin: 3vh auto;
+}
+
+.module * {
+    display: inline;
+}
+
+.module span {
+    color: #33a8d8;
 }
 
 #transform-world {
-    background-color: aqua;
+    background-image: url(./assets/images/woman-code.png);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    border: #33a8d8 1px solid;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    margin: 15vh 0;
+}
+
+#transform-world p {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-shadow: 3px 2px 0 #33a8d8;
+    text-transform: lowercase;
+    color: #fff;
+    text-align: left;
+    margin-left: 15vw;
+    width: 220px;
+}
+
+#professional-challenges img {
+    width: 60vw;
+}
+
+#professional-challenges p {
+    margin: 10vh auto;
+    width: 85vw;
 }
 
 footer {
-    background-color: blue;
+    width: 100%;
+    padding: 10vh 0;
+    background-image: linear-gradient(0deg, #092531 0%, #000000 100%);
 }

@@ -1,0 +1,182 @@
+/* Reset básico e padrão de fontes */
+* {
+    font-family: 'Raleway', sans-serif; /* Define a fonte padrão para todo o site */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura/altura */
+    margin: 0; /* Remove margens padrão dos elementos */
+}
+
+/* Estilização do body */
+body {
+    background-color: black; /* Fundo preto para a página */
+}
+
+/* Estilização dos títulos h2 */
+h2 {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #33A8DB; /* Cor azul clara */
+    font-weight: bold; /* Negrito */
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Todas as letras maiúsculas */
+    margin-bottom: 24px; /* Espaço abaixo do título */
+}
+
+/* Estilização dos parágrafos */
+p {
+    color: white; /* Texto branco */
+}
+
+/* Estilização das seções */
+section {
+    margin: 100px auto; /* Espaço acima e abaixo e centraliza horizontalmente */
+}
+
+/* Banner principal */
+.banner {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, .6),
+        rgba(49, 168, 221, .2),
+        rgba(0, 0, 0, .6)
+    ), url(assets/images/banner.png); /* Gradiente + imagem de fundo */
+    background-size: cover; /* Imagem cobre todo o container */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 600px; /* Altura do banner */
+    padding-top: 60px; /* Espaço interno superior */
+    border-bottom: 1px solid #33A8DB80; /* Linha sutil azul no final do banner */
+}
+
+/* Conteúdo do banner */
+.banner .banner-content {
+    color: white; /* Texto branco */
+    width: 600px; /* Largura fixa do conteúdo */
+    margin: auto; /* Centraliza horizontalmente */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Título dentro do banner */
+.banner h1 {
+    font-size: 2.5rem; /* Tamanho grande */
+    font-weight: 900; /* Muito negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+    color: transparent; /* Cor transparente para mostrar o background-clip */
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Degradê azul no texto */
+    background-clip: text; /* Recorta o background no formato do texto */
+    -webkit-background-clip: text; /* Compatibilidade com WebKit */
+}
+
+/* Parágrafo do banner */
+.banner p {
+    font-size: 1.25rem; /* Tamanho da fonte do parágrafo */
+    margin: 16px 0 24px; /* Espaçamento em cima e embaixo */
+} 
+
+/* Logo do banner */
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2); /* Fundo semi-transparente */
+    height: 260px; /* Altura da logo */
+    width: 260px; /* Largura da logo */
+    margin: auto; /* Centraliza horizontalmente */
+    border-radius: 50%; /* Deixa circular */
+    padding: 16px; /* Espaço interno */
+    margin-bottom: 16px; /* Espaço abaixo da logo */
+}
+
+/* Imagem dentro da logo */
+.banner .logo img {
+    margin: auto; /* Centraliza a imagem */
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 100%; /* Ocupa toda a altura do container */
+    object-fit: contain; /* Mantém proporção sem cortar */
+}
+
+/* Botão dentro do banner */
+.banner .banner-content button {
+    color: #31A8DD; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    padding: 16px 32px; /* Espaçamento interno */
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    background-color: transparent; /* Fundo transparente */
+    border-image: linear-gradient(#3BA1CD, #1572B7); /* Gradiente na borda */
+    border-image-slice: 10; /* Define as fatias da imagem da borda */
+    border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Conteúdo do curso */
+#course-content {
+    width: 800px; /* Largura fixa */
+    text-align: center; /* Centraliza texto */
+}
+
+/* Lista de módulos */
+#course-content .modules-list {
+    margin: 24px 0; /* Espaçamento acima e abaixo da lista */
+}
+
+/* Cada módulo */
+#course-content .modules-list .module {
+    color: white; /* Texto branco */
+    width: 530px; /* Largura do módulo */
+    margin: 0 auto 24px; /* Centraliza e adiciona espaçamento inferior */
+    border: 1px solid #33A8DB; /* Borda azul */
+    background-color: #252525; /* Fundo escuro */
+    padding: 16px; /* Espaço interno */
+    border-radius: 100px; /* Bordas arredondadas */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Sombra interna para profundidade */
+}
+
+/* Span dentro do módulo */
+#course-content .modules-list .module span {
+    color: #33A8DB; /* Destaca texto em azul */
+}
+
+/* Seção "Transform the World" */
+#transform-world {
+    height: 560px; /* Altura da seção */
+    background-size: cover; /* Imagem cobre todo o container */
+    background-image: url(assets/images/woman-code.png); /* Imagem de fundo */
+    background-attachment: fixed; /* Efeito parallax */
+    border-top: 1px solid #33A8DB80; /* Linha azul transparente em cima */
+    border-bottom: 1px solid #33A8DB80; /* Linha azul transparente embaixo */
+    padding: 200px; /* Espaçamento interno grande */
+}
+
+/* Parágrafo dentro de "Transform the World" */
+#transform-world p {
+    font-weight: 900; /* Muito negrito */
+    font-size: 2.5rem; /* Tamanho grande */
+    text-transform: lowercase; /* Letras minúsculas */
+    max-width: 250px; /* Largura máxima */
+    text-shadow: 3px 2px #33A8DB; /* Sombra azul no texto */
+}
+
+/* Seção "Professional Challenges" */
+#professional-challenges {
+    text-align: center; /* Centraliza o conteúdo */
+    width: 800px; /* Largura fixa */
+}
+
+/* Footer */
+footer {
+    padding: 60px 0; /* Espaçamento vertical */
+    text-align: center; /* Centraliza conteúdo */
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Gradiente suave */
+    border-top: 1px solid #33A8DB80; /* Linha azul transparente */
+}
+
+/* Logo no footer */
+footer .dio-logo {
+    width: 300px; /* Largura da logo */
+}
+
+/* Links no footer */
+footer a {
+    color: #33A8DB; /* Cor azul */
+    font-weight: bold; /* Negrito */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Efeito hover no botão do banner */
+.banner-content button:hover {
+    transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
+}

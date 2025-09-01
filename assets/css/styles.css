@@ -1,0 +1,367 @@
+/* Importando o reset */
+@import url('reset.css');
+
+/* Fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0f1c;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Fundo com padrão de código */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(10, 15, 28, 0.95), rgba(10, 15, 28, 0.95)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="20" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">const function = () =&gt; {</text><text y="30" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">  return "Hello World";</text><text y="40" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">};</text><text y="55" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">if (condition) {</text><text y="65" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">  console.log("CSS");</text><text y="75" font-family="monospace" font-size="6" fill="%23ffffff" opacity="0.05">}</text></svg>');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    z-index: -1;
+}
+
+/* Header/Banner */
+.banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: radial-gradient(ellipse at center, rgba(20, 40, 80, 0.3) 0%, rgba(10, 15, 28, 0.8) 70%);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(0, 150, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 255, 150, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.logo img {
+    max-width: 150px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 20px rgba(0, 150, 255, 0.3));
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #b8c5d6;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.banner button {
+    background: transparent;
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.banner button:hover::before {
+    left: 100%;
+}
+
+.banner button:hover {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Main sections */
+main {
+    position: relative;
+}
+
+/* Course Content Section */
+#course-content {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#course-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#course-content > p {
+    font-size: 1rem;
+    color: #b8c5d6;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Modules List */
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.module {
+    background: rgba(20, 40, 80, 0.2);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #b8c5d6;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.module::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #00d4ff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.module:hover::before {
+    opacity: 1;
+}
+
+.module:hover {
+    background: rgba(20, 40, 80, 0.4);
+    border-color: rgba(0, 212, 255, 0.4);
+    transform: translateX(10px);
+}
+
+.module span {
+    color: #00d4ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Transform World Section */
+#transform-world {
+    margin: 100px 0;
+    padding: 150px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><rect width="1000" height="1000" fill="%23001122"/><circle cx="200" cy="200" r="2" fill="%2300d4ff" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle><circle cx="800" cy="300" r="2" fill="%2300ff80" opacity="0.2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/></circle><circle cx="500" cy="700" r="2" fill="%23ff4080" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.5s" repeatCount="indefinite"/></circle></svg>');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: left;
+    position: relative;
+}
+
+#transform-world::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+        linear-gradient(-45deg, rgba(255, 64, 128, 0.05) 0%, transparent 50%);
+}
+
+#transform-world p {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: lowercase;
+    line-height: 1.1;
+    max-width: 400px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+/* Professional Challenges Section */
+#professional-challenges {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#professional-challenges h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+#professional-challenges img {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0 10px 30px rgba(0, 212, 255, 0.2));
+}
+
+#professional-challenges p {
+    font-size: 1rem;
+    color: #b8c5d6;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Footer */
+footer {
+    padding: 60px 20px 40px;
+    text-align: center;
+    background: rgba(5, 10, 20, 0.8);
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.dio-logo {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.3));
+}
+
+footer p {
+    font-size: 0.95rem;
+    color: #b8c5d6;
+    font-weight: 300;
+}
+
+footer a {
+    color: #00d4ff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .banner p {
+        font-size: 1rem;
+    }
+    
+    #course-content h2,
+    #professional-challenges h2 {
+        font-size: 1.5rem;
+    }
+    
+    #transform-world {
+        padding: 100px 20px;
+        background-attachment: scroll;
+    }
+    
+    #transform-world p {
+        font-size: 2.2rem;
+        margin-left: 20px;
+        max-width: 300px;
+    }
+    
+    .modules-list {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        min-height: 80vh;
+    }
+    
+    .banner h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .banner button {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+    
+    #course-content,
+    #professional-challenges {
+        padding: 60px 20px;
+    }
+    
+    #transform-world p {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+    
+    .module {
+        padding: 15px 20px;
+    }
+}

@@ -177,3 +177,42 @@ footer a {
   text-decoration: none;
   color: #33A8DB; 
 }
+@media (max-width: 768px) {
+
+  
+  .banner-content p {
+    width: 90%;
+  }
+
+  #transform-world p {
+    width: 80%;
+    margin: 0; 
+    text-align: center; 
+    font-size: 1.8rem; 
+  }
+
+  
+  #transform-world {
+    background-attachment: scroll; 
+    background-position: center center; 
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  #professional-challenges h2 {
+    width: 90%; 
+    font-size: 1.5rem;
+  }
+  
+  #professional-challenges p {
+    width: 90%;
+  }
+
+ 
+  #professional-challenges img {
+    width: 90%; 
+    padding: 0;
+  }
+}
+

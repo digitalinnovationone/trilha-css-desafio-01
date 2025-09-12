@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color:white;
+}
+.banner {
+  background-image: url('../images/banner.png'), linear-gradient(#000000, #135a90b8, #000000eb);
+  background-color: #000000;
+  padding: 15px;
+  background-size: cover;
+  border-bottom: 3px solid #1a7cbe;
+  
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  gap: 35px;
+  padding: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.banner-content h1{
+  font-weight: 900;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg, #1a7cbe, #2C9CD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+.logo {
+  background-color: #0000003f;
+  border-radius: 50%;
+  padding: 12px;
+  
+}
+.banner-content p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 60%;
+}
+header button {
+  padding: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1a7cbe, #2C9CD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 3px solid #1a7cbe;
+  margin-bottom: 40px;
+}
+
+
+#course-content {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  border-bottom: 3px solid #1a7cbe;
+}
+
+#course-content h2 {
+  font-size: 2rem;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-image: linear-gradient(180deg, #1a7cbe, #2C9CD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+#course-content p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  width: 60%;
+}
+#course-content .module {
+  background-color: #252525;
+  margin: 15px;
+  padding: 12px;
+  border-radius: 50px;
+  border: 3px solid #1a7cbe;
+}
+#course-content :nth-child(3).module {
+  margin-bottom: 50px;
+}
+#transform-world {
+  display: flex;
+  align-items: center;
+  height: 360px;
+  border-bottom: 3px solid #1a7cbe;
+  background-image: url('../images/woman-code.png');
+  background-color: #000000d3;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#transform-world p {
+  margin: 0 0 0 80px;
+  width: 30%;
+  font-size: 2rem;
+  text-shadow: 3px 3px 1px#33a8db;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+#professional-challenges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #000000;
+  padding: 30px;
+  border-bottom: 3px solid #1a7cbe;
+}
+
+#professional-challenges h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg, #1a7cbe, #2C9CD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 50%;
+  margin-top: 40px;
+}
+
+#professional-challenges p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+  width: 50%;
+}
+#professional-challenges img {
+  width: 40%;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 40px;
+}
+footer p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+footer a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #33A8DB; 
+}
+@media (max-width: 768px) {
+
+  
+  .banner-content p {
+    width: 90%;
+  }
+
+  #transform-world p {
+    width: 80%;
+    margin: 0; 
+    text-align: center; 
+    font-size: 1.8rem; 
+  }
+
+  
+  #transform-world {
+    background-attachment: scroll; 
+    background-position: center center; 
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  #professional-challenges h2 {
+    width: 90%; 
+    font-size: 1.5rem;
+  }
+  
+  #professional-challenges p {
+    width: 90%;
+  }
+
+ 
+  #professional-challenges img {
+    width: 90%; 
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,57 @@
+.transform-world {
+    background-image: url(../images/woman-code.png);
+    background-attachment: fixed;
+    height: 560px;
+    background-size: cover;
+
+}
+
+.transform-world-titulo {
+    font-family: Raleway;
+    position: relative;
+    color: #FFF;
+    text-shadow: 3px 2px 0 #33A8DB;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 244px;
+    text-transform: lowercase;
+    top: 40%;
+    left: 15%;
+}
+
+/* professional-challenges section */
+
+.professional-challenges {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.professional-challenges-titulo {
+    color: #33A8DB;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.08px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.professional-challenges-descricao {
+    width: 792px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 24px auto 0;
+    margin-bottom: 24px;
+}

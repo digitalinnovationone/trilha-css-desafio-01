@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(/assets/css/reset.css);
+
+body{
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+/* -------- HEADER -------- */
+header.banner{
+  top: -127px;
+  height: 732px;
+  background-image: 
+    linear-gradient(
+      rgba(0,0,0, 0.6),
+      rgba(49,168,221, 0.2),
+      rgba(0,0,0, 0.6)
+    ),
+    url(/assets/images/banner.png) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #33a8db;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content{
+  align-items: center;
+  text-align: center;
+}
+
+div.logo{
+  background: rgba(0,0,0, 0.2);
+  width: 268px;
+  height: 268px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 16px;
+} 
+.logo img{
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+header h1{
+  background: linear-gradient(#33a8db,#1472b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 16px auto;
+  text-transform: uppercase;
+}
+header p{
+  width: 100%;
+  max-width: 510px;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  margin: 16px auto;
+}
+header button{
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(#33a8db,#1472b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 19px 50px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(#33a8db,#1472b7);
+  border-image-slice: 1 ;
+  cursor: pointer;
+  margin: 18px auto;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* -------- COURSE CONTENT -------- */
+section #course-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#course-content h2{
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  color: #33a8db;
+  margin-top: 70px;
+}
+#course-content p {
+  width: 100%;
+  max-width: 792px;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+}
+
+/* -------- MODULES LIST -------- */
+.module span{
+  margin-right: 5px;
+  color: #33a8db;
+}
+.module{
+  width: 100%;
+  max-width: 530px;
+  height: 50px;
+  font-weight: 300;
+  background: rgb(34, 34, 34);
+  border: 1px solid #33a8db;
+  border-radius: 30px;
+  box-shadow: inset -3px 5px 5px rgba(0,0,0, 0.6);
+  margin: 20px auto;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- TRANSFORM WORLD -------- */
+#transform-world{
+  margin-top: 100px;
+  padding: 100px  ;
+  background: url(/assets/images/woman-code.png)center/cover no-repeat;
+  border:1px solid #33a8db;
+  background-attachment: fixed;
+}
+#transform-world p{
+  text-transform: lowercase;
+  width: 100%;
+  max-width: 244px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  margin-left: 50px;
+  text-shadow: 4px 2px #33a8db;
+  -webkit-text-stroke: 0.5px black;
+}
+
+/* -------- PROFESSIONAL CHALLENGES -------- */
+#professional-challenges{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #33a8db;
+  margin-top: 30px;
+}
+#professional-challenges h2{
+  width: 100%;
+  max-width: 746px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #33a8db;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#professional-challenges p{
+  width: 100%;
+  max-width: 792px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+/* -------- FOOTER -------- */
+footer{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+  background: linear-gradient(
+    rgba(0,0,0, 0.6),
+    rgba(49,168,221, 0.2)) center/cover no-repeat;
+}
+footer a{
+  text-decoration: none;
+  color: #33a8db;
+}
+

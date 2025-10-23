@@ -116,3 +116,31 @@ header.banner{
   color: var(--cor-texto);
   font-weight: 700;
 }
+
+/* ===== Parallax (#transform-world) ===== */
+#transform-world{
+  position: relative;
+  background: url('assets/images/woman-code.png') center/cover fixed; /* troque o nome se for outro */
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 48px 0;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+#transform-world::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.35); /* véu para texto legível */
+}
+#transform-world p{
+  position: relative;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(0,0,0,.6);
+  padding: 0 16px;
+}
+

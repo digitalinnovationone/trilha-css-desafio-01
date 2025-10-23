@@ -79,3 +79,40 @@ header.banner{
   outline-offset: 2px;
   border-radius: 12px;
 }
+
+/* ===== Seção: O que vou aprender (#course-content) ===== */
+#course-content{
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+#course-content h2{
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+#course-content > p{
+  color: var(--cor-texto-claro);
+  max-width: 70ch;
+  margin-bottom: 18px;
+}
+
+/* grid com 3 “cards” */
+#course-content .modules-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* cada card */
+#course-content .module{
+  background: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--cor-texto-claro);
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+}
+#course-content .module span{
+  color: var(--cor-texto);
+  font-weight: 700;
+}

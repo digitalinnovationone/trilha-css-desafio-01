@@ -25,5 +25,19 @@ h1{
     color: transparent;
 }
 
+button{
+  background: var(--cor-botao);
+  border: 1px solid #00af4a;
+  color:#041c0e;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .2s ease;
+}
+button:hover{
+  filter: brightness(1.08);
+}
+
 
 

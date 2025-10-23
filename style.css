@@ -19,5 +19,11 @@ body{
     
 }
 
+h1{
+  background: linear-gradient(90deg,var(--gradiente-roxo),var(--gradiente-azul));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 
 

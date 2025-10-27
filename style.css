@@ -144,3 +144,35 @@ header.banner{
   padding: 0 16px;
 }
 
+/* ===== Seção: #professional-challenges ===== */
+#professional-challenges{
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* texto | imagem */
+  gap: 24px;
+  align-items: center;
+}
+
+/* título e parágrafo */
+#professional-challenges h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+#professional-challenges p{
+  color: var(--cor-texto-claro);
+  max-width: 70ch;
+}
+
+/* trate a imagem */
+#professional-challenges img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda);
+  object-fit: cover;
+  background: #0f1320;
+}
+
+

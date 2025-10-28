@@ -191,4 +191,66 @@ footer a:hover{
   text-decoration: underline;
 }
 
-/* ===== Rodapé =====
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px){
+  #course-content .modules-list{
+    grid-template-columns: 1fr; /* uma coluna só */
+  }
+  #professional-challenges{
+    grid-template-columns: 1fr; /* uma coluna só */
+    gap: 32px;
+  }
+}   
+@media (max-width: 480px){
+  .banner-content h1{
+    font-size: 32px; /* título menor em telas pequenas */
+  }
+}
+/* Corrige o espaçamento da seção final usando áreas de grid */
+#professional-challenges{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title image"
+    "text  image";
+  column-gap: 28px;
+  row-gap: 10px;
+  align-items: start;  /* alinha topo */
+}
+
+#professional-challenges h2{
+  grid-area: title;
+  margin: 0 0 8px;    /* título coladinho no texto */
+}
+
+#professional-challenges p{
+  grid-area: text;
+  margin: 0;          /* remove espaço extra antes do parágrafo */
+  max-width: 70ch;
+}
+
+#professional-challenges img{
+  grid-area: image;
+  justify-self: center;
+  border-radius: 12px;
+}
+
+/* Mobile: empilha tudo em ordem natural */
+@media (max-width: 900px){
+  #professional-challenges{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "text"
+      "image";
+    row-gap: 16px;
+  }
+  #professional-challenges img{ justify-self: stretch; }
+}
+
+
+
+
+

@@ -145,15 +145,22 @@ header.banner{
 }
 
 /* ===== Seção: #professional-challenges ===== */
+
+/* >>> bloco antigo, guardado
 #professional-challenges{
   max-width: 1120px;
   margin: 40px auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr; /* texto | imagem */
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 24px;
   align-items: center;
 }
+<<< bloco antigo, guardado */
+
+
+
+
 
 /* título e parágrafo */
 #professional-challenges h2{

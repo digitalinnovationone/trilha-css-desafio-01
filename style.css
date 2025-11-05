@@ -1,3 +1,4 @@
+
 /* ===== BASE (mantém) ===== */
 :root{
   --cor-fundo:#0d1117;
@@ -22,62 +23,101 @@ body{
 .muted { color: var(--cor-texto-claro); }
 
 /* ===== BANNER LINDO ===== */
-header.banner{
-  padding: 64px 0 56px;     /* mais respiro */
-  border-bottom: 1px solid var(--cor-borda);
+header.banner {
+  position: relative;
+  min-height: 62vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 20px;
+  overflow: hidden;
+  /* imagem base do banner (fundo) */
+  background: linear-gradient(180deg, rgba(2,8,12,0.6), rgba(0,0,0,0.85)),
+              url('assets/images/banner.png') center/cover no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
 }
-.banner-content{
-  max-width: 720px;         /* largura ideal de leitura */
-  margin: 0 auto;
+
+header.banner::before {
+  content: "";
+  position: absolute;
+  left: -6%;             /* puxa um pouco para a esquerda */
+  top: 0;
+  width: 72%;            /* ocupa a lateral esquerda */
+  height: 100%;
+  background-image: url('assets/images/code-overlay.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover; 
+  opacity: 0.12;         /* ajuste a opacidade para mais/menos visibilidade */
+  mix-blend-mode: screen;/* experimenta 'overlay' ou 'screen' se quiser variar */
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(0.6px);   /* suaviza levemente */
+}
+
+/* vinheta radial para dar foco no centro (texto) */
+header.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1200px 420px at 50% 42%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 48%, rgba(0,0,0,0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* conteúdo do banner fica acima das camadas */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
   text-align: center;
 }
-.logo img{
-  width: 96px;              /* menorzinho e fino */
+/* logo - ajuste de tamanho */
+.logo img {
+  width: 110px;
   height: auto;
   display: block;
-  margin: 0 auto 16px;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,.3));
+  margin: 0 auto 18px;
 }
-.banner-content h1{
-  font-size: 44px;
+/* título com degradê em texto */
+.banner-content h1 {
+  margin: 8px 0 12px;
+  font-size: 56px;
   font-weight: 800;
+  line-height: 1.02;
   letter-spacing: .2px;
-  line-height: 1.15;
-  margin: 4px 0 10px;
-  /* degradê mais sofisticado */
+  /* degradê visível dentro do texto */
   background: linear-gradient(90deg, var(--gradiente-roxo), var(--gradiente-azul));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.banner-content p{
+/* subtítulo/descrição */
+.banner-content p {
   color: var(--cor-texto-claro);
   font-size: 18px;
-  max-width: 60ch;          /* linha mais curta = mais elegante */
-  margin: 0 auto 22px;
+  max-width: 66ch;
+  margin: 0 auto 20px;
 }
 
-/* ===== BOTÃO BONITO ===== */
-.banner-content button{
-  background: var(--cor-botao);
-  color: #062b1a;
-  border: 1px solid #0ea86a;
-  padding: 12px 18px;
-  border-radius: 10px;
+/* botão estilo (borda azul, hover preenchido) */
+.banner-content button {
+  background: transparent;
+  border: 2px solid var(--cor-azul);
+  color: var(--cor-azul);
+  padding: 12px 28px;
+  border-radius: 6px;
   font-weight: 700;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
-  box-shadow: 0 6px 18px rgba(22,193,114,.25);
+  transition: all .18s ease;
 }
-.banner-content button:hover{
-  filter: brightness(1.06);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(22,193,114,.28);
-}
-.banner-content button:focus-visible{
-  outline: 3px solid #74e6b4;
-  outline-offset: 2px;
-  border-radius: 12px;
+
+.banner-content button:hover {
+  background: var(--cor-azul);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(43,157,244,0.12);
 }
 
 /* ===== Seção: O que vou aprender (#course-content) ===== */
@@ -105,12 +145,13 @@ header.banner{
 
 /* cada card */
 #course-content .module{
-  background: var(--cor-card);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  padding: 16px;
-  color: var(--cor-texto-claro);
-  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+  background: transparent;
+  border: 1px solid #2b9df4;
+  border-radius: 50px;
+  text-align: center;
+  padding: 12px 0;
+  color: #9aa7b2;
+  
 }
 #course-content .module span{
   color: var(--cor-texto);
@@ -134,15 +175,14 @@ header.banner{
   position:absolute; inset:0;
   background: rgba(0,0,0,.35); /* véu para texto legível */
 }
-#transform-world p{
-  position: relative;
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: .8px;
-  text-transform: uppercase;
-  text-shadow: 0 2px 14px rgba(0,0,0,.6);
-  padding: 0 16px;
+#transform-world p {
+  text-transform: none;
+  font-size: 28px;
+  text-align: left;
+  font-weight: 700;
+  margin-left: 12%;
 }
+
 
 /* ===== Seção: #professional-challenges ===== */
 
@@ -257,7 +297,135 @@ footer a:hover{
   #professional-challenges img{ justify-self: stretch; }
 }
 
+/* ===== Ajustes finos finais no BANNER (cole só este bloco) ===== */
 
+/* 1) Banner geral: mais altura e degradê para aproximar visual */
+header.banner{
+  position: relative;
+  min-height: 70vh;                     /* mais espaço vertical como no original */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:84px 20px 56px;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(2,8,12,0.55) 0%, rgba(0,0,0,0.9) 100%),
+    url('assets/images/banner.png') center/cover no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+/* 2) Camada do código — mais visível, puxada à esquerda */
+header.banner::before{
+  content: "";
+  position: absolute;
+  left: -12%;            /* puxa mais para fora à esquerda como no modelo */
+  top: 0;
+  width: 88%;            /* ocupa mais largura da lateral esquerda */
+  height: 100%;
+  background-image: url('assets/images/code-overlay.png'); /* sua imagem do código */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  opacity: 0.32;         /* mais visível */
+  mix-blend-mode: overlay; /* 'overlay' costuma ficar próximo ao original */
+  filter: blur(0.4px) contrast(1.05) brightness(1.05);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 3) Vinheta central para destacar o texto (mais forte) */
+header.banner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(1200px 420px at 50% 46%,
+              rgba(0,0,0,0.0) 0%,
+              rgba(0,0,0,0.28) 35%,
+              rgba(0,0,0,0.62) 62%,
+              rgba(0,0,0,0.92) 100%);
+  z-index:1;
+  pointer-events:none;
+}
+
+/* 4) Logo maior com halo circular (cria o disco escuro por trás) */
+.logo{
+  position: relative;
+  display:inline-block;
+  z-index:2;
+  margin-bottom:14px;
+}
+.logo::before{
+  content:"";
+  position:absolute;
+  inset: -18px -18px auto -18px; /* espaço em volta da logo */
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 170px;
+  border-radius:50%;
+  background: radial-gradient(circle at 40% 35%, rgba(0,0,0,0.05), rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%);
+  z-index: -1;
+  filter: blur(6px) saturate(.9);
+  pointer-events:none;
+}
+.logo img{
+  width:140px;   /* maior como no original */
+  height:auto;
+  display:block;
+  margin:0 auto;
+  z-index:2;
+}
+
+/* 5) Título: maior, mais grosso e degradê mais forte */
+.banner-content{
+  position:relative;
+  z-index:2;
+  max-width:880px;
+  text-align:center;
+}
+.banner-content h1{
+  margin: 10px 0 14px;
+  font-size:72px;           /* maior */
+  font-weight:900;
+  line-height:1.02;
+  letter-spacing:.2px;
+  background: linear-gradient(90deg, #7c8cff 0%, #50b7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: none;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.25); /* leve sombra para profundidade */
+}
+
+/* 6) Subtítulo/descrição: central, largura controlada */
+.banner-content p{
+  color: var(--cor-texto-claro);
+  font-size:18px;
+  max-width:62ch;
+  margin: 0 auto 24px;
+}
+
+/* 7) Botão idêntico à referência — borda mais grossa e padding maior */
+.banner-content button{
+  background: transparent;
+  border: 3px solid #2b9df4;
+  color: #2b9df4;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  cursor:pointer;
+  transition: all .18s ease;
+  box-shadow: 0 6px 18px rgba(43,157,244,0.06);
+}
+.banner-content button:hover{
+  background:#2b9df4;
+  color:#fff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 48px rgba(43,157,244,0.20);
+}
 
 
 

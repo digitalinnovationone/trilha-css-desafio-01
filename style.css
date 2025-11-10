@@ -1,0 +1,431 @@
+
+/* ===== BASE (mantém) ===== */
+:root{
+  --cor-fundo:#0d1117;
+  --cor-texto:#e6edf3;
+  --cor-texto-claro:#9aa7b2;
+  --cor-card:#0f141b;
+  --cor-borda:#1f2630;
+  --gradiente-roxo:#7c8cff;   /* roxo-azulado mais suave */
+  --gradiente-azul:#50b7ff;   /* azul claro */
+  --cor-botao:#16c172;        /* verde mais elegante */
+}
+body{
+  background:var(--cor-fundo);
+  color:var(--cor-texto);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.6;
+  margin:0;
+}
+
+/* ===== UTILIDADE ===== */
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+.muted { color: var(--cor-texto-claro); }
+
+/* ===== BANNER LINDO ===== */
+header.banner {
+  position: relative;
+  min-height: 62vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 20px;
+  overflow: hidden;
+  /* imagem base do banner (fundo) */
+  background: linear-gradient(180deg, rgba(2,8,12,0.6), rgba(0,0,0,0.85)),
+              url('assets/images/banner.png') center/cover no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+header.banner::before {
+  content: "";
+  position: absolute;
+  left: -6%;             /* puxa um pouco para a esquerda */
+  top: 0;
+  width: 72%;            /* ocupa a lateral esquerda */
+  height: 100%;
+  background-image: url('assets/images/code-overlay.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover; 
+  opacity: 0.12;         /* ajuste a opacidade para mais/menos visibilidade */
+  mix-blend-mode: screen;/* experimenta 'overlay' ou 'screen' se quiser variar */
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(0.6px);   /* suaviza levemente */
+}
+
+/* vinheta radial para dar foco no centro (texto) */
+header.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1200px 420px at 50% 42%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 48%, rgba(0,0,0,0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* conteúdo do banner fica acima das camadas */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  text-align: center;
+}
+/* logo - ajuste de tamanho */
+.logo img {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+}
+/* título com degradê em texto */
+.banner-content h1 {
+  margin: 8px 0 12px;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: .2px;
+  /* degradê visível dentro do texto */
+  background: linear-gradient(90deg, var(--gradiente-roxo), var(--gradiente-azul));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* subtítulo/descrição */
+.banner-content p {
+  color: var(--cor-texto-claro);
+  font-size: 18px;
+  max-width: 66ch;
+  margin: 0 auto 20px;
+}
+
+/* botão estilo (borda azul, hover preenchido) */
+.banner-content button {
+  background: transparent;
+  border: 2px solid var(--cor-azul);
+  color: var(--cor-azul);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .18s ease;
+}
+
+.banner-content button:hover {
+  background: var(--cor-azul);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(43,157,244,0.12);
+}
+
+/* ===== Seção: O que vou aprender (#course-content) ===== */
+#course-content{
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+#course-content h2{
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+#course-content > p{
+  color: var(--cor-texto-claro);
+  max-width: 70ch;
+  margin-bottom: 18px;
+}
+
+/* grid com 3 “cards” */
+#course-content .modules-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* cada card */
+#course-content .module{
+  background: transparent;
+  border: 1px solid #2b9df4;
+  border-radius: 50px;
+  text-align: center;
+  padding: 12px 0;
+  color: #9aa7b2;
+  
+}
+#course-content .module span{
+  color: var(--cor-texto);
+  font-weight: 700;
+}
+
+/* ===== Parallax (#transform-world) ===== */
+#transform-world{
+  position: relative;
+  background: url('assets/images/woman-code.png') center/cover fixed; /* troque o nome se for outro */
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 48px 0;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+#transform-world::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.35); /* véu para texto legível */
+}
+#transform-world p {
+  text-transform: none;
+  font-size: 28px;
+  text-align: left;
+  font-weight: 700;
+  margin-left: 12%;
+}
+
+
+/* ===== Seção: #professional-challenges ===== */
+
+/* >>> bloco antigo, guardado
+#professional-challenges{
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: center;
+}
+<<< bloco antigo, guardado */
+
+
+
+
+
+/* título e parágrafo */
+#professional-challenges h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+#professional-challenges p{
+  color: var(--cor-texto-claro);
+  max-width: 70ch;
+}
+
+/* trate a imagem */
+#professional-challenges img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda);
+  object-fit: cover;
+  background: #0f1320;
+}
+
+/* ===== RODAPÉ SIMPLES ===== */
+footer{
+  text-align: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--cor-borda);
+  color: var(--cor-texto-claro);
+  font-size: 14px;
+} 
+footer a{
+  color: var(--gradiente-azul);
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px){
+  #course-content .modules-list{
+    grid-template-columns: 1fr; /* uma coluna só */
+  }
+  #professional-challenges{
+    grid-template-columns: 1fr; /* uma coluna só */
+    gap: 32px;
+  }
+}   
+@media (max-width: 480px){
+  .banner-content h1{
+    font-size: 32px; /* título menor em telas pequenas */
+  }
+}
+/* Corrige o espaçamento da seção final usando áreas de grid */
+#professional-challenges{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title image"
+    "text  image";
+  column-gap: 28px;
+  row-gap: 10px;
+  align-items: start;  /* alinha topo */
+}
+
+#professional-challenges h2{
+  grid-area: title;
+  margin: 0 0 8px;    /* título coladinho no texto */
+}
+
+#professional-challenges p{
+  grid-area: text;
+  margin: 0;          /* remove espaço extra antes do parágrafo */
+  max-width: 70ch;
+}
+
+#professional-challenges img{
+  grid-area: image;
+  justify-self: center;
+  border-radius: 12px;
+}
+
+/* Mobile: empilha tudo em ordem natural */
+@media (max-width: 900px){
+  #professional-challenges{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "text"
+      "image";
+    row-gap: 16px;
+  }
+  #professional-challenges img{ justify-self: stretch; }
+}
+
+/* ===== Ajustes finos finais no BANNER (cole só este bloco) ===== */
+
+/* 1) Banner geral: mais altura e degradê para aproximar visual */
+header.banner{
+  position: relative;
+  min-height: 70vh;                     /* mais espaço vertical como no original */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:84px 20px 56px;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(2,8,12,0.55) 0%, rgba(0,0,0,0.9) 100%),
+    url('assets/images/banner.png') center/cover no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+/* 2) Camada do código — mais visível, puxada à esquerda */
+header.banner::before{
+  content: "";
+  position: absolute;
+  left: -12%;            /* puxa mais para fora à esquerda como no modelo */
+  top: 0;
+  width: 88%;            /* ocupa mais largura da lateral esquerda */
+  height: 100%;
+  background-image: url('assets/images/code-overlay.png'); /* sua imagem do código */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  opacity: 0.32;         /* mais visível */
+  mix-blend-mode: overlay; /* 'overlay' costuma ficar próximo ao original */
+  filter: blur(0.4px) contrast(1.05) brightness(1.05);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 3) Vinheta central para destacar o texto (mais forte) */
+header.banner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(1200px 420px at 50% 46%,
+              rgba(0,0,0,0.0) 0%,
+              rgba(0,0,0,0.28) 35%,
+              rgba(0,0,0,0.62) 62%,
+              rgba(0,0,0,0.92) 100%);
+  z-index:1;
+  pointer-events:none;
+}
+
+/* 4) Logo maior com halo circular (cria o disco escuro por trás) */
+.logo{
+  position: relative;
+  display:inline-block;
+  z-index:2;
+  margin-bottom:14px;
+}
+.logo::before{
+  content:"";
+  position:absolute;
+  inset: -18px -18px auto -18px; /* espaço em volta da logo */
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 170px;
+  border-radius:50%;
+  background: radial-gradient(circle at 40% 35%, rgba(0,0,0,0.05), rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%);
+  z-index: -1;
+  filter: blur(6px) saturate(.9);
+  pointer-events:none;
+}
+.logo img{
+  width:140px;   /* maior como no original */
+  height:auto;
+  display:block;
+  margin:0 auto;
+  z-index:2;
+}
+
+/* 5) Título: maior, mais grosso e degradê mais forte */
+.banner-content{
+  position:relative;
+  z-index:2;
+  max-width:880px;
+  text-align:center;
+}
+.banner-content h1{
+  margin: 10px 0 14px;
+  font-size:72px;           /* maior */
+  font-weight:900;
+  line-height:1.02;
+  letter-spacing:.2px;
+  background: linear-gradient(90deg, #7c8cff 0%, #50b7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: none;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.25); /* leve sombra para profundidade */
+}
+
+/* 6) Subtítulo/descrição: central, largura controlada */
+.banner-content p{
+  color: var(--cor-texto-claro);
+  font-size:18px;
+  max-width:62ch;
+  margin: 0 auto 24px;
+}
+
+/* 7) Botão idêntico à referência — borda mais grossa e padding maior */
+.banner-content button{
+  background: transparent;
+  border: 3px solid #2b9df4;
+  color: #2b9df4;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  cursor:pointer;
+  transition: all .18s ease;
+  box-shadow: 0 6px 18px rgba(43,157,244,0.06);
+}
+.banner-content button:hover{
+  background:#2b9df4;
+  color:#fff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 48px rgba(43,157,244,0.20);
+}
+
+
+

@@ -1,0 +1,617 @@
+@charset "UTF-8";
+
+/*
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.375);
+    text-shadow: 2px 2px 0px black;
+    }
+
+section#img01{
+    background-image: url('../pacote-d012/imagens/background001.jpg');
+    background-position: right center;
+}
+
+
+    */
+    /* ============================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+============================================ */
+/* ============================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(180deg, #000000 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0a4d8c 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* ============================================
+   HEADER - BANNER PRINCIPAL
+============================================ */
+
+header {
+    background-image: url(../assets/images/banner.png) center/cover no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Efeito de overlay decorativo */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(240, 147, 251, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(245, 87, 108, 0.2) 0%, transparent 50%);
+    z-index: 0;
+    animation: gradientShift 10s ease infinite;
+    background-image: url(../assets/images/banner.png);
+
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    color: rgb(48, 48, 195);
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+.banner-content p{
+    max-width: 800px;
+    text-align: center;
+    color: rgb(240, 240, 249);
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    margin: 1px 1px 2px 2px;
+    margin-bottom: 30px;
+    padding: 2px;
+    animation: fadeIn 1.5s ease-out;
+    box-shadow: #000000;
+    border-color: #000000;
+}
+
+.logo img {
+    max-width: 200px;
+    margin: 5px 5px 3px 3px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    box-shadow: #000000;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: linear 2px 2px 8px rgb(34, 6, 213);
+    letter-spacing: -1px;
+    font-style: inherit;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    opacity: 0.95;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-content button {
+    background: white;
+    color: #667eea;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.banner-content button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #211822 0%, #65151f 100%);
+    color: white;
+}
+
+.banner-content button:active {
+    transform: translateY(-1px);
+}
+
+
+
+/* ============================================
+   MAIN - CONTEÚDO PRINCIPAL
+============================================ */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   SEÇÃO - CONTEÚDO DO CURSO
+============================================ */
+
+#course-content {
+    background: rgb(20, 19, 19);
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#course-content h2 {
+    font-size: 2.5rem;
+    color: #012be6;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#course-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+#course-content > p {
+    font-size: 1.1rem;
+    color: #faf8f8;
+    max-width: 800px;
+    margin: 30px auto 50px;
+    line-height: 1.8;
+}
+
+/* Lista de Módulos */
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.module {
+    background: linear-gradient(135deg, #002df4 0%, #f103d9 100%);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.module::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.5s ease;
+}
+
+.module:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.module:hover::before {
+    left: 100%;
+}
+
+.module span {
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* ============================================
+   SEÇÃO - TRANSFORME O MUNDO
+============================================ */
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url('../assets/images/woman-code.png');
+    background-attachment: fixed;
+    border-top: 1px solid rgb(19, 19, 102);
+    border-bottom: 1px solid rgb(4, 4, 125);
+    padding: 200px;
+    position: relative;
+}
+
+
+
+#transform-world p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-weight: 900;
+    max-width: 250px;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px  rgba(246, 3, 3, 0.3);
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    position: left;
+    
+}
+
+
+
+/* ============================================
+   SEÇÃO - DESAFIOS PROFISSIONAIS
+============================================ */
+
+#professional-challenges {
+    background: rgb(17, 17, 17);
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#professional-challenges h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+#professional-challenges h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* Efeito Parallax na Imagem */
+#professional-challenges img {
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+    /* Efeito parallax será aplicado via JavaScript ou CSS puro */
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+#professional-challenges img:hover {
+    transform: scale(1.05) translateZ(20px);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.4);
+}
+
+/* Container parallax para woman-code.png */
+.parallax-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease-out;
+}
+
+/* Efeito parallax com pseudo-elemento */
+#professional-challenges::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('assets/images/woman-code.png') center/contain no-repeat;
+    background-attachment: fixed;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#professional-challenges p {
+    font-size: 1.1rem;
+    color: #f5f4f4;
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.8;
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+
+footer {
+    background: #2d3748;
+    color: rgb(240, 236, 32);
+    padding: 60px 40px 40px;
+    text-align: center;
+}
+
+.dio-logo {
+    max-width: 200px;
+    margin: 0 auto 30px;
+    filter: brightness(0) invert(1);
+    
+}
+
+footer p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+footer a:hover {
+    color: #d741e8;
+    border-bottom-color: #f093fb;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+============================================ */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .banner-content button {
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+
+    #course-content h2,
+    #professional-challenges h2 {
+        font-size: 2rem;
+    }
+
+    #transform-world p {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .modules-list {
+        max-width: 100%;
+    }
+
+    .module {
+        padding: 20px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        min-height: 100vh;
+        padding: 30px 15px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 0.95rem;
+    }
+
+    .banner-content button {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+
+    #course-content,
+    #professional-challenges {
+        padding: 50px 20px;
+    }
+
+    #course-content h2,
+    #professional-challenges h2 {
+        font-size: 1.6rem;
+    }
+
+    #course-content > p,
+    #professional-challenges p {
+        font-size: 1rem;
+    }
+
+    #transform-world {
+        padding: 100px 20px;
+    }
+
+    #transform-world p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .module {
+        padding: 18px 20px;
+        font-size: 0.95rem;
+    }
+
+    .module:hover {
+        transform: translateX(5px);
+    }
+
+    footer {
+        padding: 40px 20px 30px;
+    }
+
+    .dio-logo {
+        max-width: 150px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   ANIMAÇÕES EXTRAS
+============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transições globais */
+* {
+    transition: all 0.3s ease;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* ============================================
+   MELHORIAS DE ACESSIBILIDADE
+============================================ */
+
+button:focus,
+a:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 3px;
+}
+
+/* Contraste melhorado para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

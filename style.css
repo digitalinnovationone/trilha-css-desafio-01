@@ -1,0 +1,50 @@
+.banner {
+  background-image: url(assets/images/banner.png),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.514),
+      rgba(10, 96, 152, 0.273),
+      rgba(0, 0, 0, 0.613)
+    );
+  background-size: cover;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  padding: 2rem 0;
+}
+
+.banner-content > p {
+  display: inline-block;
+  width: 25rem;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.banner-content > h1 {
+  margin: 0;
+}
+
+.banner-content > button {
+  font-size: 120%;
+  padding: 0.7rem 1.5rem;
+  background: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+}
+
+.logo > img {
+  background-color: rgba(201, 204, 237, 0.04);
+  border-radius: 50%;
+  height: 200px;
+}
+
+html,
+body {
+  margin: 0 10rem;
+  background-color: rgb(18, 18, 48);
+  color: aliceblue;
+}

@@ -1,0 +1,137 @@
+@import url(./font.css);
+
+* {
+    text-align: center;
+    font-family: Raleway;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #33A8DB;
+    text-transform: uppercase;
+    letter-spacing: 19%;
+    width: 746px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+section {
+    background-color: black;
+}
+
+.banner-content {
+    background: 
+    url(../assets/images/banner.png) no-repeat center / 1255px 500px, 
+    linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 5%,
+        rgb(12, 42, 55) 50%,
+        rgba(0, 0, 0, 1) 95%);
+        padding: 50px 0px 50px;
+}
+.banner p {
+    margin: auto;
+    width: 420px;
+}
+
+.banner h1 {
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #33A8DB, #1472B7);
+    -webkit-background-clip: text;
+}
+
+.banner button {
+    font-weight: bold;
+    letter-spacing: 21%;
+    text-transform: uppercase;
+    color: #33A8DB;
+    border: 2px solid #33A8DB;
+    background-color: transparent;
+    padding: 15px 40px 15px;
+    margin-top: 15px;
+}
+#course-content {
+    border: 1px solid #33A8DB;
+}
+#course-content p {
+    margin: auto;
+    padding: 30px auto 0px;
+    width: 792px;
+}
+
+.modules-list {
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 30px 0px 100px;
+}
+.module {
+    color: white;
+    margin: 15px auto auto;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    width: 450px;
+    height: 21px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 57px;
+    border-width: 1px;
+    padding: 16px 127px 16px 127px;
+    background-color: #252525;
+}
+.module span {
+    color: #33A8DB;
+}
+
+#transform-world {
+    height: 363px;
+    background: url(../assets/images/woman-code.png) center / auto 960px fixed no-repeat black;
+    border: 1px solid #33A8DB;
+
+}
+
+#transform-world p {
+    width: 244px;
+    text-align: left;
+    height: 141px;
+    margin: auto;
+    padding: 111px 1000px 0px 198px;
+    font-size: 35px;
+    text-transform: lowercase;
+    text-shadow: 3px 2px#33A8DB;
+    font-weight: bold;
+}
+
+#professional-challenges p {
+    width: 792px;
+    height: 76px;
+    margin: auto;
+    padding: 40px 0px 90px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    border: 1px solid #33A8DB;
+    background-image: linear-gradient(to top, #33A8DB -300%, black 100%);
+}
+
+footer p {
+    padding: 0px 0px 25px;
+}
+
+footer img {
+    padding-top: 60px;
+}
+
+footer a {
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: bold;
+}

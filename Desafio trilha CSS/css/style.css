@@ -1,0 +1,205 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 1.34rem;
+    font-weight: 200;
+
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 2.7rem;
+    font-weight: 900;
+    padding: 20px;
+}
+.banner-content h1{
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+;
+    --webkit-background-clip:text;
+    color: transparent;
+    background-clip: text;
+
+}
+
+h2 {
+    letter-spacing: 6px;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.colorazul,
+h1,
+h2,
+footer p a,
+button {
+    color: #33A8DB;
+    text-transform: uppercase;
+}
+
+html {
+    background-color: pink;
+    width: 1440px;
+    height: 2491px;
+    color: white;
+}
+
+header {
+    width: 1440px;
+    height: 605px;
+
+}
+
+header div p {
+    width: 538px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50)0%, rgba(51, 168, 219, 0.15)50%, rgba(0, 0, 0, 0.08)100%), url("../assets/images/banner.png");
+}
+
+.logo img {
+    margin: 80px 0px 20px 0px;
+}
+
+button {
+    background: linear-gradient(to margin-top, #33A8DB, #feb47b);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: solid 2px #33A8DB;
+    background-color: transparent;
+    padding: 16px 60px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: black;
+}
+
+section,
+footer {
+    border-top: solid 2px #33A8DB;
+}
+
+#course-content {
+    padding-top: 65px;
+}
+
+#course-content p {
+    padding: 25px 25px;
+    font-size: medium;
+    width: 878px;
+}
+
+.module {
+    font-family: 'Raleway';
+    font-size: 16px;
+    padding: 16px 0px;
+    margin-bottom: 20px;
+    width: 535px;
+    background-color: #252525;
+    display: block;
+    border: #33A8DB solid 1px;
+    border-radius: 30px;
+}
+
+.module span {
+    color: #33A8DB;
+}
+
+.modules-list {
+    width: 792px;
+    height: 325px;
+    margin-bottom: 20px;
+}
+
+/*TRANSFORME O MUNDO COM A GENTE*/
+#transform-world {
+    width: 1440px;
+    height: 363px;
+    background-image: url(../assets/images/woman-code.png);
+    background-size: cover;
+    background-position: 0px -250px;
+    opacity: 60px;
+}
+
+#transform-world p {
+    display: block;
+    float: left;
+    width: 244px;
+    height: 141px;
+    text-transform: lowercase;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: black;
+    text-shadow: #33A8DB 3px 2px;
+    margin-top: 111px;
+    margin-left: 198px;
+}
+
+
+#professional-challenges h2 {
+
+    width: 750px;
+    height: 76px;
+
+    font-size: 32px;
+    letter-spacing: 19%;
+    font-weight: 700;
+    font-style: bold;
+    margin-top: 76px;
+    line-height: 125%;
+    margin-bottom: 30px;
+}
+
+#professional-challenges p {
+    margin-top: 40px;
+    display: block;
+    width: 792px;
+    height: 76px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 95px;
+}
+footer{
+    height: 170px;
+    background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+    justify-content: center;
+}
+footer p {
+    width: 259px;
+    height: 19px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+footer img{
+    width: 310px;
+    height: 44px;
+    margin-top: 59px;
+    opacity: 1;
+}
+footer p a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}

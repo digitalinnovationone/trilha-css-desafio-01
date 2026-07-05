@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+}
+body {
+  background-color: black;
+  
+}
+
+.banner{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6) 100%),
+    url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 605px; 
+
+    border-bottom: 1px solid #33A8DB;
+  
+}
+.banner-content
+{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1{
+    color:#33A8DB;
+    font-size: 2.5 rem;
+    font-weight: 900;
+    font-style: Black;
+    text-transform: uppercase;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+}
+h2{
+    color:#33A8DB;
+    font-size: 2.5 rm;
+    font-weight: 900;
+    font-style: Black;
+    text-transform: uppercase;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 16px 0;
+}
+main{
+    
+    text-align: center;
+    margin: 0 auto;
+}
+p{
+    color:white ;
+    margin: 32px auto;
+}
+h1+p{
+
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 1.25rem;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    margin:16px 0 24px;
+
+}
+.banner-content>button
+{
+    border: 2px linear-gradient(#3BA1CD, #1572B7);
+    background: none;
+    color: #31A8DD;
+    
+    font-weight: 900;
+    font-style: Black;
+    font-size: 1rem;
+    
+    line-height: 100%;
+    letter-spacing: 21%;
+    text-align: center;
+    padding: 19px 91px;
+    text-transform: uppercase;
+
+}
+section {
+  margin: 100px auto;
+  border-bottom: 1px solid #33A8DB;
+}
+
+.module{
+    flow:horizontal;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 60px;
+    margin: 16px auto;
+    padding: 16px 67px;
+    color:white;
+    width: 550px;
+    gap: 10px;
+}
+#transform-world{
+    background-image: url(../images/woman-code.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    height: 500px;
+    margin: 32px 0;
+}
+[title="Homem lendo depoimentos em um tablet"]{
+    margin: 32px 0;
+    
+    
+}
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+  border-top: 1px solid #33A8DB80;
+}
+
+
+
+a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
